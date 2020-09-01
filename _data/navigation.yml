@@ -1,20 +1,24 @@
 items:
+
   -
-    name: What We Do
-    url: "#introduction"
+    name: Home
+    url: "#home"
   -
-    name: Portfolio
-    url: "#portfolio"
+    name: Our Mission
+    url: "#mission"
   -
-    name: Team
+    name: Business Units
+    url: "#unit"
+  -
+    name: Our Team
     url: "#team"
-  -
-    name: Media
-    url: "#media"
   -
     name: Contact
     url: "#contact"
   -
-    name: Invest with us
-    url: "#invest"
+    name: Latest News
+    url: "#media"
+  -
+    name: Where We Are
+    url: "#where"
 
