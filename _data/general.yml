@@ -17,7 +17,7 @@ items:
         # icon: /assets/img/opps/bank.png
         heading: World's Energy Supply
         text: >-
-          Agro Fund One, Limited has developed close relationships with approximately 50 high and ultra-high net worth individual investors from around the world as well as proprietary and partner based international banking and multi-currency relationships.
+          Aero Fleet One drones have the range and payload capacities to fly BVLOS missions in weather conditions necessary to serve the Oil and Gas and Power Transmission industries. Through our work in energy we are working to help the energy industry become more safe.
         img: ["/assets/img/mission/EOR-techniques-in-revitalizing-mature-oil-fields.jpg","/assets/img/mission/flare-stack.jpg","/assets/img/mission/oil-fields.jpg"]  
 
   unit:
@@ -38,6 +38,13 @@ items:
         heading: Our Operations
         text: >-
           Aero Fleet One trains drone pilots to use our unique airframe and guidance system. Our ground and administrative team facilitates the regulatory paperwork and permission to fly missions for our clients in multiple and complex jurisdictions. 
+  
+  where:
+    img: /assets/img/aerofleetonemap.png
+    heading: Where We Are
+    text: AeroFleetOne serves North, Central and South America.
+
+
   team:
     heading: Our Team
     intro:
@@ -45,104 +52,29 @@ items:
       -
         name: Mark Erjavec
         title: Finance
-        img: /assets/img/team/mark-headshot.png
-        mail: markerjavec@aerofleetone.com
+        img: /assets/img/team/MarkErjavec.png
+        mail: mark@aerofleetone.com
         linkedin: https://www.linkedin.com/in/markerjavec/
-        # text: >-
-        #   With the support of a market-leading research team and hands-on management of direct investments, Mark travels the world exploring new opportunities and working to develop quality relationships on behalf of the Agro Fund One and for our stakeholders.
-
   timeline:
     heading: Projected Timeline
-    text: >-
-      yo
+    text:
     items:
       -
-        heading: Marvella Farms
-        subheading: Fresh produce grown in the desert
-        p: >-
-          Oasis complex of indoor farms producing year round fresh produce grown in the desert utilizing practical, sustainable and affordable design that can be replicated at scale. The fresh produce will be marketed locally and for export through both the shipping port and inland to support the cities of Africa, the fastest growing population in the world.
-        href: www.marvellafarms.com      
+        year: 2019
+        text: Development of Training Program Targets Generation Z
       -
-        heading: Aero Fleet One
-        subheading: Precision aero application
-        p: >-
-          As a licensee of an advanced heavy payload, a fixed wing technology from Europe, we work with customers throughout North and South America to develop the first UAV fleet capable of commercial scale aerial application services. Based in North Dakota our company currently focuses on fleet development, marketing and the development of a logistical and operations team.
-        href: www.aerofleetone.com
+        year: 2020
+        text:  Certification &  Training Program Trials
       -
-        heading: Blue Heron Farms
-        subheading: Wide variety of crops and specialty foods
-        p: >-
-          Actively managing an 1800 hectare farm on behalf of a Georgian institutional client since 2012. We also co-own a large specialty row crop machinery portfolio that is lease through a revenue share model on specialty crops in the region. Our work in Georgia once included the active management of one of the region’s largest bee apiary enterprises.
-        href: www.blueheron.info        
+        year: 2021
+        text:  Training Program Implementation & Drone testing &  Development of Operations Platform 
       -
-        heading: Site management in Colorado - USA
-        p: >-
-          Agro Fund One has the opportunity to develop indoor grow facilities on two sites one with rail access and both with water and solar capabilities.
+        year: 2022
+        text: Roll up Of Conventional Aerial Application Businesses 
       -
-        heading: Site management in Minnesota - USA
-        p: >-
-          Agro Fund One has the opportunity to develop indoor grow facilities in two sites that are powered by renewable solar energy.
-      -
-        heading: Do you have a project in mind?
-        subheading: We are open to proposals!
-        p: >-
-          <a href="#contact" class="btn st-btn smooth-scroll my-3">Submit a Proposal</a>
-    pois:
-      -
-        name: Hong Kong
-        content: 
-          - Hong Kong - Asian Headquarter
-        top: 44%
-        left: 77%
-        top_m: 38%
-        left_m: 75%
-      -
-        name: Minnesota, USA
-        content:
-          - Minneapolis, US Headquarter
-          - Site management in Minnesota
-          - <a href="https://www.aerofleetone.com" target="_blank" rel="noopener">Precision aero application done by Aero Fleet One in North Dakota</a>
-        top: 29%
-        left: 21%
-        top_m: 21%
-        left_m: 17%
-      -
-        name: Eastern Europe
-        content:
-          - Eastern European office in Kyiv, Ukraine
-          - <a href="http://www.blueheron.info" target="_blank" rel="noopener">Blue Heron Farms in the country of Georgia</a>
-        top: 29%
-        left: 58%
-        top_m: 20%
-        left_m: 54%
-      -
-        name: Colorado, USA
-        content: 
-          - US Office location in Denver
-          - Site management in Colorado
-        top: 33%
-        left: 18%
-        top_m: 28%
-        left_m: 13%
-      -
-        name: Djibouti
-        content:
-          - <a href="https://www.marvellafarms.com" target="_blank" rel="noopener">Marvella Farms</a>
-        top: 52%
-        left: 57%
-        top_m: 45%
-        left_m: 52%
+        year: 2023
+        text: Proliferation & Fleet Implementation
     gif: /assets/video/3D-model-DR-60.gif
 
   media:
     heading: Media
-
-  invest:
-    title: A Letter From Mark M. Erjavec
-    text: >-
-      My career and business success includes the experiences of being a first mover. I and the colleagues I surround myself with demonstrate keen ability to identify feasible pathways to success. I have learned that the leading agricultural players, many of whom I nurture relations, value transparency and therefore I make it a hallmark of my relationship building. In developing relationships my goal is to make a market for others by forging a business model that attracts capital investment from the world’s agricultural investors. Because assets can react differently to the same economic event, investment diversity will ensure ongoing success.<br><br>
-      My investments are done through Mesaba Finance Company Incorporated, which supports a boutique investment banking operation and employs international staff to manage funds related to agriculture and other specialty finance in North, Central and South America, as well as a project in the Horn of Africa.
-    link: Go To MesabaFinance.com
-    url: http://www.mesabafinance.com
-    # img: /assets/img/team/mark-erjavec.jpg
-    

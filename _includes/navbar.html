@@ -16,16 +16,10 @@
         <ul class="navbar-nav ml-auto mr-2">
 
             {% for i in site.data.navigation.items %}
-                <!-- {% unless forloop.last %} -->
-                    <li class="nav-item underline ml-2">
-                        <a class="nav-link smooth-scroll" href="{{i.url}}">{{i.name}}</a>
-                    </li>
-                <!-- {% endunless %} -->
+                <li class="nav-item underline ml-2">
+                    <a class="nav-link smooth-scroll" href="{{i.url}}">{{i.name}}</a>
+                </li>
             {% endfor %}
-
-            <!-- <li class="nav-item cta-btn ml-2">
-                <a class="nav-link" data-target="#investModal" data-toggle="modal" href="">Invest</a>
-            </li> -->
         </ul>
     </div>
 </nav>

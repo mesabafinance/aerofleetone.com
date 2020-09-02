@@ -11,82 +11,56 @@ title:
     <video autoplay muted playsinline preload loop class="bg-video" poster="{{'/assets/video/hero-poster.png'}}?{{cache_buster}}">
         <source src="{{'/assets/video/hero-video.mp4'}}?{{cache_buster}}" type="video/mp4">
     </video>
-    <div class="">
-        <!-- <h1 class="text-white">{{general.headline}}</h1> -->
-        <div data-svg-id="794720bd22ae4d1ba58b15a0440cb8f9.svg" data-svg-type="shape" data-display-mode="stretch" data-strokewidth="0" data-viewbox="0 0 200 200" data-preserve-viewbox="ignore" style="width: 87px; height: 57px; visibility: inherit;" data-angle="180" data-angle-style-location="style" class="style-k1i08bir" id="comp-k1i08b4d"><a href="https://www.aerofleetone.com" target="_self" data-keep-roots="true" data-anchor-comp-id="comp-k1ljqkpl" data-anchor="dataItem-k1ljqkqu" style="cursor:pointer" id="comp-k1i08b4dlink" class="style-k1i08birlink"><div style="stroke-width:0;fill-opacity:1;stroke:#ED1566;stroke-opacity:1;fill:rgba(255, 255, 255, 1)" class="style-k1i08bir_comp-k1i08b4d style-k1i08bir_non-scaling-stroke style-k1i08birsvg" id="comp-k1i08b4dsvg"><svg preserveAspectRatio="none" id="comp-k1i08b4dsvgcontent" data-bbox="19.5 47.5 161 105.001" viewBox="19.5 47.5 161 105.001" height="200" width="200" xmlns="http://www.w3.org/2000/svg" data-type="shape" role="img">
-            <g>
-                <path d="M100 52.558c5.054 0 10.111 1.912 13.944 5.735l55.772 55.611c7.668 7.646 7.668 20.158 0 27.804-3.833 3.823-8.887 5.735-13.944 5.735-5.054 0-10.108-1.912-13.941-5.735L100 100l-41.829 41.707c-3.835 3.823-8.889 5.735-13.944 5.735s-10.111-1.912-13.944-5.735c-7.668-7.646-7.668-20.158 0-27.804l55.772-55.61v-.001c3.834-3.823 8.891-5.734 13.945-5.734m0-5.058c-6.619 0-12.831 2.558-17.487 7.202l-55.772 55.611c-4.668 4.656-7.241 10.868-7.241 17.493 0 6.625 2.573 12.838 7.241 17.493 4.656 4.644 10.868 7.202 17.487 7.202s12.831-2.558 17.487-7.202L100 107.124l38.288 38.175c4.656 4.644 10.868 7.202 17.484 7.202 6.619 0 12.831-2.558 17.487-7.202 4.668-4.655 7.241-10.868 7.241-17.493s-2.573-12.838-7.241-17.493l-55.772-55.611C112.831 50.058 106.619 47.5 100 47.5z"></path>
-            </g>
-        </svg>
-        </div></a></div>
-    </div>
+    <a class="smooth-scroll" href="#mission">
+        <span class="pulse-button"><img class="pulse-icon img-fluid" src="/assets/img/chevron-down.png"></span>
+    </a>
 </div>
 
-<!-- intro section -->
-
-<!-- <div class="bg-light py-5">
-    <a class="anchor" id="introduction"></a>
-    <div class="container">
-        <div class="d-md-none text-center mb-5">
-            <h1>{{mission.headline}}</h1>
-        </div>
-        <p class="lead">{{general.description}}</p>
-        <div class="row justify-content-center mt-4">
-            <div class="col-md-8">
-                <div class="embed-responsive embed-responsive-16by9">
-                    <iframe allowfullscreen class="embed-responsive-item" src="https://www.youtube-nocookie.com/embed/rlRUzzOXVt0?rel=0"></iframe>
-                </div>
-            </div>
-        </div>
-    </div>
-</div> -->
 
 <!-- our mission section -->
 
-<div class="container pb-5 mb-5">
+<div class="container">
     <a class="anchor" id="mission"></a>
     <h2 class="mt-5 pt-5 text-center">{{general.mission.heading}}</h2>
+
     {% for i in general.mission.items %}
-    {% assign carouselIndex = forloop.index %}
-    <div class="row mt-3">
-            <div class="col-sm-6 col-12 mt-4 justify-content-center">
-                <div class="">
-                    <h5 class="mt-3 text-center px-4 font-weight-bold">{{i.heading}}</h5>
-                    <div class="">
-                        <p>{{i.text}}</p>
-                    </div>
-                </div>
+        {% assign carouselIndex = forloop.index %}
+        {% assign test = forloop.index|modulo:2 %}
+        <div class="row mb-5 pb-5">
+            <div class="col-sm-6 col-12 justify-content-center {% if test== 0 %}order-1 order-sm-1 order-md-2{% endif %}">
+                <h5 class="mt-3 text-center px-4 font-weight-bold">{{i.heading}}</h5>
+                <p>{{i.text}}</p>
             </div>
-                <div id="carousel{{forloop.index}}" class="col-sm-6 col-12 carousel slide" data-ride="carousel">
-                    <ol class="carousel-indicators">
-                        {% for j in i.img %}
-                        <li data-target="#carousel{{carouselIndex}}" data-slide-to="{{ forloop.index0 }}" {% if forloop.first == true %} class="active"{% endif %}></li>
-                        {% endfor %}
-                        <!-- <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li> -->
-                    </ol>
-                    <div class="carousel-inner">
-                        {% for j in i.img %}
+            <div class="col-sm-6 col-12 carousel slide {% if test == 0 %}order-2 order-sm-2 order-md-1{% endif %}" data-ride="carousel" id="carousel{{forloop.index}}">
+                <ol class="carousel-indicators">
+                    {% for j in i.img %}
+                        <li data-target="#carousel{{carouselIndex}}" data-slide-to="{{ forloop.index0 }}" {% if forloop.first == true %} class="active" {% endif %}></li>
+                    {% endfor %}
+                </ol>
+                <div class="carousel-inner">
+                    {% for j in i.img %}
                         <div class="carousel-item {% if forloop.first %} active {% endif %}">
                             <img class="d-block w-100" src="{{j}}" alt="First slide">
                         </div>
-                        {% endfor %}
-                    </div>
-                        <a class="carousel-control-prev" href="#carousel{{forloop.index}}" role="button" data-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Previous</span>
-                    </a>
-                        <a class="carousel-control-next" href="#carousel{{forloop.index}}" role="button" data-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Next</span>
-                    </a>
+                    {% endfor %}
+                </div>
+                <a class="carousel-control-prev" data-slide="prev" href="#carousel{{forloop.index}}" role="button">
+                    <span aria-hidden="true" class="carousel-control-prev-icon"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" data-slide="next" href="#carousel{{forloop.index}}" role="button">
+                    <span aria-hidden="true" class="carousel-control-next-icon"></span>
+                    <span class="sr-only">Next</span>
+                </a>
             </div>
-        {% endfor %}
-    </div>
+        </div>
+    {% endfor %}
 
-    <div class="col-12 row justify-content-center mt-4">
-        <div class="col-md-8">
+</div>
+
+<div class="bg-light">
+    <div class="row justify-content-center py-5 mt-4">
+        <div class="col-md-6">
             <div class="embed-responsive embed-responsive-16by9">
                 <iframe allowfullscreen class="embed-responsive-item" src="https://www.youtube.com/embed/6fk2A7VJme4?"></iframe>
             </div>
@@ -98,31 +72,36 @@ title:
 <div class="container pb-5 mb-5">
     <a class="anchor" id="unit"></a>
     <h2 class="mt-5 pt-5 text-center">{{general.unit.heading}}</h2>
-    <div class="row mt-3">
+    <div class="card-deck mt-3">
         {% for i in general.unit.items %}
-            <!-- <div class="col-sm-6 col-md-4 col-12 mt-4 card" style="width: 18rem;">
-                    <div class="opps-circle">
-                         <img src="{{i.icon}}" alt="{{i.heading}}">
-                        <h5 class="mt-3 text-center px-4 font-weight-bold">{{i.heading}}</h5>
-                        <p>{{i.text}}</p>
-                    </div> 
-            </div> -->
-            <div class="card col-md-4" >
+            <div class="card">
                 <img class="card-img-top" src="{{i.icon}}" alt="{{i.heading}}">
                 <div class="card-body">
-                  <h5 class="card-title font-weight-bold">{{i.heading}}</h5>
-                  <p class="card-text">{{i.text}}</p>
-                  <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                    <h5 class="card-title font-weight-bold">{{i.heading}}</h5>
+                    <p class="card-text">{{i.text}}</p>
                 </div>
             </div>
         {% endfor %}
     </div>
 </div>
 
+<!-- where section -->
+<div class="bg-light">
+    <div class="container pb-5 mb-5">
+        <a class="anchor" id="where"></a>
+        <h2 class="mt-5 pt-5 text-center">{{general.where.heading}}</h2>
+        <p class="lead text-center mb-5">{{general.where.text}}</p>
+        <div class="row justify-content-center">
+            <div class="col-md-6"><img class="img-fluid" src="{{general.where.img}}"></div>
+        </div>
+
+    </div>
+</div>
+
 <!-- timeline section -->
 {% assign time = site.data.general.items.timeline %}
 
-<div class="section bg-light">
+<div class="section">
     <a class="anchor" id="timeline"></a>
     <div class="container">
         <h2 class="text-center">{{time.heading}}</h2>
@@ -130,41 +109,6 @@ title:
         <div class="row timeline-gif">
             <img src="{{time.gif}}" class="img-fluid" alt="">
         </div>
-        <!-- {% include static_map.html %} -->
-        <!-- portfolio cards -->
-        <!-- <div class="card-deck mt-5">
-            {% for i in port.items %}
-                {% assign remainder = forloop.index |modulo: 3 %}
-                <div class="card card-a">
-                    <div class="card-body">
-                        <h5 class="card-title font-weight-bold mb-0">{{i.heading}}</h5>
-                        {% if i.subheading %}
-                            <p class="font-weight-bold">{{i.subheading}}</p>
-                        {% endif %}
-                        <p class="card-text">{{i.p}}</p>
-                        {% if i.href %}
-                            <p class="card-text">
-                                <a href="http://{{i.href}}" rel="noopener" target="_blank">{{i.href}}</a>
-                            </p>
-                        {% endif %}
-                    </div>
-                </div>
-                {% if remainder == 0 %}
-                </div>
-                <div class="card-deck mt-4">
-                {% endif %}
-                {% if forloop.last == true %}
-                    {% case remainder %}
-                        {% when 1 %}
-                            <div class="card placeholder-card"></div>
-                            <div class="card placeholder-card"></div>
-                        {% when 2 %}
-                            <div class="card placeholder-card"></div>
-                    {% endcase %}
-
-                {% endif %}
-            {% endfor %}
-        </div> -->
     </div>
 </div>
 
@@ -174,10 +118,12 @@ title:
 <div class="section">
     <a class="anchor" id="team"></a>
     <div class="container">
-        <h2 class="text-center">{{team.heading}}</h2>
+        <h2 class="text-center">{{team.heading}}
+            <span class="heading-highlight"></span>
+        </h2>
         <div class="row justify-content-center ">
             {% for i in team.items %}
-                <div class="mb-5">
+                <div class="mb-3 text-center">
                     <img class="img-fluid img-team" alt="{{i.name}}" src="{{i.img}}">
                     <h4 class="mb-0 mt-4 font-weight-bold">{{i.name}}
                         <a href="{{i.linkedin}}" target="_blank" rel="noopener"><img src="/assets/icon/linkedin.png" alt="{{i.name}}"></a>
@@ -225,11 +171,13 @@ title:
     <a class="anchor" id="contact"></a>
     <div class="container">
         <h2 class="text-center">Contact Us</h2>
-        <p class="text-center my-3">Call us at +1 (701) 214-7901 or send us a message below and we will get back to you.</p>
-        <form action="https://submit-form.com/xfXf8CuT1ISwK-YGu-6EN" class="mt-5" id="contactForm">
-            <input name="_redirect" type="hidden" value="agrofundone.com/index.html?contact=sent">
-            <div class="row justify-content-center">
-                <div class="col-sm-10 col-md-6">
+        <div class="row mt-5">
+            <div class="col-md-5 mb-4">
+                <h3>Inquiries</h3>
+                <p class="my-3">For inquiries please call 1-701-214-4177 or fill out the form below.</p>
+                <form action="https://submit-form.com/BrecKxGVBJlpGTTCYvyT5" class="mt-5" id="contactForm">
+                    <input name="_redirect" type="hidden" value="aerofleetone.com.com/index.html?contact=sent">
+
                     <div class="form-group">
                         <label for="contactFormName">Name<sup>*</sup>
                         </label>
@@ -245,60 +193,25 @@ title:
                         <input class="form-control" id="contactFormPhone" name="Phone" placeholder="+ 1 (888) 888-8888" type="text">
                     </div>
                     <div class="form-group">
-                        <label for="contactFormType">I am a...<sup>*</sup>
-                        </label>
-                        <select class="form-control" id="contactFormType" name="Category">
-                            <option disabled selected value="">Please choose one...</option>
-                            <option>Investor</option>
-                            <option>Entrepreneur</option>
-                            <option>Farmer</option>
-                            <option>Other</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
                         <label for="contactFormMessage">Message<sup>*</sup>
                         </label>
                         <textarea class="form-control" id="contactFormMessage" name="Message" rows="5"></textarea>
                     </div>
 
-                    <!-- form spark pot -->
-                    <div aria-hidden="true" class="form-hide"><input name="website" tabindex="-1" type="text" value="">
-                    </div>
-                    <div class="g-recaptcha" data-sitekey="6LcFKrUZAAAAAMGnRi8pGOuBr1rlWmxqt5lCuyZF"></div>
+                    <div class="g-recaptcha" data-sitekey="6LeK68YZAAAAAGIpK5n851BT6yOXSnwKuXXJM0jX"></div>
                     <button class="btn st-btn mt-3" type="submit">Send</button>
+                </form>
+                <div class="row justify-content-center mt-5 d-none" id="contactSuccess">
+                    <div class="col-sm-6">
+                        <h5>Thank you for your message. We will be in touch shortly.</h5>
+                    </div>
+
                 </div>
             </div>
-        </form>
-        <div class="row justify-content-center mt-5 d-none" id="contactSuccess">
-            <div class col-sm-6>
-                <h5>Thank you for your message. We will be in touch shortly.</h5>
-            </div>
-
-        </div>
-    </div>
-</div>
-
-<!-- invest modal -->
-{% assign invest = site.data.general.items.invest %}
-<div aria-hidden="true" aria-labelledby="investModalLabel" class="modal fade" id="investModal" role="dialog" tabindex="-1">
-    <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h3 class="modal-title" id="investModalLabel" style="margin-left: auto">{{invest.title}}</h3>
-                <button aria-label="Close" class="close" data-dismiss="modal" type="button">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="modal-body text-center">
-                <img alt="Mark M. Erjavec" class="text-center my-4 img-fluid rounded-circle img-invest" src="{{invest.img}}">
-                <p class="text-justify">{{invest.text}}</p>
-                <h4 class="mt-4">Let's get started!</h4>
-                <p>
-                    <a class="btn st-btn mt-3" href="{{invest.url}}" target="_blank" rel="noopener">{{invest.link}}</a>
-                </p>
-            </div>
-            <div class="modal-footer">
-                <button class="btn btn-secondary" data-dismiss="modal" type="button">Close</button>
+            <div class="col-md-5 offset-md-2">
+                <h3>Head Office</h3>
+                <p>10270 67th St NW, Tioga, ND 58852, United States</p>
+                <p>Phone: +1 (701) 214-4177</p>
             </div>
         </div>
     </div>

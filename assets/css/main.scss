@@ -1,8 +1,8 @@
 ---
 ---
 
-$primary-color:#3D5975;
-$secondary-color: #6a9b7d;
+$primary-color:#136bc2;
+$secondary-color: #ff0000;
 
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Lato:wght@400;700&display=swap');
 $theme-font: 'Lato', Helvetica, sans-serif;
@@ -21,9 +21,16 @@ h1 {
 }
 
 h2 {
-  margin-top: auto;
-  margin-bottom: auto;
+  margin-bottom: 4rem;
+  font-size: 3rem;
   color: $primary-color;
+}
+
+.heading-highlight {
+  position: absolute;
+  margin-left: auto;
+  background-color: $secondary-color;
+  width: 300px;
 }
 
 .main {
@@ -56,8 +63,8 @@ a.anchor {
 
 /* background styles */
 
-.bg-red {background-color: $primary-color;}
-.bg-green {background-color: $secondary-color;}
+.bg-pri {background-color: $primary-color;}
+.bg-sec {background-color: $secondary-color;}
 .bg-light {background-color: lighten(#dcdcdc,25%)}
 .bg-farm {
   background: no-repeat top center url({{'/assets/img/farm_bg.jpg'|relative_url}});
@@ -114,20 +121,14 @@ a.anchor {
 
 .navbar {
   transition: 1.2s background-color;
-  text-shadow: 2px 2px 4px black;
-
+  font-weight: bold;
   @media (max-width: 768px) {
     background-color: white;
-    color: black !important;
-    text-shadow: none;
   }
 }
 
 .navbar li a {
-  @media (max-width: 768px) {
-    color: black;
-  }
-  color: white;
+  color: $primary-color;
   font-weight: bold;
   font-size: 125%;
   text-decoration: none;
@@ -137,8 +138,10 @@ a.anchor {
 }
 .navbar li[class~="underline"] { 
   display: table-cell; 
-  position: relative; 
-  padding: 15px 0;
+  position: relative;
+  @media (min-width: 768px) {
+    padding: 15px 0;
+  }
 }
 
 .navbar li[class~="underline"] a:after {    
@@ -149,9 +152,10 @@ a.anchor {
   height: 2px;
   left: 50%;
   position: absolute;
-  background: white;
   transition: width 0.3s ease 0s, left 0.3s ease 0s;
   width: 0;
+  background: $primary-color;
+
 }
 .navbar li[class~="underline"] a:hover:after { 
   width: 100%; 
@@ -175,14 +179,9 @@ background-color: #fff;
  }
 
  .navbar-scroll {
-  box-shadow: 0px 1px 10px 1px rgba(150,114,116,.7);
+  box-shadow: 0px 1px 10px 1px #888888;
   background-color: white;
-  text-shadow: none;
-  color: black !important;
  
-  li a {
-    color: black;
-  }
 
   li a .submit-btn {
     color: white;
@@ -199,132 +198,76 @@ background-color: #fff;
   height: auto;
   width: 100%;
   position: relative;
-  // position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   
-
-  .bg-video {
-    width: 100%;
-    background: top center url({{'/assets/img/farm_bg.jpg'|relative_url}})
-  }
-
-  .style-k1i08bir {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    margin: auto;
-}
+ }
 
 
-  // .headline {
-  //   position: absolute;
-  //   top: 35%;
-  //   left: 50%;
-  //   transform: translate(-50%,-50%);
-  //   text-align: center;
-  //   text-shadow: 4px 4px 8px black;
-  //   width: 75% !important;
-  //   @media (max-width: 820px) {
-  //     width: 95% !important;
-  //   }
-
-  //   h1 {
-  //     font-size: 5rem;
-  //     @media (max-width: 820px) {
-  //       font-size: 1.5rem;
-  //     }
-  //   }
-  // }
-}
-
-
-
-
-/* opportunities  */
-
-.opps-circle {
-  background: $secondary-color;
-  border-radius: 50%;
-  height: 100px;
-  width: 100px;
-  display: table;
-  margin: auto;
-
-  img {
-    height: 100%;
-    width: auto;
-  }
-}
-
-/* portfolio styles */
-
-.placeholder-card {
-  background: none;
-  border: none;
-  box-shadow: none !important;
-}
-
-.card-a {
-  box-shadow: 0 6px 18px 0 rgba(86, 91, 115, .45) !important;
-  transition: box-shadow .2s;
-}
-
-.map-bg {
-  background-image: url('/assets/img/map.png');
-  background-size: contain;
-  background-repeat: no-repeat;
-  width: 100%;
-  height: 0;
-  padding-top: 46.79%;
-  position: relative;
-}
-
-.location {
+.pulse-button {
   position: absolute;
   background: $primary-color;
 	border-radius: 50%;
-	margin: 10px;
-	height: 17px;
-	width: 17px;
+	height: 75px;
+	width: 75px;
   @media (max-width: 820px) {
-    height: 13px;
-    width: 13px;
+    height: 50px;
+    width: 50px;
   }
 	box-shadow: 0 0 0 0 $primary-color;
 	transform: scale(1);
-	animation: pulse 2s infinite;
+  animation: pulse 2s infinite;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.pulse-icon {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+  filter: invert(1);
 }
 
 @keyframes pulse {
 	0% {
-		transform: scale(0.95);
+		transform: scale(0.9);
 		box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
 	}
 
 	70% {
-		transform: scale(1);
+		transform: scale(1.1);
 		box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
 	}
 
 	100% {
-		transform: scale(0.95);
+		transform: scale(0.9);
 		box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
 	}
 }
+
+.bg-video {
+  width: 100%;
+  background: top center url('/assets/img/farm_bg.jpg')
+}
+
 
 
 // timeline styles
 
 .timeline-gif {
-
   img {
     max-width: 100%;
     height: auto;
   }
- 
 }
 
 
@@ -336,13 +279,7 @@ background-color: #fff;
   text-align: center;
   margin: auto;
   width: 250px;
-}
-
-.img-invest {
-  text-align: center;
-  margin: auto;
-  border: 5px solid $secondary-color;
-  width: 150px;
+  box-shadow: 0px 1px 10px 1px #888888;
 }
 
 /* media */
@@ -369,13 +306,25 @@ background-color: #fff;
   }
 }
 
-#map {
-  height: 500px;
-  @media (max-width: 820px) {
-    height: 650px;
+
+/* carousel customization */
+
+.carousel {
+  img {
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+    @media (max-width: 768px) {
+      height: 200px;
+    }
   }
 }
 
+.card-img-top {
+  height: 225px;
+  object-fit: cover;
+}
+
 @import 'hamburger';
-// @import 'flipcard';
+@import 'flipcard';
 @import 'lightbox';

@@ -1,8 +1,4 @@
 items:
-
-  -
-    name: Home
-    url: "#home"
   -
     name: Our Mission
     url: "#mission"
@@ -10,15 +6,18 @@ items:
     name: Business Units
     url: "#unit"
   -
+    name: Where We Are
+    url: "#where"
+  -
+    name: Timeline
+    url: "#timeline"
+  -
     name: Our Team
     url: "#team"
   -
+    name: Latest News
+    url: "#news"
+  -
     name: Contact
     url: "#contact"
-  -
-    name: Latest News
-    url: "#media"
-  -
-    name: Where We Are
-    url: "#where"
 
