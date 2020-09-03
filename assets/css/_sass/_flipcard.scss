@@ -1,0 +1,80 @@
+.flip-card {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  height: 180px;
+  width: 100%;
+  transform: translate(-50%, -50%);
+  transform-style: preserve-3d;
+  perspective: 600px;
+  transition: 0.5s;
+}
+.flip-card:hover .flip-card-front {
+  transform: rotateX(-180deg);
+}
+.flip-card:hover .flip-card-back {
+  transform: rotateX(0deg);
+}
+
+.flip-card-front {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  transform: rotateX(0deg);
+  transition: 0.5s;
+  text-align: center;
+  h3 {
+    font-size: 3rem;
+  }
+  background-color: $primary-color;
+  color: white;
+}
+
+.flip-card-back {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  backface-visibility: hidden;
+  transform: rotateX(180deg);
+  transition: 0.5s;
+  color: black;
+  text-align: center;
+  background-color: white;
+  color: $primary-color;
+  border: 5px solid $primary-color;
+}
+
+.flip-line {
+  text-align: center;
+  margin: 20px;
+  position: relative;
+}
+
+.flip-line:before {
+  @media (max-width: 767px) {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    border-right: 10px solid $secondary-color;
+    background: $secondary-color;
+    height: 100%;
+    transform: translateX(-50%);
+  }
+  @media (min-width: 992px) {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    border-top: 10px solid $secondary-color;
+    background: $secondary-color;
+    width: 100%;
+    transform: translateY(-50%);
+  }
+}
