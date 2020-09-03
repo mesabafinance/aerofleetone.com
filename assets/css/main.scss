@@ -325,6 +325,37 @@ background-color: #fff;
   object-fit: cover;
 }
 
+/* news post cards */
+
+.fadeout {
+  -webkit-mask-image: linear-gradient(to bottom, black 66%, transparent 100%);
+  mask-image: linear-gradient(to bottom, black 66%, transparent 100%);
+} 
+
+.placeholder-card {
+  background: none;
+  border: none;
+  box-shadow: none !important;
+}
+
+.news-card {
+  a {
+    color: black;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+  h4 {
+    font-size: 1rem;
+  }
+  .card-img-top {
+    height: 150px;
+  }
+  .card-body {
+    padding: 10px;
+  }
+}
+
 @import 'hamburger';
 @import 'flipcard';
 @import 'lightbox';

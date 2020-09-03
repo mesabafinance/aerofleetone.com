@@ -15,6 +15,7 @@ sass:
   sass_dir: assets/css/_sass
 
 collections:
-  - news
+  news:
+    output: true
 
 exclude: [README.md]

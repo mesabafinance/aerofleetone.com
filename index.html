@@ -153,32 +153,53 @@ title:
     </div>
 </div>
 
-<!-- media section -->
-<!-- {% assign media = site.data.general.items.media %} -->
-<!-- <div class="section bg-light">
-    <a class="anchor" id="media"></a>
+<!-- news section -->
+<div class="section bg-light">
+    <a class="anchor" id="news"></a>
     <div class="container">
-        <h2 class="text-center">{{media.heading}}</h2>
-        {% for i in site.news reversed %}
-            {% if i.link %}
-                <a href="{{i.link}}" target="_blank" rel="noopener" class="media">
-                {% endif %}
-                <div class="row mt-3 pt-2">
-                    <div class="d-none d-sm-block col-sm-2">
-                        <img src="{% if i.img %}{{i.img}}{% else %}/assets/img/logo.png{% endif %}" alt="{{i.title}}" class="img-fluid media-preview">
-                    </div>
-                    <div class="col-sm-10">
-                        <p class="font-weight-bold mb-0">{{i.date|date:'%B %e, %Y'}}</p>
-                        <h4 class="">{{i.title}}</h4>
-                        <p>{{i.content}}</p>
-                    </div>
+        <h2 class="text-center">Latest News</h2>
+
+        <div class="card-deck">
+            {% for i in site.news reversed%}
+                {% assign remainder = forloop.index |modulo: 4 %}
+                <div class="card news-card">
+                    <a href="{{i.url}}">
+
+                        <img src="{{i.img}}" alt="{{i.title}}" class="card-img-top"/>
+                        <div class="card-body">
+                            <h4>{{i.title}}</h4>
+                            <div class="fadeout">
+                                <p class="card-text">{{i.excerpt |truncate: 150}}</p>
+                            </div>
+                        </div>
+                    </a>
+
                 </div>
-                {% if i.link %}
-                </a>
-            {% endif %}
-        {% endfor %}
+                {% if remainder == 0 %}
+                </div>
+                <div class="card-deck mt-5">
+                {% endif %}
+
+                {% if forloop.last == true %}
+
+                    {% case remainder %}
+                        {% when 1 %}
+                            <div class="card placeholder-card"></div>
+                            <div class="card placeholder-card"></div>
+                            <div class="card placeholder-card"></div>
+                        {% when 2 %}
+                            <div class="card placeholder-card"></div>
+                            <div class="card placeholder-card"></div>
+                        {% when 3 %}
+                            <div class="card placeholder-card"></div>
+                    {% endcase %}
+
+                {% endif %}
+
+            {% endfor %}
+        </div>
     </div>
-</div> -->
+</div>
 
 <!-- contact section -->
 <div class="section">
