@@ -19,3 +19,13 @@ collections:
     output: true
 
 exclude: [README.md]
+
+# data for privacy policy
+address:
+  name: Aero Fleet One
+  street: 10270 67th St NW
+  city: Tioga
+  state: North Dakota
+  zip: 58852
+  country: United States
+  phone: +1 (701) 214-4177
