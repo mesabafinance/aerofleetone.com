@@ -1,6 +1,6 @@
 ---
 permalink: robots.txt
-published: true
+published: false
 ---
 User-agent: *
 Disallow: /
