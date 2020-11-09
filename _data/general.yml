@@ -57,16 +57,6 @@ items:
     heading: Our Team
     intro:
     items:
-      - name: Mark Erjavec
-        title: Finance
-        img: /assets/img/team/MarkErjavec.jpg
-        mail: mark@aerofleetone.com
-        linkedin: https://www.linkedin.com/in/markerjavec/
-      - name: Maria Dyatchyna
-        title: Marketing and Administration
-        img: /assets/img/team/MariaDyatchyna.jpg
-        mail: maria@aerofleetone.com
-        linkedin: https://www.linkedin.com/in/maria-dyatchyna-8ab61137/
       - name: Allan Dosan
         title: Market Development
         img: /assets/img/team/AllanDosan.jpg
@@ -77,19 +67,29 @@ items:
         img: /assets/img/team/DestinyWest.jpg
         mail: destiny@aerofleetone.com
         linkedin: https://www.linkedin.com/in/destiny-west-b9b7571b3/
+      - name: Maria Dyatchyna
+        title: Marketing and Administration
+        img: /assets/img/team/MariaDyatchyna.jpg
+        mail: maria@aerofleetone.com
+        linkedin: https://www.linkedin.com/in/maria-dyatchyna-8ab61137/
+      - name: Mark Erjavec
+        title: Finance
+        img: /assets/img/team/MarkErjavec.jpg
+        mail: mark@aerofleetone.com
+        linkedin: https://www.linkedin.com/in/markerjavec/
   timeline:
     heading: Projected Timeline
     text:
     items:
-      - year: 2019
-        text: Development of Training Program Targets Generation Z
       - year: 2020
-        text: Certification &  Training Program Trials
+        text: Development of Training Program Targets Generation Z
       - year: 2021
-        text: Training Program Implementation & Drone testing &  Development of Operations Platform
+        text: Certification &  Training Program Trials
       - year: 2022
-        text: Roll up Of Conventional Aerial Application Businesses
+        text: Training Program Implementation & Drone testing &  Development of Operations Platform
       - year: 2023
+        text: Roll up Of Conventional Aerial Application Businesses
+      - year: 2024
         text: Proliferation & Fleet Implementation
     gif: /assets/video/3D-model-DR-60.gif
 
