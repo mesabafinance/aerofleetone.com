@@ -62,7 +62,7 @@ title:
     <div class="container">
         <div class="row justify-content-center py-5 mt-4">
             {% for i in general.videos %}
-                <div class="col-md-6">
+                <div class="col-md-4 mb-4">
                     <h4>{{i.title}}</h4>
                     <div class="embed-responsive embed-responsive-16by9">
                         <iframe allowfullscreen class="embed-responsive-item" src="{{i.url}}" title="{{i.title}}"></iframe>
@@ -88,6 +88,16 @@ title:
             </div>
         {% endfor %}
     </div>
+</div>
+
+<div class="row no-gutters">
+    {% for i in (1..6) %}
+        <div class="col-6 col-lg-4 col-xl-2">
+            <a href="/assets/img/gallery/2020-{{i}}.jpg" data-toggle="lightbox" data-gallery="2020-gallery" data-title="2020 Drone Pictures">
+                <img src="/assets/img/gallery/2020-{{i}}.jpg" alt="2020 Drone Picture {{i}}" class="img-fluid img-lightbox">
+            </a>
+        </div>
+    {% endfor %}
 </div>
 
 <!-- where section -->
