@@ -19,7 +19,7 @@ items:
       - # icon: /assets/img/opps/bank.png
         heading: World's Energy Supply
         text: >-
-          Aero Fleet One drones have the range and payload capacities to fly BVLOS missions in weather conditions necessary to serve the Oil and Gas and Power Transmission industries. Through our work in energy we are working to help the energy industry become more safe.
+          Aero Fleet One drones have the necessary range and payload capacities to fly BVLOS missions in weather conditions inherent to the Oil and Gas and Power Transmission industries. Through our work in energy we are working to help the energy industry become more safe.
         img:
           [
             "/assets/img/mission/EOR-techniques-in-revitalizing-mature-oil-fields.jpg",
@@ -84,11 +84,11 @@ items:
     text:
     items:
       - year: 2020
-        text: Development of Training Program Targets Generation Z
+        text: Development of Training Program targeting Generation Z
       - year: 2021
-        text: Certification &  Training Program Trials
+        text: Certification & Training Program Trials
       - year: 2022
-        text: Training Program Implementation & Drone testing &  Development of Operations Platform
+        text: Training Program Implementation & Drone testing & Development of Operations Platform
       - year: 2023
         text: Roll up Of Conventional Aerial Application Businesses
       - year: 2024
