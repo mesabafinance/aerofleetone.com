@@ -79,6 +79,14 @@ items:
         img: /assets/img/team/MarkErjavec.jpg
         mail: mark@aerofleetone.com
         linkedin: https://www.linkedin.com/in/markerjavec/
+      - name: Matheus Picinin
+        title: Marketing & Social Media
+        img: /assets/img/team/MatheusPicinin.jpg
+        mail: matheus@aerofleetone.com
+        linkedin: https://www.linkedin.com/in/matheus-raslan-a270941b4/
+        text: >-
+          Matheus is a Brazilian Digital Marketer based in Ireland. Matheus’ main role is to build a social media presence for Aero Fleet One. In addition he creates visual concepts (pictures and videos) to communicate ideas and concepts.
+
   timeline:
     heading: Projected Timeline
     text:
