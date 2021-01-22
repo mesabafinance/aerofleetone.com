@@ -1,6 +1,8 @@
 <!-- assign variable to invalidate cache upon each new build -->
 {% assign cache_buster = site.time | date: '%s%N' %}
 
+{% unless page.url contains "404" %}
+
 <nav class="navbar navbar-expand-lg fixed-top">
     <a class="navbar-brand smooth-scroll" href="#top">
         <img class="my-navbar-img" src="{{'/assets/img/Aero-Fleet-One-logo.png' | relative_url }}?{{cache_buster}}" alt="{{site.title}}">
@@ -24,3 +26,5 @@
         </div>
     {% endunless %}
 </nav>
+
+{% endunless %}

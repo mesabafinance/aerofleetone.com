@@ -1,23 +1,16 @@
 items:
-  -
-    name: Our Mission
+  - name: Our Mission
     url: "#mission"
-  -
-    name: Business Units
+  - name: Business Units
     url: "#unit"
-  -
-    name: Where We Are
+  - name: Where We Are
     url: "#where"
-  -
-    name: Timeline
+  - name: Timeline
     url: "#timeline"
-  -
-    name: Our Team
+  - name: Our Team
     url: "#team"
-  -
-    name: Latest News
-    url: "#news"
-  -
-    name: Contact
+  # -
+  #   name: Latest News
+  #   url: "#news"
+  - name: Contact
     url: "#contact"
-
