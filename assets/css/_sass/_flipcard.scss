@@ -30,7 +30,7 @@
   h3 {
     font-size: 3rem;
   }
-  background-color: $primary-color;
+  background-color: $primary;
   color: white;
 }
 
@@ -46,8 +46,8 @@
   color: black;
   text-align: center;
   background-color: white;
-  color: $primary-color;
-  border: 5px solid $primary-color;
+  color: $primary;
+  border: 5px solid $primary;
 }
 
 .flip-line {
@@ -58,22 +58,22 @@
 
 .flip-line:before {
   @media (max-width: 767px) {
-    content: '';
+    content: "";
     position: absolute;
     bottom: 0;
     left: 50%;
-    border-right: 10px solid $secondary-color;
-    background: $secondary-color;
+    border-right: 10px solid $secondary;
+    background: $secondary;
     height: 100%;
     transform: translateX(-50%);
   }
   @media (min-width: 992px) {
-    content: '';
+    content: "";
     position: absolute;
     top: 50%;
     left: 0;
-    border-top: 10px solid $secondary-color;
-    background: $secondary-color;
+    border-top: 10px solid $secondary;
+    background: $secondary;
     width: 100%;
     transform: translateY(-50%);
   }

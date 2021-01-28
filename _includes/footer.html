@@ -1,8 +1,19 @@
 <!-- assign variable to invalidate cache upon each new build -->
 {% assign cache_buster = site.time | date: '%s%N' %}
 
-<div class="flex-container font-weight-bold bg-pri text-white" id="footer">
+<div class="flex-container bg-light" id="footer" style="min-height: 20vh;">
     <div class="container py-5 text-center">
+        <p class="mb-4">
+            {% for i in site.data.general.items.navigation.items %}
+            <a href="{{i.url}}" class="mx-3 fs-5 text-decoration-none">{{i.name}}</a>
+            {% unless forloop.last %}<span class="text-primary fs-5">&mdash;</span>{% endunless %}
+            {% endfor %}
+        </p>
+        <p class="mb-5">
+            {% for i in site.social_media %}
+            <a href="{{i.url}}" target="_blank" class="me-3"><i class="bi-{{i.name}} text-primary fs-1"></i></a>
+            {% endfor %}
+        </p>
         <p>Copyright &copy;
             <span id="currentYear"></span>
             by AeroFleetOne.
@@ -11,14 +22,5 @@
     </div>
 </div>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script type="text/javascript" src="{{'/assets/js/bootstrap.min.js' | relative_url}}?{{cache_buster}}" async></script>
-<script type="text/javascript" src="{{'/assets/js/ekko-lightbox.min.js' | relative_url}}?{{cache_buster}}" async></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
 <script type="text/javascript" src="{{'/assets/js/myscript.js' | relative_url}}?{{cache_buster}}" async></script>
-
-<script>
-    $(document).on('click', '[data-toggle="lightbox"]', function(event) {
-        event.preventDefault();
-        $(this).ekkoLightbox();
-    });
-</script>

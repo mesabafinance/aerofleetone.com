@@ -10,13 +10,25 @@ plugins:
   - jekyll-feed
 
 sass:
-  sass_dir: assets/css/_sass
+  load_paths:
+    - assets/css/_sass
+    - assets/css/_bootstrap/scss
 
 collections:
   news:
     output: false
 
 exclude: [README.md]
+
+social_media:
+  - name: twitter
+    url: https://twitter.com/AeroFleetOne
+  - name: linkedin
+    url: https://www.linkedin.com/company/69963910/
+  - name: instagram
+    url: https://www.instagram.com/aerofleetone/
+  - name: facebook
+    url: https://www.facebook.com/AeroFleetOne
 
 # data for privacy policy
 address:

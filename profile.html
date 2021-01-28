@@ -1,0 +1,33 @@
+---
+layout: base
+permalink: /profile/index.html
+title: Profile
+---
+
+{% assign data = site.data.general.items %}
+
+<div class="container py-5">
+    <section>
+        <h1>{{data.profile.heading}}</h1>
+        <p>{{data.profile.text}}</p>
+    </section>
+
+    <section>
+        <h2>{{data.profile.team.heading}}</h2>
+        <div class="row row-cols-1 row-cols-md-3 g-4 justify-content-center py-5">
+            {% for i in data.profile.team.items %}
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="{{i.img}}" class="card-img-top" alt="{{i.name}}" />
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title mb-1 fw-bold">{{i.name}} <span><a href="{{i.linkedin}}" target="_blank"><i class="ms-1 bi-linkedin fs-4"></i></a></span></h5>
+                            <p class="fw-bold">{{i.title}}</p>
+                            <p>{{i.text}}</p>
+                            <p class="card-text mt-auto"><a href="{{i.mail}}" class="text-decoration-none">{{i.mail}}</a></p>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </section>
+</div>

@@ -2,106 +2,180 @@ items:
   headline: Aero Fleet One
   description: >-
     Aero Fleet One designs tools and implements systems that make crop protection less expensive and more efficient than conventional methods
-
-  mission:
-    heading: Our Mission
+  navigation:
     items:
-      - # icon: /assets/img/opps/turnover.png
-        heading: World's Food Supply
-        text: >-
-          Aero Fleet One designs tools and implements systems that make crop protection less expensive and more efficient than conventional methods.
-        img:
-          [
-            "/assets/img/mission/Grain-agricultural-fields.jpg",
-            "/assets/img/mission/corn-field.jpg",
-            "/assets/img/mission/aerial-view-field.jpg",
-          ]
-      - # icon: /assets/img/opps/bank.png
-        heading: World's Energy Supply
-        text: >-
-          Aero Fleet One drones have the necessary range and payload capacities to fly BVLOS missions in weather conditions inherent to the Oil and Gas and Power Transmission industries. Through our work in energy we are working to help the energy industry become more safe.
-        img:
-          [
-            "/assets/img/mission/EOR-techniques-in-revitalizing-mature-oil-fields.jpg",
-            "/assets/img/mission/flare-stack.jpg",
-            "/assets/img/mission/oil-fields.jpg",
-          ]
+      - url: /
+        name: Home
+        id: home
+      - url: /about/
+        name: About
+        id: about
+      - url: /profile/
+        name: Profile
+        id: profile
+      - url: /request-for-proposal/
+        name: RFP
+        id: rfp
+      - url: /connect/
+        name: Connect
+        id: connect
+  home:
+    video:
+      tagline: Aero Fleet One provides premier aerial services with a future-focused mindset
+    blurb: Aero Fleet One invests in and acquires agricultural aviation companies. The company seeks to improve existing businesses by harnessing the expertise of experienced operators and by implementing new technologies to improve operations.
+    team:
+      heading: Our Team
+      button:
+        text: Meet our team
+        url: /profile/
+    rfp:
+      heading: Got a UAS Plan?
+      text: Submit responses to our Request for Proposals
+      button:
+        text: Go to RFP
+        url: /request-for-proposal/
 
-  videos:
-    - title: Mark Erjavec on the AeroFleetOne Business Case
-      url: https://www.youtube.com/embed/6fk2A7VJme4
-    - title: Low Altitude Flight for Aerial Application
-      url: https://www.youtube.com/embed/sJHYu9mznSI
-    - title: Drone Development Progress Over Time
-      url: https://www.youtube.com/embed/Sd6qEkTZxTo
-  unit:
-    heading: Business Units
-    items:
-      - icon: /assets/img/unit/unitimg1.png
-        heading: Our Airframes
-        text: >-
-          Heavy Payload - Aero Fleet One focuses on airframes that can carry heavy payloads, typically 20-150 pounds. Long Range- our drones can go up to 300 miles. Gasoline Powered- our powerful engines allow us to lift heavy things and operate in diverse climate conditions.
-      - icon: /assets/img/unit/unitimg2.jpg
-        heading: Our Guidance System
-        text: >-
-          Aero Fleet One utilizes a proprietary guidance system that enables us to fly Beyond Visual Line of Sight. We fly at a lower altitude than other high speed drones. Our BVLOS - guidance system simultaneously calculates and adjusts to weather conditions.
-      - icon: /assets/img/unit/unitimg3.jpg
-        heading: Our Operations
-        text: >-
-          Aero Fleet One trains drone pilots to use our unique airframe and guidance system. Our ground and administrative team facilitates the regulatory paperwork and permission to fly missions for our clients in multiple and complex jurisdictions.
+  about:
+    heading: Heading
+    text: Intro paragraph
+    story:
+      heading: Our Story
+      text: >
+        Aero Fleet One was born in 2013 when the founder, Mark Erjavec, met a UAS developer named 
+        Yuri Pederii. At the time, Yuri was developing the AeroDrone DR-20, a smaller predecessor 
+        to his current work with UAVITA. Mark saw potential in the unique fixed-wing, gas-powered 
+        drone technology as the pathway to making unmanned aircraft that would one day be able to 
+        accomplish the same tasks as manned aircraft. He bought a DR-20 as a way to support Yuri’s 
+        work and kept up with the development team’s progress over the years. In this process, 
+        he created Aero Fleet One, with a vision to someday have the world’s largest fleet of 
+        autonomous drones performing aerial services at superior levels. Much time has passed 
+        since then, and Aero Fleet One is grateful to Yuri for his contributions of technology 
+        and inspiration, though the companies are no longer associated. Towards the end of 2020, 
+        it came time to start making Mark’s dream a reality. Aero Fleet One’s core team was brought 
+        together to get it into place.
+    purpose:
+      heading: Our Purpose
+      text: >
+        We believe that drones are the future of aerial services, and we want to help bring this to 
+        fruition. With a big vision like ours, it’s important to start with a narrow focus. 
+        We have selected agricultural aviation as the industry on which to focus our efforts 
+        as we step into the world of aerial services. Our team has begun the process of 
+        acquiring and merging with aerial application businesses. We seek to understand 
+        this major industry thoroughly and do the work from the inside before trying to bring 
+        new technology to long-standing customers. We will be coming together with applicators 
+        across the country to standardize protocols and communications for increased safety and 
+        smoother pathways to shared knowledge. When UAS technology is finally ready to match 
+        manned aircraft systems, we will be poised and ready to incorporate them into our 
+        fleet-family in the most responsible, appropriate, expert way. We also look for ways 
+        to support the development of drone technology and infrastructure to help bring 
+        about a more autonomous world through conscientious collaboration. We exist 
+        to maximize potential and minimize risk for all involved.
 
-  where:
-    img: /assets/img/aerofleetonemap.png
-    heading: Where We Are
-    text: AeroFleetOne serves North, Central and South America.
-
-  team:
-    heading: Our Team
-    intro:
-    items:
-      - name: Allan Dosan
-        title: Market Development
-        img: /assets/img/team/AllanDosan.jpg
-        mail: allan@aerofleetone.com
-        linkedin: https://www.linkedin.com/in/allandosan/
-      - name: Destiny West
-        title: Team Lead
-        img: /assets/img/team/DestinyWest.jpg
-        mail: destiny@aerofleetone.com
-        linkedin: https://www.linkedin.com/in/destiny-west-b9b7571b3/
-      - name: Maria Dyatchyna
-        title: Analyst and European Representative
-        img: /assets/img/team/MariaDyatchyna.jpg
-        mail: maria@aerofleetone.com
-        linkedin: https://www.linkedin.com/in/maria-dyatchyna-8ab61137/
-      - name: Mark Erjavec
-        title: Finance
-        img: /assets/img/team/MarkErjavec.jpg
-        mail: mark@aerofleetone.com
-        linkedin: https://www.linkedin.com/in/markerjavec/
-      - name: Matheus Picinin
-        title: Marketing & Social Media
-        img: /assets/img/team/MatheusPicinin.jpg
-        mail: matheus@aerofleetone.com
-        linkedin: https://www.linkedin.com/in/matheus-raslan-a270941b4/
-        text: >-
-          Matheus is a Brazilian Digital Marketer based in Ireland. Matheus’ main role is to build a social media presence for Aero Fleet One. In addition he creates visual concepts (pictures and videos) to communicate ideas and concepts.
-
-  timeline:
-    heading: Projected Timeline
-    text:
-    items:
-      - year: 2020
-        text: Development of Training Program targeting Generation Z
-      - year: 2021
-        text: Certification & Training Program Trials
-      - year: 2022
-        text: Training Program Implementation & Drone testing & Development of Operations Platform
-      - year: 2023
-        text: Roll up Of Conventional Aerial Application Businesses
-      - year: 2024
-        text: Proliferation & Fleet Implementation
-    gif: /assets/video/3D-model-DR-60.gif
-
-  media:
-    heading: Media
+  profile:
+    heading: Heading
+    text: >
+      Aero Fleet One’s team is distributed across several the globe, though our operations 
+      are focused in North, Central, and South America. We will be announcing the beginning 
+      locations of our aerial agricultural services soon.
+    team:
+      heading: Our Team
+      items:
+        - name: Allan Dosan
+          title: Market Development
+          img: /assets/img/team/AllanDosan.jpg
+          mail: allan@aerofleetone.com
+          linkedin: https://www.linkedin.com/in/allandosan/
+          text: >
+            Allan brings his strong background in business analysis and sales to Aero 
+            Fleet One. He acts as a spokesperson and negotiator as we form partnerships 
+            and deals.
+        - name: Destiny West
+          title: Team Lead
+          img: /assets/img/team/DestinyWest.jpg
+          mail: destiny@aerofleetone.com
+          linkedin: https://www.linkedin.com/in/destiny-west-b9b7571b3/
+          text: >
+            Destiny is our main public voice and administrative organizer. As she is training 
+            for her pilot’s license, she is also our in-house aviation enthusiast.
+        - name: Maria Dyatchyna
+          title: Analyst and European Representative
+          img: /assets/img/team/MariaDyatchyna.jpg
+          mail: maria@aerofleetone.com
+          linkedin: https://www.linkedin.com/in/maria-dyatchyna-8ab61137/
+          text: >
+            Maria utilizes her significant experience in business development 
+            and deal-making to keep Aero Fleet One ahead of the game. She is the 
+            person to contact for any of our affairs in Europe.
+        - name: Mark Erjavec
+          title: Finance
+          img: /assets/img/team/MarkErjavec.jpg
+          mail: mark@aerofleetone.com
+          linkedin: https://www.linkedin.com/in/markerjavec/
+          text: >
+            Mark has provided the seed and continues to help this vision grow. 
+            While managing our funding and resources, he keeps us all on track.
+        - name: Matheus Picinin
+          title: Marketing & Social Media
+          img: /assets/img/team/MatheusPicinin.jpg
+          mail: matheus@aerofleetone.com
+          linkedin: https://www.linkedin.com/in/matheus-raslan-a270941b4/
+          text: >-
+            Matheus is a Brazilian Digital Marketer based in Ireland. Matheus’ main role is 
+            to build a social media presence for Aero Fleet One. In addition he creates visual 
+            concepts (pictures and videos) to communicate ideas and concepts.
+        - name: Yuriy Sherayzen
+          title: Strategist
+          img: /assets/img/team/MatheusPicinin.jpg
+          mail: yuriy@aerofleetone.com
+          linkedin: https://www.linkedin.com/in/yuriy-sherayzen-6935894/
+          text: >-
+            Yuriy is an experienced business analyst who helps guide our team as we move 
+            forward with mergers and acquisitions.
+        - name: Dionas Silva
+          title: Brazilian Representative
+          img: /assets/img/team/MatheusPicinin.jpg
+          mail: dionas@aerofleetone.com
+          linkedin: https://www.linkedin.com/in/dionas-silva-1451a8153/
+          text: >-
+            As an expert agronomist and an experienced UAS pilot, Dionas is our 
+            pioneer in Brazil as we expand to service North, Central and South America.
+      agro:
+        text: Check out our sister company, Agro Fund One who is also innovating to help create a more sustainable world
+        button:
+          text: Go to agrofundone.com
+          url: https://agrofundone.com
+  rfp:
+    heading: RFP Heading
+    text: >
+      Aero Fleet One is looking for capable developers to realize the possibility of UAS 
+      which are able to truly do the job that manned agricultural aircraft currently do. 
+      We have published a Request for Proposals (PDF will be embedded here when it is a
+      ctually ready) to spur the market. If you think your team can meet the criteria, 
+      please submit your application below by [deadline]. Late responses will not be accepted. 
+      We are excited to see what you can do!
+    cta:
+      text: Send your proposal to rfp@aerofleetone.com or get in touch with us to find out more.
+      button:
+        text: Schedule a meeting
+        url: /connect/
+    form:
+      heading: Form Heading
+      form: Form goes here
+  connect:
+    heading: Get in touch
+    calendly:
+      heading: Schedule a meeting instantly
+    message:
+      heading: Send us a message
+      contact_form:
+        roles:
+          - Aerial Application Pilot
+          - Aerial Application Operator
+          - UAS Technology Developer
+          - UAS Pilot
+          - Journalist
+          - Investor
+          - Farmer
+          - Activist
+          - Government Official/Employee
+          - Other

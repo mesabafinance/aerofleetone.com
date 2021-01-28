@@ -1,0 +1,22 @@
+---
+layout: base
+permalink: /about/index.html
+title: About
+---
+
+{% assign data = site.data.general.items %}
+
+<div class="container py-5">
+    <section>
+        <h1>{{data.about.heading}}</h1>
+        <p>{{data.about.text}}</p>
+    </section>
+    <section>
+        <h2>{{data.about.story.heading}}</h2>
+        <p>{{data.about.story.text}}</p>
+    </section>
+    <section>
+        <h2>{{data.about.purpose.heading}}</h2>
+        <p>{{data.about.purpose.text}}</p>
+    </section>
+</div>

@@ -5,256 +5,66 @@ title:
 <!-- assign variable to invalidate cache upon each new build -->
 {% assign cache_buster = site.time | date: '%s%N' %}
 
-{% assign general = site.data.general.items %}
+{% assign data = site.data.general.items %}
 
-<div class="video-container" id="video">
-    <video autoplay muted playsinline preload loop class="bg-video" poster="{{'/assets/video/hero-poster.jpg'}}?{{cache_buster}}">
-        <source src="{{'/assets/video/hero-video.mp4'}}?{{cache_buster}}" type="video/mp4">
+<div class="video-container">
+    <video playsinline autoplay muted loop poster="/assets/video/poster.jpg" id="bgvid">
+        <source src="/assets/video/hero-video.mp4" type="video/mp4">
     </video>
-    <a class="smooth-scroll d-none d-sm-block" href="#mission">
-        <span class="pulse-button"><img class="pulse-icon img-fluid" src="/assets/img/chevron-down.png" alt="Down Button"></span>
-    </a>
-</div>
-
-
-<!-- our mission section -->
-
-<div class="container">
-    <a class="anchor" id="mission"></a>
-    <h2 class="mt-5 pt-5 text-center">{{general.mission.heading}}</h2>
-
-    {% for i in general.mission.items %}
-        {% assign carouselIndex = forloop.index %}
-        {% assign test = forloop.index|modulo:2 %}
-        <div class="row mb-5 pb-5">
-            <div class="col-sm-6 col-12 justify-content-center {% if test== 0 %}order-1 order-sm-1 order-md-2{% endif %}">
-                <h5 class="mt-3 text-center px-4 font-weight-bold">{{i.heading}}</h5>
-                <p>{{i.text}}</p>
-            </div>
-            <div class="col-sm-6 col-12 carousel slide {% if test == 0 %}order-2 order-sm-2 order-md-1{% endif %}" data-ride="carousel" id="carousel{{forloop.index}}">
-                <ol class="carousel-indicators">
-                    {% for j in i.img %}
-                        <li data-target="#carousel{{carouselIndex}}" data-slide-to="{{ forloop.index0 }}" {% if forloop.first == true %} class="active" {% endif %}></li>
-                    {% endfor %}
-                </ol>
-                <div class="carousel-inner">
-                    {% for j in i.img %}
-                        <div class="carousel-item {% if forloop.first %} active {% endif %}">
-                            <img class="d-block w-100" src="{{j}}" alt="First slide">
-                        </div>
-                    {% endfor %}
-                </div>
-                <a class="carousel-control-prev" data-slide="prev" href="#carousel{{forloop.index}}" role="button">
-                    <span aria-hidden="true" class="carousel-control-prev-icon"></span>
-                    <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next" data-slide="next" href="#carousel{{forloop.index}}" role="button">
-                    <span aria-hidden="true" class="carousel-control-next-icon"></span>
-                    <span class="sr-only">Next</span>
-                </a>
-            </div>
-        </div>
-    {% endfor %}
-
-</div>
-
-<div class="bg-light">
     <div class="container">
-        <div class="row justify-content-center py-5 mt-4">
-            {% for i in general.videos %}
-                <div class="col-md-4 mb-4">
-                    <h4>{{i.title}}</h4>
-                    <div class="embed-responsive embed-responsive-16by9">
-                        <iframe allowfullscreen class="embed-responsive-item" src="{{i.url}}" title="{{i.title}}"></iframe>
-                    </div>
-                </div>
-            {% endfor %}
-        </div>
-    </div>
-</div>
-
-<!-- unit section -->
-<div class="container pb-5 mb-5">
-    <a class="anchor" id="unit"></a>
-    <h2 class="mt-5 pt-5 text-center">{{general.unit.heading}}</h2>
-    <div class="card-deck mt-3">
-        {% for i in general.unit.items %}
-            <div class="card">
-                <img class="card-img-top" src="{{i.icon}}" alt="{{i.heading}}">
-                <div class="card-body">
-                    <h5 class="card-title font-weight-bold">{{i.heading}}</h5>
-                    <p class="card-text">{{i.text}}</p>
-                </div>
-            </div>
-        {% endfor %}
-    </div>
-</div>
-
-<div class="row no-gutters">
-    {% for i in (1..6) %}
-        <div class="col-6 col-lg-4 col-xl-2">
-            <a href="/assets/img/gallery/2020-{{i}}.jpg" data-toggle="lightbox" data-gallery="2020-gallery" data-title="2020 Drone Pictures">
-                <img src="/assets/img/gallery/2020-{{i}}.jpg" alt="2020 Drone Picture {{i}}" class="img-fluid img-lightbox">
-            </a>
-        </div>
-    {% endfor %}
-</div>
-
-<!-- where section -->
-<div class="bg-light">
-    <div class="container pb-5 mb-5">
-        <a class="anchor" id="where"></a>
-        <h2 class="mt-5 pt-5 text-center">{{general.where.heading}}</h2>
-        <p class="lead text-center mb-5">{{general.where.text}}</p>
         <div class="row justify-content-center">
-            <div class="col-md-6"><img class="img-fluid" src="{{general.where.img}}" alt="Where we operate"></div>
-        </div>
-
-    </div>
-</div>
-
-<!-- timeline section -->
-{% assign time = site.data.general.items.timeline %}
-
-<div class="section">
-    <a class="anchor" id="timeline"></a>
-    <div class="container">
-        <h2 class="text-center">{{time.heading}}</h2>
-        <p class="mt-4">{{time.text}}</p>
-        <div class="row my-5 justify-content-center flip-line">
-            {% for i in time.items %}
-                <div class="col-12 col-sm-4 col-lg-2 mb-3">
-                    <div class="flip-card">
-                        <div class="flip-card-front d-flex justify-content-center align-items-center">
-                            <h3 class="text-center">{{i.year}}</h3>
-                        </div>
-                        <div class="flip-card-back d-flex align-items-center">
-                            <p class="p-2">{{i.text}}</p>
-                        </div>
-                    </div>
-                </div>
-            {% endfor %}
-        </div>
-    </div>
-</div>
-
-<!-- team section -->
-{% assign team = site.data.general.items.team %}
-
-<div class="section">
-    <a class="anchor" id="team"></a>
-    <div class="container">
-        <h2 class="text-center">{{team.heading}}
-            <span class="heading-highlight"></span>
-        </h2>
-        <div class="row justify-content-center ">
-            {% for i in team.items %}
-                <div class="col-md-4 mb-5 text-center">
-                    <img class="img-fluid img-team" alt="{{i.name}}" src="{{i.img}}">
-                    <h4 class="mb-0 mt-4 font-weight-bold">{{i.name}}
-                        <a href="{{i.linkedin}}" target="_blank" rel="noopener"><img src="/assets/icon/linkedin.png" alt="{{i.name}}"></a>
-                    </h4>
-                    <p class="font-weight-bold mb-0">{{i.title}}</p>
-                    <p class="mb-1">
-                        <a href="mailto:{{i.mail}}">{{i.mail}}</a>
-                    </p>
-                </div>
-            {% endfor %}
-        </div>
-    </div>
-</div>
-
-<!-- news section -->
-<!-- <div class="section bg-light">
-    <a class="anchor" id="news"></a>
-    <div class="container">
-        <h2 class="text-center">Latest News</h2>
-
-        <div class="card-deck">
-            {% for i in site.news reversed%}
-                {% assign remainder = forloop.index |modulo: 4 %}
-                <div class="card news-card">
-                    <a href="{{i.url}}">
-                        <img src="{{i.img}}" alt="{{i.title}}" class="card-img-top"/>
-                        <div class="card-body">
-                            <h4>{{i.title}}</h4>
-                            <div class="fadeout">
-                                <p class="card-text">{{i.excerpt |truncate: 150}}</p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                {% if remainder == 0 %}
-                </div>
-                <div class="card-deck mt-5">
-                {% endif %}
-
-                {% if forloop.last == true %}
-
-                    {% case remainder %}
-                        {% when 1 %}
-                            <div class="card placeholder-card"></div>
-                            <div class="card placeholder-card"></div>
-                            <div class="card placeholder-card"></div>
-                        {% when 2 %}
-                            <div class="card placeholder-card"></div>
-                            <div class="card placeholder-card"></div>
-                        {% when 3 %}
-                            <div class="card placeholder-card"></div>
-                    {% endcase %}
-
-                {% endif %}
-
-            {% endfor %}
-        </div>
-    </div>
-</div> -->
-
-<!-- contact section -->
-<div class="section">
-    <a class="anchor" id="contact"></a>
-    <div class="container">
-        <h2 class="text-center">Contact Us</h2>
-        <div class="row mt-5">
-            <div class="col-md-5 mb-4">
-                <h3>Inquiries</h3>
-                <p class="my-3">For inquiries please call +1 (701) 214-4177 or fill out the form below.</p>
-                <form action="https://submit-form.com/BrecKxGVBJlpGTTCYvyT5" class="mt-5" id="contactForm">
-                    <input name="_redirect" type="hidden" value="aerofleetone.com/index.html?contact=sent">
-
-                    <div class="form-group">
-                        <label for="contactFormName">Name<sup>*</sup>
-                        </label>
-                        <input class="form-control" id="contactFormName" name="Name" placeholder="Your Name" required type="text">
-                    </div>
-                    <div class="form-group">
-                        <label for="contactFormEmail">Email<sup>*</sup>
-                        </label>
-                        <input class="form-control" id="contactFormEmail" name="Email" placeholder="name@example.com" required type="email">
-                    </div>
-                    <div class="form-group">
-                        <label for="contactFormPhone">Phone number (optional)</label>
-                        <input class="form-control" id="contactFormPhone" name="Phone" placeholder="+ 1 (888) 888-8888" type="text">
-                    </div>
-                    <div class="form-group">
-                        <label for="contactFormMessage">Message<sup>*</sup>
-                        </label>
-                        <textarea class="form-control" id="contactFormMessage" name="Message" rows="5"></textarea>
-                    </div>
-
-                    <div class="g-recaptcha" data-sitekey="6LeK68YZAAAAAGIpK5n851BT6yOXSnwKuXXJM0jX"></div>
-                    <button class="btn st-btn mt-3" type="submit">Send</button>
-                </form>
-                <div class="mt-5 d-none" id="contactSuccess">
-                    <h5>Thank you for your message. We will be in touch shortly.</h5>
-                </div>
-            </div>
-            <div class="col-md-5 offset-md-2">
-                <h3>Head Office</h3>
-                <p>10270 67th St NW, Tioga, ND 58852, United States</p>
-                <p>Phone: +1 (701) 214-4177</p>
-                <p>Check out our sister company, <a href="https://agrofundone.com" target="_blank" rel="noopener">Agro Fund One</a> who is also innovating to help create a more sustainable world.</p>
+            <div class="col-sm-10 video-header">
+                <h1 class="fw-bold">{{data.home.video.tagline}}</h1>
+                <a class="d-none d-sm-block mt-5" href="#mission">
+                    <span class="pulse-button bg-primary">
+                        <img class="pulse-icon" src="/assets/img/chevron-down.png" alt="Down Button" />
+                    </span>
+                </a>
             </div>
         </div>
     </div>
+</div>
+
+<div class="container py-5">
+    <section>
+        <div class="row justify-content-center">
+            <div class="col-sm-9 col-lg-7">
+                <p class="lead">{{data.home.blurb}}</p>
+            </div>
+        </div>    
+    </section>
+
+    <section class="mt-5 text-center">
+        <h2>{{data.home.team.heading}}</h2>
+        <div class="row justify-content-center g-4 mt-4">
+        {% for i in data.profile.team.items %}
+        <div class="col-6 col-md-3 text-start">
+            <img class="img-fluid" src="{{i.img}}" alt="{{i.name}}" />
+            <p class="fw-bold mt-2 mb-0">{{i.name|truncatewords: 1, ''}}</p>
+            <p>{{i.title}}</p>
+        </div>
+        {% endfor %}
+        </div>
+
+        <p><a href="/profile/" class="btn btn-primary mt-4 fw-bold">{{data.home.team.button.text}}</a></p>
+    </section>
+</div>
+
+<div class="bg-primary py-5 text-white text-center">
+    <div class="container py-3">
+        <h3>Follow us on social media</h3>
+        <p class="mb-0">
+            {% for i in site.social_media %}
+            <a href="{{i.url}}" target="_blank" class="me-3"><i class="bi-{{i.name}} text-white fs-1"></i></a>
+            {% endfor %}
+        </p>
+    </div>
+</div>
+
+<div class="container py-5 text-center">
+    <section class="py-5">
+        <h2>{{data.home.rfp.heading}}</h2>
+        <p>{{data.home.rfp.text}}</p>
+        <p><a href="{{data.home.rfp.button.url}}" class="btn btn-primary fw-bold">{{data.home.rfp.button.text}}</a></p>
+    </section>
 </div>

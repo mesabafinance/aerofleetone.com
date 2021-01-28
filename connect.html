@@ -1,0 +1,53 @@
+---
+layout: base
+permalink: /connect/index.html
+title: Connect
+---
+
+{% assign data = site.data.general.items %}
+
+
+<div class="container py-5">
+    <section class="text-center">
+        <h1>{{data.connect.heading}}</h1>
+        <h2>{{data.connect.calendly.heading}}</h2>
+        <!-- Calendly inline widget begin -->
+        <div class="calendly-inline-widget" data-url="https://calendly.com/smn22/intro-meeting" style="min-width:320px;height:750px;"></div>
+        <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js"></script>
+        <!-- Calendly inline widget end -->
+    </section>
+    <section class="mt-5">
+        <h2 class="text-center">{{data.connect.message.heading}}</h2>
+        <div class="row mt-4 justify-content-center">
+            <div class="col-md-8 col-lg-5">
+                <form name="contact" method="POST" netlify>
+                    <!-- TODO: Handle form success, add action="/connect/index.html?form=success"  and javascript -->
+
+                            <p class="fw-bold mb-1">I am a... <sup>*</sup></p>
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected disabled>Choose one</option>
+                                {% for i in data.connect.message.contact_form.roles %}
+                                <option value="{{i|| handleize}}">{{i}}</option>
+                                {% endfor %}
+                            </select>
+
+                            <label for="inputEmail" class="form-label mt-3 mb-0 fw-bold">Email <sup>*</sup></label>
+                            <input type="email" class="form-control" id="inputEmail" required>
+
+                            <label for="inputEmail" class="form-label mt-3 mb-0 fw-bold">First Name <sup>*</sup></label>
+                            <input type="text" class="form-control" id="inputFName" required>
+
+                            <label for="inputEmail" class="form-label mt-3 mb-0 fw-bold">Last Name <sup>*</sup></label>
+                            <input type="text" class="form-control" id="inputLName" required>
+
+                            <label for="inputEmail" class="form-label mt-3 mb-0 fw-bold">Message <sup>*</sup></label>
+                            <textarea class="form-control" id="inputMessage" rows="4" required ></textarea>
+
+                    <button type="submit" class="btn btn-primary mt-4">Send</button>
+                </form>
+                <p class="mt-4">Fields marked with <sup>*</sup> are required.</p>
+            </div>
+        </div>
+    </section>  
+    
+</div>

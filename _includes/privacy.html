@@ -1,4 +1,4 @@
-<a data-toggle="modal" href="#privacyModal">Privacy Policy</a>
+<a data-bs-toggle="modal" class="text-decoration-none" href="#privacyModal">Privacy Policy</a>
 <style>
     #privacyModal h2 {
         margin-top: 3rem !important;
@@ -28,14 +28,12 @@
         color: black !important;
     }
 </style>
-<div class="modal text-dark text-left" id="privacyModal" role="dialog" tabindex="-1">
+<div class="modal text-dark text-start" id="privacyModal" role="dialog" tabindex="-1">
     <div class="modal-dialog modal-xl" role="document">
         <div class="modal-content">
             <div class="modal-header">
                 <h5 class="modal-title">Privacy Policy</h5>
-                <button aria-label="Close" class="close" data-dismiss="modal" type="button">
-                    <span aria-hidden="true">&times;</span>
-                </button>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
                 <p>Last updated:
@@ -394,7 +392,7 @@
                 </ul>
             </div>
             <div class="modal-footer">
-                <button class="btn btn-secondary" data-dismiss="modal" type="button">Close</button>
+                <button type="button" class="btn btn-secondary text-white" data-bs-dismiss="modal">Close</button>
             </div>
         </div>
     </div>
