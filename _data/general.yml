@@ -125,7 +125,7 @@ items:
             concepts (pictures and videos) to communicate ideas and concepts.
         - name: Yuriy Sherayzen
           title: Strategist
-          img: /assets/img/team/MatheusPicinin.jpg
+          img: /assets/img/team/YuriySherayzen.png
           mail: yuriy@aerofleetone.com
           linkedin: https://www.linkedin.com/in/yuriy-sherayzen-6935894/
           text: >-
@@ -133,7 +133,7 @@ items:
             forward with mergers and acquisitions.
         - name: Dionas Silva
           title: Brazilian Representative
-          img: /assets/img/team/MatheusPicinin.jpg
+          img: /assets/img/team/DionasSilva.jpg
           mail: dionas@aerofleetone.com
           linkedin: https://www.linkedin.com/in/dionas-silva-1451a8153/
           text: >-
@@ -154,7 +154,7 @@ items:
       please submit your application below by [deadline]. Late responses will not be accepted. 
       We are excited to see what you can do!
     cta:
-      text: Send your proposal to rfp@aerofleetone.com or get in touch with us to find out more.
+      text: Send your documents to proposals@aerofleetone.com or get in touch with us to find out more.
       button:
         text: Schedule a meeting
         url: /connect/

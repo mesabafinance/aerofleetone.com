@@ -27,7 +27,7 @@ title: Connect
                             <select class="form-select" aria-label="Default select example">
                                 <option selected disabled>Choose one</option>
                                 {% for i in data.connect.message.contact_form.roles %}
-                                <option value="{{i|| handleize}}">{{i}}</option>
+                                <option value="{{i| handleize}}">{{i}}</option>
                                 {% endfor %}
                             </select>
 
@@ -48,6 +48,21 @@ title: Connect
                 <p class="mt-4">Fields marked with <sup>*</sup> are required.</p>
             </div>
         </div>
-    </section>  
-    
+    </section>
+    <section class="mt-5">
+        <h2 class="text-center">Location</h2>
+        <div class="mt-4 row justify-content-center">
+            <div class="col-sm-6 col-md-4 col-lg-2">
+                <p>
+                    {{site.address.street}} <br/>
+                    {{site.address.city}}, {{site.address.state}}, {{site.address.zip}} <br/>
+                    {{site.address.country}} <br/>
+                </p>
+                <p>
+                    <a class="text-decoration-none" href="tel:{{site.address.phone}}">{{site.address.phone}}</a>
+                </p>
+            </div>
+        </div>
+
+    </section>
 </div>

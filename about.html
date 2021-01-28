@@ -12,11 +12,26 @@ title: About
         <p>{{data.about.text}}</p>
     </section>
     <section>
-        <h2>{{data.about.story.heading}}</h2>
-        <p>{{data.about.story.text}}</p>
+        <div class="row py-5 my-5">
+            <div class="col-md-6 order-1 d-flex flex-column justify-content-center">
+                <h2>{{data.about.story.heading}}</h2>
+                <p>{{data.about.story.text}}</p>
+            </div>
+            <div class="col-md-6 order-2 gx-0 gx-md-4 align-self-center">
+                <img src="/assets/img/erjavec-pederii.jpg" class="img-fluid w-100" style="object-fit: cover;"  alt="{{data.about.story.heading}}" /> 
+            </div>
+        </div>
+
     </section>
     <section>
-        <h2>{{data.about.purpose.heading}}</h2>
-        <p>{{data.about.purpose.text}}</p>
+        <div class="row py-5 my-5">
+            <div class="col-md-6 order-1 d-flex flex-column justify-content-center">
+                <h2>{{data.about.purpose.heading}}</h2>
+                <p>{{data.about.purpose.text}}</p>
+            </div>
+            <div class="col-md-6 order-2 order-md-0 gx-0 gx-md-4">
+                <img src="/assets/img/gallery/2020-3.jpg" class="img-fluid w-100" style="object-fit: cover;"  alt="{{data.about.purpose.heading}}" /> 
+            </div>
+        </div>
     </section>
 </div>

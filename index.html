@@ -25,7 +25,7 @@ title:
     </div>
 </div>
 
-<div class="container py-5">
+<div id="mission" class="container py-5">
     <section>
         <div class="row justify-content-center">
             <div class="col-sm-9 col-lg-7">
@@ -39,7 +39,7 @@ title:
         <div class="row justify-content-center g-4 mt-4">
         {% for i in data.profile.team.items %}
         <div class="col-6 col-md-3 text-start">
-            <img class="img-fluid" src="{{i.img}}" alt="{{i.name}}" />
+            <img style="object-fit: cover;height: 300px;width: 250px" class="img-fluid" src="{{i.img}}" alt="{{i.name}}" />
             <p class="fw-bold mt-2 mb-0">{{i.name|truncatewords: 1, ''}}</p>
             <p>{{i.title}}</p>
         </div>
@@ -62,7 +62,7 @@ title:
 </div>
 
 <div class="container py-5 text-center">
-    <section class="py-5">
+    <section class="py-5 my-5">
         <h2>{{data.home.rfp.heading}}</h2>
         <p>{{data.home.rfp.text}}</p>
         <p><a href="{{data.home.rfp.button.url}}" class="btn btn-primary fw-bold">{{data.home.rfp.button.text}}</a></p>
