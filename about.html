@@ -7,30 +7,77 @@ title: About
 {% assign data = site.data.general.items %}
 
 <div class="container py-5">
+    {% comment %}
     <section>
         <h1>{{data.about.heading}}</h1>
         <p>{{data.about.text}}</p>
     </section>
-    <section>
-        <div class="row py-5 my-5">
-            <div class="col-md-6 order-1 d-flex flex-column justify-content-center">
-                <h2>{{data.about.story.heading}}</h2>
-                <p>{{data.about.story.text}}</p>
+    {% endcomment %}
+    <section class="pb-5 my-5">
+        <h2>{{data.about.story.heading}}</h2>
+        <div class="row my-2">
+            <div
+                class="col-md-6 order-1 d-flex flex-column justify-content-center"
+            >
+                <p>{{data.about.story.text[0]}}</p>
             </div>
             <div class="col-md-6 order-2 gx-0 gx-md-4 align-self-center">
-                <img src="/assets/img/erjavec-pederii.jpg" class="img-fluid w-100" style="object-fit: cover;"  alt="{{data.about.story.heading}}" /> 
+                <img
+                    src="/assets/img/erjavec-pederii.jpg"
+                    class="img-fluid w-100 p-md-5"
+                    style="object-fit: cover"
+                    alt="{{data.about.story.heading}}"
+                />
             </div>
         </div>
-
+        <div class="row my-2">
+            <div
+                class="col-md-6 order-1 d-flex flex-column justify-content-center"
+            >
+                <p>{{data.about.story.text[1]}}</p>
+            </div>
+            <div
+                class="col-md-6 order-2 order-md-0 gx-0 gx-md-4 align-self-center"
+            >
+                <img
+                    src="/assets/img/erjavec-pederii.jpg"
+                    class="img-fluid w-100 p-md-5"
+                    style="object-fit: cover"
+                    alt="{{data.about.story.heading}}"
+                />
+            </div>
+        </div>
     </section>
-    <section>
-        <div class="row py-5 my-5">
-            <div class="col-md-6 order-1 d-flex flex-column justify-content-center">
-                <h2>{{data.about.purpose.heading}}</h2>
-                <p>{{data.about.purpose.text}}</p>
+    <section cass="py-5 my-5">
+        <h2>{{data.about.purpose.heading}}</h2>
+        <div class="row my-2">
+            <div
+                class="col-md-6 order-1 d-flex flex-column justify-content-center"
+            >
+                <p>{{data.about.purpose.text[0]}}</p>
+            </div>
+            <div class="col-md-6 order-2 gx-0 gx-md-4">
+                <img
+                    src="/assets/img/gallery/2020-3.jpg"
+                    class="img-fluid w-100 p-md-5"
+                    style="object-fit: cover"
+                    alt="{{data.about.purpose.heading}}"
+                />
+            </div>
+        </div>
+        <div class="row my-2">
+            <div
+                class="col-md-6 order-1 d-flex flex-column justify-content-center"
+            >
+                <p>{{data.about.purpose.text[1]}}</p>
             </div>
             <div class="col-md-6 order-2 order-md-0 gx-0 gx-md-4">
-                <img src="/assets/img/gallery/2020-3.jpg" class="img-fluid w-100" style="object-fit: cover;"  alt="{{data.about.purpose.heading}}" /> 
+                <img
+                    src="/assets/img/gallery/2020-3.jpg"
+                    class="img-fluid w-100 p-md-5"
+                    style="object-fit: cover"
+                    alt="{{data.about.purpose.heading}}"
+                />
             </div>
         </div>
     </section>

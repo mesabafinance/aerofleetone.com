@@ -6,27 +6,100 @@ title: Profile
 
 {% assign data = site.data.general.items %}
 
-<div class="container py-5">
-    <section>
-        <h1>{{data.profile.heading}}</h1>
-        <p>{{data.profile.text}}</p>
-    </section>
+<script src="https://api.mapbox.com/mapbox-gl-js/v2.0.0/mapbox-gl.js"></script>
+<link
+    href="https://api.mapbox.com/mapbox-gl-js/v2.0.0/mapbox-gl.css"
+    rel="stylesheet"
+/>
 
+<div class="container py-5">
+    <section class="row">
+        <div class="col-lg-8 col-xl-8">
+            <h1>{{data.profile.team.heading}}</h1>
+            <p>{{data.profile.text}}</p>
+        </div>
+    </section>
     <section>
-        <h2>{{data.profile.team.heading}}</h2>
-        <div class="row row-cols-1 row-cols-md-3 g-4 justify-content-center py-5">
+    <div id="profile-map" class="w-100"></div>
+    <script>
+        var team = {
+            'type': 'TeamCollection',
+            'people': [
             {% for i in data.profile.team.items %}
-                <div class="col">
-                    <div class="card h-100">
-                        <img src="{{i.img}}" class="card-img-top" alt="{{i.name}}" />
-                        <div class="card-body d-flex flex-column">
-                            <h5 class="card-title mb-1 fw-bold">{{i.name}} <span><a href="{{i.linkedin}}" target="_blank"><i class="ms-1 bi-linkedin fs-4"></i></a></span></h5>
-                            <p class="fw-bold">{{i.title}}</p>
-                            <p>{{i.text}}</p>
-                            <p class="card-text mt-auto"><a href="mailto:{{i.mail}}" class="text-decoration-none">{{i.mail}}</a></p>
-                        </div>
+                {
+                    'type': 'TeamMember',
+                    'properties': {
+                        'name': '{{i.name}}',
+                        'iconSize': [60, 60],
+                        'iconUrl': '{{i.img}}',
+                        'title': '{{i.title}}'
+                    },
+                    'geometry': {
+                        'type': 'Point',
+                        'coordinates': [{{i.latlong[1]}},{{i.latlong[0]}}]
+                    }
+                }{% unless forloop.last %},{% endunless %}
+                {% endfor %}
+            ]
+        }
+        mapboxgl.accessToken = 'pk.eyJ1Ijoic21ubWYiLCJhIjoiY2trbjN2d2N5MWs3djJ2bXF2dm9jeDg4aCJ9.8QrQsswYRpYrbw2PAbCXmA';
+        var mq = window.matchMedia("(min-width: 576px)");
+        var zoomlvl = (mq.matches ? 1 : 0)
+        var centre = (mq.matches ?  [-50,25] : [-20,25])
+        var map = new mapboxgl.Map({
+            container: 'profile-map',
+            style: 'mapbox://styles/smnmf/ckknbgr8n51xx17qx1waebm9i',
+            center: centre,
+            zoom: zoomlvl
+        });
+        team.people.forEach(function (marker) {
+            var el = document.createElement('div');
+            el.className = 'marker';
+            el.style.backgroundImage = 'url(https://aerofleetone.com' + marker.properties.iconUrl + ')';
+
+            new mapboxgl.Marker(el)
+                .setLngLat(marker.geometry.coordinates)
+                .setPopup(new mapboxgl.Popup({ offset: 25 }) // add popups
+                    .setHTML('<div class="text-start mt-3"><h5 class="mb-0">' + marker.properties.name + '</h5><p class="fs-6">' + marker.properties.title + '</p></div>'))
+                .addTo(map);
+            console.log('Marker added:'+ marker.properties.name + 'iconurl: https://aerofleetone.com' + marker.properties.iconUrl)
+        })
+
+    </script>
+    <section>
+        <div
+            class="row row-cols-1 row-cols-md-3 g-4 justify-content-center py-5"
+        >
+            {% for i in data.profile.team.items %}
+            <div class="col">
+                <div class="card h-100">
+                    <img
+                        src="{{i.img}}"
+                        class="card-img-top"
+                        alt="{{i.name}}"
+                    />
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title mb-1 fw-bold">
+                            {{i.name}}
+                            <span>
+                                <a href="{{i.linkedin}}" target="_blank">
+                                    <i class="ms-1 bi-linkedin fs-4"></i>
+                                </a>
+                            </span>
+                        </h5>
+                        <p class="fw-bold">{{i.title}}</p>
+                        <p>{{i.text}}</p>
+                        <p class="card-text mt-auto">
+                            <a
+                                href="mailto:{{i.mail}}"
+                                class="text-decoration-none"
+                            >
+                                {{i.mail}}
+                            </a>
+                        </p>
                     </div>
                 </div>
+            </div>
             {% endfor %}
         </div>
     </section>

@@ -2,40 +2,40 @@ title: Heavy Payload | Low Altitude | Aero Fleet One Drones | United States
 email: your-email@example.com
 
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://aerofleetone.com" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Build settings
 theme: minima
 plugins:
-  - jekyll-feed
+    - jekyll-feed
 
 sass:
-  load_paths:
-    - assets/css/_sass
-    - assets/css/_bootstrap/scss
+    load_paths:
+        - assets/css/_sass
+        - assets/css/_bootstrap/scss
 
 collections:
-  news:
-    output: false
+    news:
+        output: false
 
 exclude: [README.md]
 
 social_media:
-  - name: twitter
-    url: https://twitter.com/AeroFleetOne
-  - name: linkedin
-    url: https://www.linkedin.com/company/69963910/
-  - name: instagram
-    url: https://www.instagram.com/aerofleetone/
-  - name: facebook
-    url: https://www.facebook.com/AeroFleetOne
+    - name: twitter
+      url: https://twitter.com/AeroFleetOne
+    - name: linkedin
+      url: https://www.linkedin.com/company/69963910/
+    - name: instagram
+      url: https://www.instagram.com/aerofleetone/
+    - name: facebook
+      url: https://www.facebook.com/AeroFleetOne
 
 # data for privacy policy
 address:
-  name: Aero Fleet One
-  street: 10270 67th St NW
-  city: Tioga
-  state: North Dakota
-  zip: 58852
-  country: United States
-  phone: +1 (701) 214-4177
+    name: Aero Fleet One
+    street: 10270 67th St NW
+    city: Tioga
+    state: North Dakota
+    zip: 58852
+    country: United States
+    phone: +1 (701) 214-4177

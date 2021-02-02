@@ -142,8 +142,7 @@ $theme-font: "Lato", Helvetica, sans-serif;
   text-decoration: none;
 }
 
-@import "bootstrap";
 
+@import "bootstrap";
 @import "hamburger";
-@import "flipcard";
-@import "lightbox";
+@import "map";
