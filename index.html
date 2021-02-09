@@ -75,8 +75,14 @@ site.data.general.items %}
         <h3>Follow us on social media</h3>
         <p class="mb-0">
             {% for i in site.social_media %}
-            <a href="{{i.url}}" target="_blank" class="me-3">
-                <i class="bi-{{i.name}} text-white fs-1"></i>
+            <a
+                href="{{i.url}}"
+                target="_blank"
+                class="me-3"
+                aria-label="{{i.name}}"
+                rel="noopener"
+            >
+                <i class="bi-{{i.name|downcase}} text-white fs-1"></i>
             </a>
             {% endfor %}
         </p>

@@ -21,13 +21,13 @@ collections:
 exclude: [README.md]
 
 social_media:
-    - name: twitter
+    - name: Twitter
       url: https://twitter.com/AeroFleetOne
-    - name: linkedin
+    - name: Linkedin
       url: https://www.linkedin.com/company/69963910/
-    - name: instagram
+    - name: Instagram
       url: https://www.instagram.com/aerofleetone/
-    - name: facebook
+    - name: Facebook
       url: https://www.facebook.com/AeroFleetOne
 
 # data for privacy policy

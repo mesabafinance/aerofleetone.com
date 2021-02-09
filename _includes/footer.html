@@ -18,8 +18,10 @@
                 href="{{i.url}}"
                 target="_blank"
                 class="me-3 text-decoration-none"
+                aria-label="{{i.name}}"
+                rel="noopener"
             >
-                <i class="bi-{{i.name}} text-primary fs-1"></i>
+                <i class="bi-{{i.name|downcase}} text-primary fs-1"></i>
             </a>
             {% endfor %}
         </p>
