@@ -14,7 +14,11 @@
         </p>
         <p class="mb-5">
             {% for i in site.social_media %}
-            <a href="{{i.url}}" target="_blank" class="me-3">
+            <a
+                href="{{i.url}}"
+                target="_blank"
+                class="me-3 text-decoration-none"
+            >
                 <i class="bi-{{i.name}} text-primary fs-1"></i>
             </a>
             {% endfor %}

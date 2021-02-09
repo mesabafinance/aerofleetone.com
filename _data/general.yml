@@ -1,7 +1,7 @@
 items:
   headline: Aero Fleet One
   description: >-
-    Aero Fleet One designs tools and implements systems that make crop protection less expensive and more efficient than conventional methods
+    Aero Fleet One invests in and acquires agricultural aviation companies. The company seeks to improve existing businesses by harnessing the expertise of experienced operators and by implementing new technologies to improve operations.
   navigation:
     items:
       - url: /
@@ -77,8 +77,7 @@ items:
     heading: Heading
     text: >
       Aero Fleet One’s team is distributed across several the globe, though our operations 
-      are focused in North, Central, and South America. We will be announcing the beginning 
-      locations of our aerial agricultural services soon.
+      are focused in North, Central, and South America.
     team:
       heading: Our Team
       items:
@@ -154,14 +153,11 @@ items:
           text: Go to agrofundone.com
           url: https://agrofundone.com
   rfp:
-    heading: RFP Heading
+    heading: Request for Proposals for Agricultural UAS
     text: >
-      Aero Fleet One is looking for capable developers to realize the possibility of UAS 
-      which are able to truly do the job that manned agricultural aircraft currently do. 
-      We have published a Request for Proposals (PDF will be embedded here when it is a
-      ctually ready) to spur the market. If you think your team can meet the criteria, 
-      please submit your application below by [deadline]. Late responses will not be accepted. 
-      We are excited to see what you can do!
+      Aero Fleet One is looking for UAS which are able to truly do the job that manned agricultural aircraft currently do. 
+      We will be publishing an official Request for Proposals to spur this technological advancement. If you think your 
+      team can meet the criteria, please consider submitting a proposal. We are excited to see what you can do!
     cta:
       text: Send your documents to proposals@aerofleetone.com or get in touch with us to find out more.
       button:
