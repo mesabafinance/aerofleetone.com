@@ -19,11 +19,18 @@ site.data.general.items %}
         <source src="/assets/video/hero-video.mp4" type="video/mp4" />
     </video>
     <div class="container">
+        <div class="row justify-content-end">
+            <div class="col-md-5 video-header">
+                <h1 class="fw-bold fs-1">{{data.home.video.tagline}}</h1>
+                <h2 class="fw-bold fs-6 mt-4">{{data.home.video.subtagline}}</h2>
+            </div>
+        </div>
         <div class="row justify-content-center">
-            <div class="col-sm-10 video-header">
-                <h1 class="fw-bold">{{data.home.video.tagline}}</h1>
-                <a class="d-none d-sm-block mt-5" href="#mission">
-                    <span class="pulse-button bg-primary">
+            <div
+                class="col-md-4 position-relative d-flex align-items-center flex-column"
+            >
+                <a class="d-none d-sm-block mt-5" href="#team">
+                    <span style="top: -50px" class="pulse-button bg-primary">
                         <img
                             class="pulse-icon"
                             src="/assets/img/chevron-down.png"
@@ -36,17 +43,9 @@ site.data.general.items %}
     </div>
 </div>
 
-<div id="mission" class="container py-5">
-    <section>
-        <div class="row justify-content-center pt-3 mt-5">
-            <div class="col-sm-9 col-lg-7">
-                <p class="lead">{{data.home.blurb}}</p>
-            </div>
-        </div>
-    </section>
-
+<div id="team" class="container py-5">
     <section class="mt-5 text-center">
-        <h2>{{data.home.team.heading}}</h2>
+        <h2 class="pt-3">{{data.home.team.heading}}</h2>
         <div class="row justify-content-center g-4 mt-4">
             {% for i in data.profile.team.items %}
             <div class="col-6 col-md-3 text-start">

@@ -21,8 +21,11 @@ items:
         id: connect
   home:
     video:
-      tagline: Aero Fleet One provides premier aerial services with a future-focused mindset
-    blurb: Aero Fleet One invests in and acquires agricultural aviation companies. The company seeks to improve existing businesses by harnessing the expertise of experienced operators and by implementing new technologies to improve operations.
+      tagline: Premier Aerial Services. 
+      subtagline: >-
+        Innovate through integration.<br/>
+        Harness the expertise of experienced operators.<br/> 
+        Implement new technologies to improve operations. 
     team:
       heading: Our Team
       button:
