@@ -150,6 +150,25 @@ items:
           text: >-
             As an expert agronomist and an experienced UAS pilot, Dionas is our 
             pioneer in Brazil as we expand to service North, Central and South America.
+    map:
+      offices:
+        - location: tioga
+          title: North American Headquarters
+          name: Tioga, North Dakota, USA
+          latlong: [48.385480, -102.900970]
+        - location: ribeirao
+          title: South American Headquarters
+          name: Ribeirão, São Paulo State, Brazil
+          latlong: [-21.2068752671004, -47.91907593248477]
+        - location: denver
+          title: Colorado Office Location
+          name: Denver, Colorado, USA
+          latlong: [39.75929079347683, -105.00842779822192]
+        - location: kiev
+          title: European Office Location
+          name: Kiev, Ukraine
+          latlong: [50.450100, 30.523399]
+          
       agro:
         text: Check out our sister company, Agro Fund One who is also innovating to help create a more sustainable world
         button:
