@@ -62,7 +62,10 @@
         rel="stylesheet"
         href="{{'/assets/css/main.css' | relative_url}}?{{ site.time | date: '%s%N' }}"
     />
-    <meta name="description" content="{{site.data.general.items.home.blurb}}" />
+    <meta
+        name="description"
+        content="{% if page.description %}{{page.description}}{% else %}{{site.data.general.items.description}}{% endif %}"
+    />
     <link
         rel="stylesheet"
         href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
