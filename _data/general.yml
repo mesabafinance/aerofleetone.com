@@ -79,8 +79,7 @@ items:
   profile:
     heading: Heading
     text: >
-      Aero Fleet One’s team is distributed across several the globe, though our operations 
-      are focused in North, Central, and South America.
+      Aero Fleet One’s team is distributed across the globe, though our operations are focused in North, Central, and South America.
     team:
       heading: Our Team
       items:
