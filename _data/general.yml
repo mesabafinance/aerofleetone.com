@@ -84,6 +84,7 @@ items:
       heading: Our Team
       items:
         - name: Allan Dosan
+          active: True
           title: Market Development
           img: /assets/img/team/AllanDosan.jpg
           mail: allan@aerofleetone.com
@@ -94,6 +95,7 @@ items:
             Fleet One. He acts as a spokesperson and negotiator as we form partnerships 
             and deals.
         - name: Destiny West
+          active: True
           title: Team Lead
           img: /assets/img/team/DestinyWest.jpg
           mail: destiny@aerofleetone.com
@@ -103,6 +105,7 @@ items:
             Destiny is our main public voice and administrative organizer. As she is training 
             for her pilot’s license, she is also our in-house aviation enthusiast.
         - name: Maria Dyatchyna
+          active: True
           title: Analyst and European Representative
           img: /assets/img/team/MariaDyatchyna.jpg
           mail: maria@aerofleetone.com
@@ -113,6 +116,7 @@ items:
             and deal-making to keep Aero Fleet One ahead of the game. She is the 
             person to contact for any of our affairs in Europe.
         - name: Mark Erjavec
+          active: True
           title: Finance
           img: /assets/img/team/MarkErjavec.jpg
           mail: mark@aerofleetone.com
@@ -122,6 +126,7 @@ items:
             Mark has provided the seed and continues to help this vision grow. 
             While managing our funding and resources, he keeps us all on track.
         - name: Matheus Picinin
+          active: True
           title: Marketing & Social Media
           img: /assets/img/team/MatheusPicinin.jpg
           mail: matheus@aerofleetone.com
@@ -131,7 +136,17 @@ items:
             Matheus is a Brazilian Digital Marketer based in Ireland. Matheus’ main role is 
             to build a social media presence for Aero Fleet One. In addition he creates visual 
             concepts (pictures and videos) to communicate ideas and concepts.
+        - name: Ana Garcia
+          active: True
+          title: Business Development Representative Latin America
+          img: /assets/img/team/AnaGarcia.jpg
+          mail: ana@aerofleetone.com
+          linkedin: 
+          latlong: [-21.158780, -47.820990]
+          text: >-
+            Ana is an experienced business manager in the fields of agriculture and aviation. She helps develop and implement our business strategy and new technologies in Central and South America.
         - name: Yuriy Sherayzen
+          active: False
           title: Strategist
           img: /assets/img/team/YuriySherayzen.png
           mail: yuriy@aerofleetone.com
@@ -141,6 +156,7 @@ items:
             Yuriy is an experienced business analyst who helps guide our team as we move 
             forward with mergers and acquisitions.
         - name: Dionas Silva
+          active: True
           title: Brazilian Representative
           img: /assets/img/team/DionasSilva.jpg
           mail: dionas@aerofleetone.com

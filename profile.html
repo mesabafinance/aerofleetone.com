@@ -27,6 +27,7 @@ description: Aero Fleet One’s team is distributed across the globe, though our
             'type': 'TeamCollection',
             'people': [
             {% for i in data.profile.team.items %}
+            {% if i.active %}
             {
                 'type': 'TeamMember',
                 'properties': {
@@ -40,6 +41,7 @@ description: Aero Fleet One’s team is distributed across the globe, though our
                     'coordinates': [{{i.latlong[1]}},{{i.latlong[0]}}]
                 }
             }{% unless forloop.last %},{% endunless %}
+            {% endif %}
             {% endfor %}
             ]
         }
@@ -103,6 +105,7 @@ description: Aero Fleet One’s team is distributed across the globe, though our
             class="row row-cols-1 row-cols-md-3 g-4 justify-content-center py-5"
         >
             {% for i in data.profile.team.items %}
+            {% if i.active %}
             <div class="col">
                 <div class="card h-100">
                     <img
@@ -132,6 +135,7 @@ description: Aero Fleet One’s team is distributed across the globe, though our
                     </div>
                 </div>
             </div>
+            {% endif %}
             {% endfor %}
         </div>
     </section>
