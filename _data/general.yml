@@ -141,10 +141,19 @@ items:
           title: Business Development Representative Latin America
           img: /assets/img/team/AnaGarcia.jpg
           mail: ana@aerofleetone.com
-          linkedin: 
+          linkedin: https://www.linkedin.com/in/ana-garcia4/
           latlong: [-21.158780, -47.820990]
           text: >-
             Ana is an experienced business manager in the fields of agriculture and aviation. She helps develop and implement our business strategy and new technologies in Central and South America.
+        - name: Matthew Lessard
+          active: true
+          title: Strategic Advisor
+          img: /assets/img/team/MatthewLessard.jpg
+          linkedin: https://www.linkedin.com/in/matthew-lessard-4b73ab/
+          latlong: [44.1835832, -94.047492]
+          text: >-
+              Based in Minnesota, Matthew is an executive leader and entrepreneur with over 20 years of business management, financial oversight and analysis, business development, private equity, and international business experience in various countries including the US, Brazil, Mexico, and Europe.
+
         - name: Yuriy Sherayzen
           active: False
           title: Strategist
