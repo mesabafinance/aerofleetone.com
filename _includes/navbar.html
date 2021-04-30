@@ -1,7 +1,8 @@
 <nav class="navbar navbar-expand-lg fixed-top bg-white">
     <a class="navbar-brand" href="/">
         <img
-            class="ms-3 my-navbar-img"
+            class="ms-5 mt-2"
+            width="200px"
             src="{{'/assets/img/Aero-Fleet-One-logo.png' | relative_url }}?{{cache_buster}}"
             alt="{{site.title}}"
         />
@@ -22,14 +23,14 @@
     </button>
 
     <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto me-4 fs-5">
-            {% for i in site.data.general.items.navigation.items %}
+        <ul class="navbar-nav ms-auto me-2 fs-5">
+            {% for i in site.data.general.items.navigation %}
             <li class="nav-item ml-lg-2">
                 <a
-                    class="nav-link fw-bold px-3 {% if forloop.last %} ms-2 fs-5 btn btn-primary mb-4 d-inline{% endif %}"
-                    href="{{i.url}}"
+                    class="nav-link px-3 {% if forloop.last %}d-md-none ms-2 fs-5 btn btn-primary mb-4 d-inline{% endif %} {% if forloop.first and page.url == '/' %} active{% endif %}{% unless forloop.first %}{% unless forloop.last %}{% if page.url contains i.url %} active{% endif %}{% endunless %}{% endunless %}"
+                    href="/{{i.url}}{% unless forloop.first %}/{% endunless %}"
                 >
-                    {{i.name}}
+                    {{i.name|upcase}}
                 </a>
             </li>
             {% endfor %}
