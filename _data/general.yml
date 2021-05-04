@@ -174,31 +174,33 @@ items:
                       title: European Office Location
                       name: Kiev, Ukraine
                       latlong: [50.450100, 30.523399]
-        blog:
-            heading: Our Blog
+    blog:
+        heading: Our Blog
+        subheading: Text
 
-        media:
-            heading: Media
-            news:
-                heading: news
-            social:
-                heading: Social Media
+    media:
+        heading: Media
+        subheading: Text
+        news:
+            heading: News
+        social:
+            heading: Social Media
 
-        connect:
-            heading: Get in touch
-            calendly:
-                heading: Schedule a meeting instantly
-            message:
-                heading: Send us a message
-                contact_form:
-                    roles:
-                        - Aerial Application Pilot
-                        - Aerial Application Operator
-                        - UAS Technology Developer
-                        - UAS Pilot
-                        - Journalist
-                        - Investor
-                        - Farmer
-                        - Activist
-                        - Government Official/Employee
-                        - Other
+    connect:
+        heading: Get in touch
+        calendly:
+            heading: Schedule a meeting instantly
+        message:
+            heading: Send us a message
+            contact_form:
+                roles:
+                    - Aerial Application Pilot
+                    - Aerial Application Operator
+                    - UAS Technology Developer
+                    - UAS Pilot
+                    - Journalist
+                    - Investor
+                    - Farmer
+                    - Activist
+                    - Government Official/Employee
+                    - Other

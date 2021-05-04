@@ -7,15 +7,27 @@ url: "https://aerofleetone.com" # the base hostname & protocol for your site, e.
 # Build settings
 plugins:
     - jekyll-feed
+    - jekyll-paginate
 
 sass:
     load_paths:
         - assets/css/_sass
         - assets/css/_bootstrap
 
+permalink: /blog/:year/:slug/index.html
+
 collections:
     news:
         output: false
+
+paginate: 2
+paginate_path: "/blog/page-:num/"
+
+defaults:
+    - scope:
+          type: "posts"
+      values:
+          layout: blog
 
 exclude: [README.md]
 

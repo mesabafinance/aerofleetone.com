@@ -1,6 +1,58 @@
 ---
 layout: base
 permalink: /blog/index.html
+parallax: true
 ---
 
-<h1>Blog</h1>
+{% assign data = site.data.general.items %}
+
+<div
+    class="parallax-window d-flex align-items-center justify-content-center"
+    data-image-src="/assets/img/drone-crop-spraying.jpg"
+    data-parallax="scroll"
+    style="height: 60vh"
+>
+    <div>
+        <h1>{{data.blog.heading}}</h1>
+        <h3 class="text-white">{{data.blog.subheading}}</h3>
+    </div>
+</div>
+
+<div class="container py-5 my-5">
+    <div class="row">
+        <div class="col-md-9">
+            {% for i in site.posts %}
+            <div class="row mb-2">
+                <div class="col-md-3">
+                    <img
+                        class="img-fluid"
+                        alt="{{i.title}}"
+                        src="{% if i.img %}{{i.img}}{% else %}/assets/img/drone-crop-spraying.jpg{% endif %}"
+                    />
+                </div>
+                <div class="col-md-9">
+                    <h2>{{i.title}}</h2>
+                    <p>{{i.content|truncatewords: 20}}</p>
+                    <p><a class="stretched-link" href="{{i.url|remove: "index.html"}}">Read More ></a></p>
+                </div>
+            </div>
+            <hr class="mb-5" />
+            {% endfor %}
+        </div>
+
+        <div class="col-md-3 bg-light py-4 ps-2">
+            <div class="p-4">
+                {% for tag in site.tags %}
+                <h3 class="fw-semibold">{{ tag[0] }}</h3>
+                <ul class="list-unstyled">
+                    {% for post in tag[1] %}
+                    <li class="mt-2">
+                        <a href="{{ post.url }}">&rarr; {{ post.title }}</a>
+                    </li>
+                    {% endfor %}
+                </ul>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>

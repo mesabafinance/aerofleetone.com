@@ -27,7 +27,7 @@
             {% for i in site.data.general.items.navigation %}
             <li class="nav-item ml-lg-2">
                 <a
-                    class="nav-link px-3 {% if forloop.last %}d-md-none ms-2 fs-5 btn btn-primary mb-4 d-inline{% endif %} {% if forloop.first and page.url == '/' %} active{% endif %}{% unless forloop.first %}{% unless forloop.last %}{% if page.url contains i.url %} active{% endif %}{% endunless %}{% endunless %}"
+                    class="nav-link px-3 {% if forloop.last %}ms-2 fs-5 btn btn-primary mb-4 d-inline{% endif %} {% if forloop.first and page.url == '/' %} active{% endif %}{% unless forloop.first %}{% unless forloop.last %}{% if page.url contains i.url %} active{% endif %}{% endunless %}{% endunless %}"
                     href="/{{i.url}}{% unless forloop.first %}/{% endunless %}"
                 >
                     {{i.name|upcase}}
