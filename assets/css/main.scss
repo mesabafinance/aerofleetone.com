@@ -37,7 +37,22 @@ a {
     border-radius: 1rem !important;
 }
 
+#footer {
+    .active {
+        color: $primary;
+    }
+}
 
+.btn {
+    border-radius: 1rem !important;
+}
+
+#messageCol {
+    min-height: 300px;
+    @media (min-width: 576px)  { min-height: 600px }
+    
+}
+    
 
 @import "navbar";
 @import "hamburger";

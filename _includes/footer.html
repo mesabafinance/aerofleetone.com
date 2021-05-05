@@ -10,8 +10,8 @@
         <p class="mb-4">
             {% for i in site.data.general.items.navigation %}
             <a
-                href="/{{i.url}}{% unless forloop.first%}/{% endunless %}"
-                class="mx-3 fs-5 text-decoration-none"
+                class="mx-3 fs-6 fw-semibold text-decoration-none {% if forloop.first and page.url == '/' %} active{% endif %}{% unless forloop.first %}{% unless forloop.last %}{% if page.url contains i.url %} active{% endif %}{% endunless %}{% endunless %}"
+                href="/{{i.url}}{% unless forloop.first %}/{% endunless %}"
             >
                 {{i.name|upcase}}
             </a>
@@ -19,12 +19,13 @@
         </p>
         <p>
             <img
+                class="mt-3"
                 src="/assets/img/Aero-Fleet-One-Logo.png"
                 alt="Aero Fleet One Logo"
-                width="200px"
+                width="150px"
             />
         </p>
-        <p>
+        <p class="mt-5">
             Copyright &copy;
             <span id="currentYear"></span>
             by AeroFleetOne.

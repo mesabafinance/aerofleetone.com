@@ -14,31 +14,35 @@ items:
     home:
         top:
             headline: Aero Fleet One
-            subline: Innove through integration. Harness the expertise of experienced operators.
+            subline: Innove through integration. <br>Harness the expertise of experienced operators.
             button:
                 url: /connect/
                 text: Contact Us
         boilerplate:
-            text:
-            img:
-                src:
-                alt:
+            text: We believe that drones are the future of aerial services, and we want to help bring this to fruition.
+            src: UAV-fixed-wing-agriculture.png
         galleries:
             items:
-                - img:
-                  src:
-                  alt:
-                - img:
-                  src:
-                  alt:
-                - img:
-                  src:
-                  alt:
+                - src: /assets/img/drone-data-collection.png
+                  text: We believe that drones are the future of aerial services, and we want to help bring this to fruition.
+                - src: /assets/img/uas-agtech-agriculture.png
+                  text: We believe that drones are the future of aerial services, and we want to help bring this to fruition.
+                - src: /assets/img/smart-farming-technology-agriculture.jpg
+                  text: We believe that drones are the future of aerial services, and we want to help bring this to fruition.
             text:
+            about:
+                heading: About Us
+                img: /assets/img/drone-agriculture.jpg
+                text: Innove through integration. Harness the expertise of experienced operators.
+                button:
+                    text: Learn more
+                    url: /about/
         blog:
             heading: Latest Articles
+            img: /assets/img/agricultural-aircraft-crop-dusting.jpg
         message:
-            heading: Send us a message
+            heading: Send us a<br> message
+            img: /assets/img/agricultural-field.jpg
             text:
         socials:
             heading: Follow us on Social Media
