@@ -1,4 +1,13 @@
-<nav class="navbar navbar-expand-lg fixed-top bg-white">
+<nav
+    class="
+        navbar navbar-expand-lg
+        fixed-top
+        bg-white
+        d-flex
+        align-items-stretch
+        p-0
+    "
+>
     <a class="navbar-brand" href="/">
         <img
             class="ms-2 ms-sm-5 mt-2"
@@ -27,7 +36,51 @@
             {% for i in site.data.general.items.navigation %}
             <li class="nav-item ml-lg-2">
                 <a
-                    class="nav-link px-3 fs-5 fw-semibold {% if forloop.last %}ms-2 btn btn-primary mb-4 d-inline{% endif %} {% if forloop.first and page.url == '/' %} active{% endif %}{% unless forloop.first %}{% unless forloop.last %}{% if page.url contains i.url %} active{% endif %}{% endunless %}{% endunless %}"
+                    class="
+                        nav-link
+                        px-3
+                        fs-5
+                        fw-semibold
+                        {%
+                        if
+                        forloop.last
+                        %}d-lg-none
+                        ms-2
+                        btn btn-primary
+                        mb-4
+                        d-inline{%
+                        endif
+                        %}
+                        {%
+                        if
+                        forloop.first
+                        and
+                        page.url
+                        ==
+                        '/'
+                        %}
+                        active{%
+                        endif
+                        %}{%
+                        unless
+                        forloop.first
+                        %}{%
+                        unless
+                        forloop.last
+                        %}{%
+                        if
+                        page.url
+                        contains
+                        i.url
+                        %}
+                        active{%
+                        endif
+                        %}{%
+                        endunless
+                        %}{%
+                        endunless
+                        %}
+                    "
                     href="/{{i.url}}{% unless forloop.first %}/{% endunless %}"
                 >
                     {{i.name|upcase}}
@@ -35,5 +88,10 @@
             </li>
             {% endfor %}
         </ul>
+    </div>
+    <div class="d-none d-lg-flex bg-primary px-5 align-items-center">
+        <a class="nav-link px-3 fs-5 fw-semibold text-white" href="/connect/">
+            CONNECT
+        </a>
     </div>
 </nav>
