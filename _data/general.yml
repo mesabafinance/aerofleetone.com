@@ -14,26 +14,26 @@ items:
     home:
         top:
             headline: Aero Fleet One
-            subline: Innove through integration. <br>Harness the expertise of experienced operators.
+            subline: Innove through integration.
             button:
                 url: /connect/
                 text: Contact Us
         boilerplate:
-            text: We believe that drones are the future of aerial services, and we want to help bring this to fruition.
+            text: We believe that unmanned aircraft are the future of the agricultural aviation industry.
             src: UAV-fixed-wing-agriculture.png
         galleries:
             items:
                 - src: /assets/img/drone-data-collection.png
-                  text: We believe that drones are the future of aerial services, and we want to help bring this to fruition.
+                  text: The implementation of new technologies will improve operations, if done the right way.
                 - src: /assets/img/uas-agtech-agriculture.png
-                  text: We believe that drones are the future of aerial services, and we want to help bring this to fruition.
+                  text: Harnessing the expertise of experienced operators is critical to a smooth transition.
                 - src: /assets/img/smart-farming-technology-agriculture.jpg
-                  text: We believe that drones are the future of aerial services, and we want to help bring this to fruition.
+                  text: We want to sustain the aerial application sector through this inevitable technological transformation.
             text:
             about:
                 heading: About Us
                 img: /assets/img/drone-agriculture.jpg
-                text: Innove through integration. Harness the expertise of experienced operators.
+                text: We exist to maximize potential and minimize risk for all involved in agricultural avation.
                 button:
                     text: Learn more
                     url: /about/
@@ -49,17 +49,21 @@ items:
 
     about:
         heading: About Us
-        subheading: Innovate through...
+        subheading: We exist to maximize potential and minimize risk for all involved in agricultural avation.
         boxes:
-            - heading: Crop Dusting
-              text: Innovate through integration
-            - heading: Crop Dusting
-              text: Innovate through integration
-            - heading: Crop Dusting
-              text: Innovate through integration
-        history:
-            heading: Our History
-            text: Aero...
+            - heading: Agriculture
+              text:
+            - heading: Aviation
+              text:
+            - heading: Technology
+              text:
+        mission:
+            heading: Our Mission
+            text: >-
+                Our team has begun the process of acquiring and partnering with aerial application businesses. We are laying the groundwork from the inside before trying to bring outside technology to long-standing clients.
+                <br>We are not developing any UAS of our own, but remain agnostic to seek the optimal technology and supporting systems. We will be coming together with applicators across the country to share best practices and standardize communications for increased safety and efficiency. When the unmanned technology is finally ready to match the capabilities of manned aircraft systems, we will be poised and ready to incorporate them into our fleet-family in the most responsible, appropriate, expert way. 
+                <br>We also look for ways to support the development of drone technology and infrastructure to help bring about a more autonomous world through conscientious collaboration. We exist to maximize potential and minimize risk for all involved.
+
         gallery:
             src: /assets/img/fixed-wing-drone.jpg
             alt: "Fixed Wing Drone"
@@ -77,9 +81,7 @@ items:
                   linkedin: https://www.linkedin.com/in/allandosan/
                   latlong: [44.98306165100913, -93.26148006478746]
                   text: >
-                      Allan brings his strong background in business analysis and sales to Aero 
-                      Fleet One. He acts as a spokesperson and negotiator as we form partnerships 
-                      and deals.
+                      Allan brings his strong background in business analysis and sales to Aero Fleet One. He acts as a spokesperson and negotiator as we form partnerships and deals. He is our resident futurist, exploring new market possibilities.
                 - name: Destiny West
                   active: True
                   title: Team Lead
@@ -88,8 +90,7 @@ items:
                   linkedin: https://www.linkedin.com/in/destiny-west-b9b7571b3/
                   latlong: [39.771370, -104.981852]
                   text: >
-                      Destiny is our main public voice and administrative organizer. As she is training 
-                      for her pilot’s license, she is also our in-house aviation enthusiast.
+                      Destiny runs this project from front to back. She is our main public voice and administrative organizer. As she is training for her private pilot’s license, she is also our in-house aviation enthusiast.
                 - name: Maria Dyatchyna
                   active: True
                   title: Analyst and European Representative
@@ -98,9 +99,7 @@ items:
                   linkedin: https://www.linkedin.com/in/maria-dyatchyna-8ab61137/
                   latlong: [50.436699619840184, 30.51481603417014]
                   text: >
-                      Maria utilizes her significant experience in business development 
-                      and deal-making to keep Aero Fleet One ahead of the game. She is the 
-                      person to contact for any of our affairs in Europe.
+                      Maria utilizes her significant experience in business development and deal-making to keep Aero Fleet One ahead of the game. She is the person to contact for any of our international affairs. She also provides the bulk of our team’s cat photos.
                 - name: Mark Erjavec
                   active: True
                   title: Finance
@@ -109,8 +108,7 @@ items:
                   linkedin: https://www.linkedin.com/in/markerjavec/
                   latlong: [39.74883535119338, -105.01637690875211]
                   text: >
-                      Mark has provided the seed and continues to help this vision grow. 
-                      While managing our funding and resources, he keeps us all on track.
+                      Mark has provided the seed and continues to help this vision grow. While managing our funding and resources, he keeps us all on track
                 - name: Matheus Picinin
                   active: True
                   title: Marketing & Social Media
@@ -119,9 +117,7 @@ items:
                   linkedin: https://www.linkedin.com/in/matheus-raslan-a270941b4/
                   latlong: [53.349804, -6.260310]
                   text: >-
-                      Matheus is a Brazilian Digital Marketer based in Ireland. Matheus’ main role is 
-                      to build a social media presence for Aero Fleet One. In addition he creates visual 
-                      concepts (pictures and videos) to communicate ideas and concepts.
+                      Matheus is a Brazilian Digital Marketer based in Ireland. Matheus’ main role is to shape our brand and online presence. He is a wizard at creating video content too.
                 - name: Ana Garcia
                   active: True
                   title: Business Development Representative Latin America
@@ -130,7 +126,7 @@ items:
                   linkedin: https://www.linkedin.com/in/ana-garcia4/
                   latlong: [-21.158780, -47.820990]
                   text: >-
-                      Ana is an experienced business manager in the fields of agriculture and aviation. She helps develop and implement our business strategy and new technologies in Central and South America.
+                      Ana is an experienced business manager in the fields of agriculture and aviation. She helps develop and implement our business strategy and new technologies in Central and South America. She also flies airplanes and drones, so she acts as our feet on the ground and our
                 - name: Matthew Lessard
                   active: true
                   title: Strategic Advisor
@@ -139,7 +135,6 @@ items:
                   latlong: [44.1835832, -94.047492]
                   text: >-
                       Based in Minnesota, Matthew is an executive leader and entrepreneur with over 20 years of business management, financial oversight and analysis, business development, private equity, and international business experience in various countries including the US, Brazil, Mexico, and Europe.
-
                 - name: Yuriy Sherayzen
                   active: False
                   title: Strategist
@@ -158,8 +153,7 @@ items:
                   linkedin: https://www.linkedin.com/in/dionas-silva-1451a8153/
                   latlong: [-21.176630, -47.820839]
                   text: >-
-                      As an expert agronomist and an experienced UAS pilot, Dionas is our 
-                      pioneer in Brazil as we expand to service North, Central and South America.
+                      As an expert agronomist and an experienced UAS pilot, Dionas is our pioneer in Brazil. He manages partnership relations in the Brazilian drone space and implements our operational projects in ag. He is also pretty good at steering a boat on the river.
             map:
                 offices:
                     - location: tioga
@@ -180,7 +174,7 @@ items:
                       latlong: [50.450100, 30.523399]
     blog:
         heading: Our Blog
-        subheading: Text
+        subheading: Our articles provide information and insights on the latest technologies in agriculture.
 
     media:
         heading: Media

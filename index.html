@@ -1,6 +1,7 @@
 ---
 layout: base
-title:
+title: Aero Fleet One | Agricultural Aviation | Drone Application
+description: A company dedicated to the responsible integration of new technology in the agricultural aviation industry.
 parallax: True
 ---
 
@@ -12,6 +13,7 @@ site.data.general.items %}
     class="parallax-window d-flex align-items-center justify-content-center"
     data-image-src="/assets/img/drone-crop-spraying.jpg"
     data-parallax="scroll"
+    data-position="top"
     style="height: 60vh"
 >
     <div class="p-3">
@@ -44,7 +46,18 @@ site.data.general.items %}
             <img src="{{i.src}}" alt="{{i.text}}" class="img-fluid" />
         </div>
         <div
-            class="col-md-6 align-self-center {% if test == 0 %}order-sm-first{% endif %}"
+            class="
+                col-md-6
+                align-self-center
+                {%
+                if
+                test
+                ==
+                0
+                %}order-sm-first{%
+                endif
+                %}
+            "
         >
             <p class="fs-2 fw-semibold py-5 px-2 px-sm-5">{{i.text}}</p>
         </div>
@@ -100,7 +113,13 @@ site.data.general.items %}
                             "
                         >
                             <h3
-                                class="fs-2 text-center text-white fw-semibold text-center mt-auto"
+                                class="
+                                    fs-2
+                                    text-center text-white
+                                    fw-semibold
+                                    text-center
+                                    mt-auto
+                                "
                             >
                                 {{i.title}}
                             </h3>
