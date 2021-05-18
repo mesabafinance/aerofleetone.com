@@ -35,22 +35,13 @@
         <ul class="navbar-nav ms-auto me-2 fs-5">
             {% for i in site.data.general.items.navigation %}
             <li class="nav-item ml-lg-2">
+                {% unless forloop.last %}
                 <a
                     class="
                         nav-link
                         px-3
                         fs-5
                         fw-semibold
-                        {%
-                        if
-                        forloop.last
-                        %}d-lg-none
-                        ms-2
-                        btn btn-primary
-                        mb-4
-                        d-inline{%
-                        endif
-                        %}
                         {%
                         if
                         forloop.first
@@ -85,6 +76,7 @@
                 >
                     {{i.name|upcase}}
                 </a>
+                {% endunless %}
             </li>
             {% endfor %}
         </ul>
