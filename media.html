@@ -4,6 +4,7 @@ permalink: /media/index.html
 title: Media | Aero Fleet One
 description: Find the latest posts across Aero Fleet One’s social media channels about agricultural aviation, drone technology, ag-tech & more.
 parallax: True
+curator:  True
 ---
 
 {% assign data = site.data.general.items %}
@@ -44,20 +45,7 @@ parallax: True
 
 <div class="container py-5 my-5">
     <h2>{{data.media.social.heading}}
-    <div class="row py-5">
-        <div class="col-md-4 col-sm-6">
-            <a
-                class="twitter-timeline"
-                data-theme="light"
-                href="https://twitter.com/AgroFundOne?ref_src=twsrc%5Etfw"
-            >
-                Tweets by AgroFundOne
-            </a>
-            <script
-                async
-                src="https://platform.twitter.com/widgets.js"
-                charset="utf-8"
-            ></script>
-        </div>
+    <div id="curator-feed">
+        <a href="https://curator.io" target="_blank" class="crt-logo">Powered by Curator.io</a>
     </div>
 </div>

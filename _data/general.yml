@@ -25,14 +25,14 @@ items:
             items:
                 - src: /assets/img/drone-data-collection.png
                   text: The implementation of new technologies will improve operations, if done the right way.
-                - src: /assets/img/uas-agtech-agriculture.png
+                - src: /assets/img/agricultural-aircraft-aerial-application.jpg
                   text: Harnessing the expertise of experienced operators is critical to a smooth transition.
                 - src: /assets/img/smart-farming-technology-agriculture.jpg
                   text: We want to sustain the aerial application sector through this inevitable technological transformation.
             text:
             about:
                 heading: About Us
-                img: /assets/img/drone-agriculture.jpg
+                img: /assets/img/precision-agriculture-drone-in-farm-field.jpg
                 text: We exist to maximize potential and minimize risk for all involved in agricultural avation.
                 button:
                     text: Learn more
@@ -52,10 +52,13 @@ items:
         subheading: We exist to maximize potential and minimize risk for all involved in agricultural avation.
         boxes:
             - heading: Agriculture
+              icon: /assets/img/about/precision-agriculture.png
               text:
             - heading: Aviation
+              icon: /assets/img/about/drone-fixed-wing.png
               text:
             - heading: Technology
+              icon: /assets/img/about/agricultural-technology.png
               text:
         mission:
             heading: Our Mission
