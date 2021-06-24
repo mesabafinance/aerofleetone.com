@@ -93,16 +93,14 @@ site.data.general.items %}
     style="background-image: url('{{data.home.blog.img}}');background-size: cover;background-position: bottom"
 >
     <div class="container" style="min-height: 60vh">
-        <h2 class="fs-1 pt-5 my-5 text-center text-white">
-            {{data.home.blog.heading}}
-        </h2>
+        <h2 class="fs-1 pt-5 my-5 text-white">{{data.home.blog.heading}}</h2>
         <div class="row mt-5">
             {% for i in site.posts limit:3 %}
             <div class="col-md-4 mb-4">
                 <a href="{{i.url}}">
                     <div
-                        class="position-relative"
-                        style="min-height: 300px;background-image: url('{% if i.img %}{{i.img}}{% else %}{{data.home.blog.img}}'){% endif %};background-size:cover"
+                        class="position-relative py-3"
+                        style="min-height: 350px"
                     >
                         <div
                             class="
@@ -112,7 +110,6 @@ site.data.general.items %}
                                 position-absolute
                                 text-white
                                 w-100
-                                h-100
                             "
                             style="
                                 background-color: rgba(128, 128, 128, 0.65);
@@ -120,15 +117,17 @@ site.data.general.items %}
                                 left: 0;
                             "
                         >
-                            <h3
-                                class="
-                                    fs-2
-                                    text-center
-                                    fw-semibold
-                                    text-center
-                                    mt-auto
+                            <img
+                                class="img-fluid"
+                                alt="{{i.title}}"
+                                src="{% if i.img %}{{i.img}}{% else %}/assets/img/agricultural-aircraft-crop-seeding.jpg{% endif %}"
+                                style="
+                                    height: 100%;
+                                    width: 100%;
+                                    object-fit: cover;
                                 "
-                            >
+                            />
+                            <h3 class="mt-3 fs-2 text-left fw-semibold">
                                 {{i.title}}
                             </h3>
                             <p class="text-white">

@@ -2,6 +2,7 @@
 title: How many landings in a day?
 tags:
 published: true
+img: /assets/img/blog.jpg
 ---
 
 As light emerges from the horizon and the morning dew creates a sparkle upon each blade of grass, a new day workday has begun for agriculture pilots all across the world. The serene morning air is disrupted by the sounds of gusting winds coming from the propellers on an ag plane.

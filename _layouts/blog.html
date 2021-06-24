@@ -3,11 +3,16 @@ layout: base
 ---
 
 <div class="bg-light" style="margin-top: 8rem">
-    <div class="container py-5 my-5">
+    <div class="container py-5">
         <div class="col-md-8">
-            <h1 class="py-5 my-5 text-dark">{{page.title}}</h1>
+            <h1 class="my-5 text-dark">{{page.title}}</h1>
             {% if page.img %}
-            <img src="{{page.img}}" alt="{{post.title}}" class="img-fluid" />
+            <img
+                src="{{page.img}}"
+                alt="{{post.title}}"
+                class="img-fluid"
+                style="max-height: 400px"
+            />
             <p>{{page.subtitle}}</p>
             {% endif %}
         </div>
