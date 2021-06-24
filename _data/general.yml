@@ -14,31 +14,32 @@ items:
     home:
         top:
             headline: Aero Fleet One
-            subline: Innove through integration.
+            subline: Strength in Numbers
             button:
                 url: /connect/
                 text: Contact Us
         boilerplate:
-            text: We believe that unmanned aircraft are the future of the agricultural aviation industry.
+            text: Bringing together ag flying operations throughout the Americas.
             src: UAV-fixed-wing-agriculture.png
         galleries:
             items:
-                - src: /assets/img/drone-data-collection.png
-                  text: The implementation of new technologies will improve operations, if done the right way.
-                - src: /assets/img/agricultural-aircraft-aerial-application.jpg
-                  text: Harnessing the expertise of experienced operators is critical to a smooth transition.
+                - src: /assets/img/aerial-application-spraying-pesticides.jpg
+                  text: "Common Assets: Relieving capital expenditures and overhead pressures."
                 - src: /assets/img/smart-farming-technology-agriculture.jpg
-                  text: We want to sustain the aerial application sector through this inevitable technological transformation.
+                  text: "Common Goals: Utilizing synergies to make life easier at individual locations."
+                - src: /assets/img/crop-duster-agricultural-aviation.jpg
+                  text: "Common Expertise: Integrating strategic technologies and best practices to increase efficiency."
+
             text:
             about:
                 heading: About Us
-                img: /assets/img/precision-agriculture-drone-in-farm-field.jpg
-                text: We exist to maximize potential and minimize risk for all involved in agricultural avation.
+                img: /assets/img/agricultural-aircraft-crop-seeding.jpg
+                text: We exist to maximize potential and minimize risk for all involved in agricultural aviation.
                 button:
                     text: Learn more
                     url: /about/
         blog:
-            heading: Latest Articles
+            heading: Latest Blog Articles
             img: /assets/img/agricultural-aircraft-crop-dusting.jpg
         message:
             heading: Send us a<br> message
@@ -49,7 +50,7 @@ items:
 
     about:
         heading: About Us
-        subheading: We exist to maximize potential and minimize risk for all involved in agricultural avation.
+        subheading: Strengthening and revolutionizing the aerial application industry from the inside out.
         boxes:
             - heading: Agriculture
               icon: /assets/img/about/precision-agriculture.png
@@ -62,10 +63,10 @@ items:
               text:
         mission:
             heading: Our Mission
-            text: >-
-                Our team has begun the process of acquiring and partnering with aerial application businesses. We are laying the groundwork from the inside before trying to bring outside technology to long-standing clients.
-                <br>We are not developing any UAS of our own, but remain agnostic to seek the optimal technology and supporting systems. We will be coming together with applicators across the country to share best practices and standardize communications for increased safety and efficiency. When the unmanned technology is finally ready to match the capabilities of manned aircraft systems, we will be poised and ready to incorporate them into our fleet-family in the most responsible, appropriate, expert way. 
-                <br>We also look for ways to support the development of drone technology and infrastructure to help bring about a more autonomous world through conscientious collaboration. We exist to maximize potential and minimize risk for all involved.
+            text:
+                - After 100 years of helping to feed and clothe the world, we believe that great things are yet to come for the ag aviation industry. As the demand for this work increases, so will the necessity of improved safety and efficiency. This will require more capital investment for training, equipment, maintenance, infrastructure, and insurance.
+                - As the industry sees pilot shortages, regulatory constraints, and inevitable technological upgrades, we know that this will be a hard transition for many operators to face. Many aging operators do not have an exit strategy and many young pilots do not have the financial means to begin. We want to see the industry through this season by providing financial stability, creating sustainable infrastructure, and integrating strategic technologies.
+                - Our team has begun the process of acquiring and partnering with aerial application businesses. We will be coming together with applicators across the country to share best practices and standardize communications for increased safety and efficiency. We will also continue to implement the best technologies available across our operations. We are here to help the agricultural aviation industry survive - and thrive - through the next waves of global demand and technological advancement.
 
         gallery:
             src: /assets/img/fixed-wing-drone.jpg

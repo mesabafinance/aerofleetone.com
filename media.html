@@ -15,12 +15,13 @@ curator: True
     data-parallax="scroll"
     style="height: 60vh"
 >
-    <div>
+    <div class="p-3">
         <h1>{{data.media.heading}}</h1>
         <h3 class="text-white">{{data.media.subheading}}</h3>
     </div>
 </div>
 
+{% comment %}
 <div class="container py-5 my-5">
     <h2>{{data.media.news.heading}}</h2>
 
@@ -44,6 +45,7 @@ curator: True
         {% endfor %}
     </div>
 </div>
+{% endcomment %}
 
 <div class="container py-5 my-5">
     <h2>{{data.media.social.heading}}</h2>

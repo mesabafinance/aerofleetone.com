@@ -32,8 +32,6 @@ defaults:
 exclude: [README.md]
 
 social_media:
-    - name: Twitter
-      url: https://twitter.com/AeroFleetOne
     - name: Linkedin
       url: https://www.linkedin.com/company/69963910/
     - name: Instagram

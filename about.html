@@ -2,7 +2,7 @@
 layout: base
 permalink: /about/index.html
 title: About us | Aero Fleet One | Aerial Application
-description: We are an Aerial Services Company that champions technological advances in the agricultural aviation industry.
+description: We are an Aerial Services Company that champions technological advances and practical improvements in the agricultural aviation industry.
 parallax: true
 ---
 
@@ -23,7 +23,7 @@ parallax: true
     data-position=""
     style="height: 60vh;"
 >
-    <div>
+    <div class="p-3">
         <h1>{{data.about.heading}}</h1>
         <h3 class="text-white">{{data.about.subheading}}</h3>
     </div>
@@ -47,7 +47,9 @@ parallax: true
 
 <div class="container py-5 my-5">
     <h2>{{data.about.mission.heading}}</h2>
-    <p>{{data.about.mission.text}}</p>
+    {% for i in data.about.mission.text %}
+    <p>{{i}}</p>
+    {% endfor %}
 </div>
 
 <div class="container py-5 my-5">
@@ -56,14 +58,14 @@ parallax: true
 <div class="container py-5 my-5"></div>
 
 
-<div class="py-5 my-5" style="border-radius: 100% 0% 100% 0% / 0% 77% 23% 100%;background-image: url('/assets/img/agricultural-aircraft-crop-dusting.jpg');min-height: 80vh;background-position: bottom;background-size:cover">
+{% comment %} <div class="py-5 my-5" style="border-radius: 100% 0% 100% 0% / 0% 77% 23% 100%;background-image: url('/assets/img/agricultural-aircraft-crop-dusting.jpg');min-height: 80vh;background-position: bottom;background-size:cover">
     <div class="container position-relative d-flex justify-content-center">
         <div class="position-absolute p-5 bg-white border border-2 border-primary rounded-1" style="top: -100px; width: 80%">
             <h2>{{data.about.purpose.heading}}</h2>
             <p>{{data.about.purpose.text}}</p>
         </div>
     </div>
-</div>
+</div> {% endcomment %}
 
 <div class="container py-5 my-5">
     <div id="profile-map" class="w-100"></div>
