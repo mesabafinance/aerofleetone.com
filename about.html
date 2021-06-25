@@ -1,85 +1,199 @@
 ---
 layout: base
 permalink: /about/index.html
-title: About
-description: We believe that drones are the future of aerial services, and we want to help bring this to fruition.
+title: About us | Aero Fleet One | Aerial Application
+description: We are an Aerial Services Company that champions technological advances and practical improvements in the agricultural aviation industry.
+parallax: true
 ---
+
+
+<script src="https://api.mapbox.com/mapbox-gl-js/v2.0.0/mapbox-gl.js"></script>
+<link
+    href="https://api.mapbox.com/mapbox-gl-js/v2.0.0/mapbox-gl.css"
+    rel="stylesheet"
+/>
+
 
 {% assign data = site.data.general.items %}
 
-<div class="container py-5">
-    {% comment %}
-    <section>
+<div
+    class="parallax-window d-flex align-items-center justify-content-center"
+    data-image-src="/assets/img/about/ag-aircraft-spraying-farm-field.jpg"
+    data-parallax="scroll"
+    data-position=""
+    style="height: 60vh;"
+>
+    <div class="p-3">
         <h1>{{data.about.heading}}</h1>
-        <p>{{data.about.text}}</p>
-    </section>
-    {% endcomment %}
-    <section class="pb-5 my-5">
-        <h2>{{data.about.story.heading}}</h2>
-        <div class="row my-2">
-            <div
-                class="col-md-6 order-1 d-flex flex-column justify-content-center"
-            >
-                <p>{{data.about.story.text[0]}}</p>
-            </div>
-            <div class="col-md-6 order-2 gx-0 gx-md-4 align-self-center">
-                <img
-                    src="/assets/img/erjavec-pederii.jpg"
-                    class="img-fluid w-100 p-md-5"
-                    style="object-fit: cover"
-                    alt="{{data.about.story.heading}}"
-                />
+        <h3 class="text-white">{{data.about.subheading}}</h3>
+    </div>
+</div>
+
+<div class="container py-5 my-5">
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+        {% for i in data.about.boxes %}
+        <div class="col">
+            <div class="card rounded-1 border border-primary h-100">
+                <div class="card-body d-flex justify-content-between align-items-center flex-column">
+                <img src="{{i.icon}}" class="img-fluid" alt="{{i.heading}}" style="max-width: 150px;"/>
+                    <h5 class="card-title fw-semibold">{{i.heading}}</h5>
+                    <p class="card-text mt-3">{{i.text}}</p>
+                </div>
             </div>
         </div>
-        <div class="row my-2">
-            <div
-                class="col-md-6 order-1 d-flex flex-column justify-content-center"
-            >
-                <p>{{data.about.story.text[1]}}</p>
-            </div>
-            <div
-                class="col-md-6 order-2 order-md-0 gx-0 gx-md-4 align-self-center"
-            >
-                <img
-                    src="/assets/img/gallery/2020-3.jpg"
-                    class="img-fluid w-100 p-md-5"
-                    style="object-fit: cover"
-                    alt="{{data.about.story.heading}}"
-                />
-            </div>
+        {% endfor %}
+    </div>
+</div>
+
+<div class="container py-5 my-5">
+    <h2>{{data.about.mission.heading}}</h2>
+    {% for i in data.about.mission.text %}
+    <p>{{i}}</p>
+    {% endfor %}
+</div>
+
+<div class="container py-5 my-5">
+        <img src="{{data.about.gallery.src}}" alt="{{data.about.gallery.alt}}" class="img-fluid"/></div>
+</div>
+<div class="container py-5 my-5"></div>
+
+
+{% comment %} <div class="py-5 my-5" style="border-radius: 100% 0% 100% 0% / 0% 77% 23% 100%;background-image: url('/assets/img/agricultural-aircraft-crop-dusting.jpg');min-height: 80vh;background-position: bottom;background-size:cover">
+    <div class="container position-relative d-flex justify-content-center">
+        <div class="position-absolute p-5 bg-white border border-2 border-primary rounded-1" style="top: -100px; width: 80%">
+            <h2>{{data.about.purpose.heading}}</h2>
+            <p>{{data.about.purpose.text}}</p>
         </div>
-    </section>
-    <section cass="py-5 my-5">
-        <h2>{{data.about.purpose.heading}}</h2>
-        <div class="row my-2">
-            <div
-                class="col-md-6 order-1 d-flex flex-column justify-content-center"
-            >
-                <p>{{data.about.purpose.text[0]}}</p>
+    </div>
+</div> {% endcomment %}
+
+<div class="container py-5 my-5">
+    <div id="profile-map" class="w-100"></div>
+    <script>
+        var team = {
+            'type': 'TeamCollection',
+            'people': [
+            {% for i in data.about.team.items %}
+            {% if i.active %}
+            {
+                'type': 'TeamMember',
+                'properties': {
+                    'name': '{{i.name}}',
+                    'iconSize': [60, 60],
+                    'iconUrl': '{{i.img}}',
+                    'title': '{{i.title}}'
+                },
+                'geometry': {
+                    'type': 'Point',
+                    'coordinates': [{{i.latlong[1]}},{{i.latlong[0]}}]
+                }
+            }{% unless forloop.last %},{% endunless %}
+            {% endif %}
+            {% endfor %}
+            ]
+        }
+
+        var offices = {
+            'type': 'OfficeLocation',
+            'locations': [
+            {% for i in data.about.team.map.offices %}
+            {
+                'type': 'OfficeLocation',
+                'properties': {
+                    'id': '{{i.location}}',
+                    'name': '{{i.name}}',
+                    'iconSize': [60, 60],
+                    'iconUrl': '/assets/img/marker.png',
+                    'title': '{{i.title}}'
+                },
+                'geometry': {
+                    'type': 'Point',
+                    'coordinates': [{{i.latlong[1]}},{{i.latlong[0]}}]
+                }
+            }{% unless forloop.last %},{% endunless %}
+            {% endfor %}
+            ]
+        }
+        mapboxgl.accessToken = 'pk.eyJ1Ijoic21ubWYiLCJhIjoiY2trbjN2d2N5MWs3djJ2bXF2dm9jeDg4aCJ9.8QrQsswYRpYrbw2PAbCXmA';
+        var mq = window.matchMedia("(min-width: 576px)");
+        var zoomlvl = (mq.matches ? 1 : 0)
+        var center = (mq.matches ?  [-50,25] : [-20,25])
+        var map = new mapboxgl.Map({
+            container: 'profile-map',
+            style: 'mapbox://styles/smnmf/ckknbgr8n51xx17qx1waebm9i',
+            center: center,
+            zoom: zoomlvl
+        });
+        team.people.forEach(function (marker) {
+            var el = document.createElement('div');
+            el.className = 'marker';
+            el.style.backgroundImage = 'url(https://aerofleetone.com' + marker.properties.iconUrl + ')';
+
+            new mapboxgl.Marker(el)
+                .setLngLat(marker.geometry.coordinates)
+                .setPopup(new mapboxgl.Popup({ offset: 25 }) // add popups
+                    .setHTML('<div class="text-start mt-3"><h5 class="mb-0">' + marker.properties.name + '</h5><p class="fs-6">' + marker.properties.title + '</p></div>'))
+                .addTo(map);
+        });
+        offices.locations.forEach(function (marker) {
+            var el = document.createElement('div');
+            el.className = 'marker';
+            el.style.backgroundImage = 'url(https://aerofleetone.com' + marker.properties.iconUrl + ')';
+
+            var location = new mapboxgl.Marker(el)
+                .setLngLat(marker.geometry.coordinates)
+                .setPopup(new mapboxgl.Popup({ offset: 25 }) // add popups
+                    .setHTML('<div class="text-start mt-3"><h5 class="mb-0 fs-5">' + marker.properties.title + '</h5><p class="fs-6">' + marker.properties.name + '</p>' +'</div>'))
+                .addTo(map);
+        });
+    </script>
+</div>
+
+
+<div class="container py-5 my-5">
+    <h2>{{data.about.team.heading}}</h2>
+
+    <div
+            class="row row-cols-1 row-cols-md-3 g-4 justify-content-center py-5"
+        >
+            {% for i in data.about.team.items %}
+            {% if i.active %}
+            <div class="col">
+                <div class="card h-100">
+                    <img
+                        src="{{i.img}}"
+                        class="card-img-top"
+                        alt="{{i.name}}"
+                    />
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title mb-1 fw-bold">
+                            {{i.name}}
+                            {% if i.linkedin %}
+                            <span>
+                                <a href="{{i.linkedin}}" target="_blank">
+                                    <i class="ms-1 bi-linkedin fs-4"></i>
+                                </a>
+                            </span>
+                            {% endif %}
+                        </h5>
+                        <p class="fw-bold">{{i.title}}</p>
+                        <p>{{i.text}}</p>
+                        {% if i.mail %}
+                        <p class="card-text mt-auto">
+                            <a
+                                href="mailto:{{i.mail}}"
+                                class="text-decoration-none"
+                            >
+                                {{i.mail}}
+                            </a>
+                        </p>
+                        {% endif %}
+                    </div>
+                </div>
             </div>
-            <div class="col-md-6 order-2 gx-0 gx-md-4">
-                <img
-                    src="/assets/img/gallery/yellow-plane.jpg"
-                    class="img-fluid w-100 p-md-5"
-                    style="object-fit: cover"
-                    alt="{{data.about.purpose.heading}}"
-                />
-            </div>
+            {% endif %}
+            {% endfor %}
         </div>
-        <div class="row my-2">
-            <div
-                class="col-md-6 order-1 d-flex flex-column justify-content-center"
-            >
-                <p>{{data.about.purpose.text[1]}}</p>
-            </div>
-            <div class="col-md-6 order-2 order-md-0 gx-0 gx-md-4">
-                <img
-                    src="/assets/img/gallery/road.jpg"
-                    class="img-fluid w-100 p-md-5"
-                    style="object-fit: cover"
-                    alt="{{data.about.purpose.heading}}"
-                />
-            </div>
-        </div>
-    </section>
+
+
 </div>

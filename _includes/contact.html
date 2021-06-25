@@ -1,0 +1,77 @@
+<form
+    class="mb-4"
+    action="/connect/success/"
+    name="contact"
+    method="POST"
+    netlify
+>
+    <p class="fw-semibold mb-1">
+        I am a...
+        <sup>*</sup>
+    </p>
+    <select
+        name="contact_category"
+        class="form-select border-2 border-primary rounded-1"
+        aria-label="Default select example"
+    >
+        <option selected disabled>Choose one</option>
+        {% for i in data.connect.message.contact_form.roles %}
+        <option value="{{i| handleize}}">{{i}}</option>
+        {% endfor %}
+    </select>
+
+    <label for="inputEmail" class="form-label mt-3 mb-0 fw-semibold">
+        Email
+        <sup>*</sup>
+    </label>
+    <input
+        name="email"
+        type="email"
+        class="form-control border-2 border-primary rounded-1"
+        id="inputEmail"
+        required
+    />
+
+    <label for="inputEmail" class="form-label mt-3 mb-0 fw-semibold">
+        First Name
+        <sup>*</sup>
+    </label>
+    <input
+        name="first_name"
+        type="text"
+        class="form-control border-2 border-primary rounded-1"
+        id="inputFName"
+        required
+    />
+
+    <label for="inputEmail" class="form-label mt-3 mb-0 fw-semibold">
+        Last Name
+        <sup>*</sup>
+    </label>
+    <input
+        name="last_name"
+        type="text"
+        class="form-control border-2 border-primary rounded-1"
+        id="inputLName"
+        required
+    />
+
+    <label for="inputEmail" class="form-label mt-3 mb-0 fw-semibold">
+        Message
+        <sup>*</sup>
+    </label>
+    <textarea
+        name="message"
+        class="form-control border-2 border-primary rounded-1"
+        id="inputMessage"
+        rows="4"
+        required
+    ></textarea>
+
+    <button type="submit" class="btn btn-primary mt-4 px-4">Send</button>
+    <p class="mt-4">
+        Fields marked with
+        <sup>*</sup>
+        are required.
+    </p>
+</form>

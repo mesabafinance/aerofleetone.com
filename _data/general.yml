@@ -1,232 +1,206 @@
 items:
-  headline: Aero Fleet One
-  description: >-
-    Aero Fleet One invests in and acquires agricultural aviation companies. The company seeks to improve existing businesses by harnessing the expertise of experienced operators and by implementing new technologies to improve operations.
-  navigation:
-    items:
-      - url: /
-        name: Home
-        id: home
-      - url: /about/
-        name: About
-        id: about
-      - url: /profile/
-        name: Profile
-        id: profile
-      - url: /request-for-proposal/
-        name: RFP
-        id: rfp
-      - url: /connect/
-        name: Connect
-        id: connect
-  home:
-    video:
-      tagline: Premier Aerial Services. 
-      subtagline: >-
-        Innovate through integration.<br/>
-        Harness the expertise of experienced operators.<br/> 
-        Implement new technologies to improve operations. 
-    team:
-      heading: Our Team
-      button:
-        text: Meet our team
-        url: /profile/
-    rfp:
-      heading: Got a UAS Plan?
-      text: Submit responses to our Request for Proposals
-      button:
-        text: Go to RFP
-        url: /request-for-proposal/
+    navigation:
+        - name: home
+          url: ""
+        - name: about
+          url: about
+        - name: blog
+          url: blog
+        - name: media
+          url: media
+        - name: connect
+          url: connect
 
-  about:
-    heading: Heading
-    text: Intro paragraph
-    story:
-      heading: Our Story
-      text:
-        - "Aero Fleet One was born in 2013 when the founder, Mark Erjavec, met a UAS developer named 
-        Yuri Pederii. At the time, Yuri was developing the AeroDrone DR-20, a smaller predecessor 
-        to his current work with UAVITA. Mark saw potential in the unique fixed-wing, gas-powered 
-        drone technology as the pathway to making unmanned aircrafts that would one day be able to 
-        accomplish the same tasks as manned aircrafts. He bought a DR-20 as a way to support Yuri’s 
-        work and kept up with the development team’s progress over the years."
-        - "In this process, 
-        he created Aero Fleet One, with a vision to someday have the world’s largest fleet of 
-        autonomous drones performing aerial services at superior levels. Much time has passed 
-        since then, and Aero Fleet One is grateful to Yuri for his contributions of technology 
-        and inspiration, though the companies are no longer associated. Towards the end of 2020, 
-        it came time to start making Mark’s dream a reality. Aero Fleet One’s core team was brought 
-        together to get it into place."
-    purpose:
-      heading: Our Purpose
-      text:
-        - "We believe that drones are the future of aerial services, and we want to help bring this to 
-        fruition. With a big vision like ours, it’s important to start with a narrow focus. 
-        We have selected agricultural aviation as the industry on which to focus our efforts 
-        as we step into the world of aerial services. Our team has begun the process of 
-        acquiring and merging with aerial application businesses. We seek to understand 
-        this major industry thoroughly and do the work from the inside before trying to bring 
-        new technology to long-standing customers."
-        - "We will be coming together with applicators 
-        across the country to standardize protocols and communications for increased safety and 
-        smoother pathways to shared knowledge. When UAS technology is finally ready to match 
-        manned aircraft systems, we will be poised and ready to incorporate them into our 
-        fleet-family in the most responsible, appropriate, expert way. We also look for ways 
-        to support the development of drone technology and infrastructure to help bring 
-        about a more autonomous world through conscientious collaboration. We exist 
-        to maximize potential and minimize risk for all involved."
+    home:
+        top:
+            headline: Aero Fleet One
+            subline: Strength in Numbers
+            button:
+                url: /connect/
+                text: Contact Us
+        boilerplate:
+            text: Bringing together ag flying operations throughout the Americas.
+            src: UAV-fixed-wing-agriculture.png
+        galleries:
+            items:
+                - src: /assets/img/aerial-application-spraying-pesticides.jpg
+                  text: "Common Assets: Relieving capital expenditures and overhead pressures."
+                - src: /assets/img/smart-farming-technology-agriculture.jpg
+                  text: "Common Goals: Utilizing synergies to make life easier at individual locations."
+                - src: /assets/img/crop-duster-agricultural-aviation.jpg
+                  text: "Common Expertise: Integrating strategic technologies and best practices to increase efficiency."
+        about:
+            heading: About Us
+            img: /assets/img/agricultural-aircraft-crop-seeding.jpg
+            text: We exist to maximize potential and minimize risk for all involved in agricultural aviation.
+            button:
+                text: Learn more
+                url: /about/
+        blog:
+            heading: Latest Blog Articles
+            img: /assets/img/agricultural-aircraft-crop-dusting.jpg
+        message:
+            heading: Send us a<br> message
+            img: /assets/img/agricultural-field.jpg
+            text:
+        socials:
+            heading: Follow us on Social Media
 
-  profile:
-    heading: Heading
-    text: >
-      Aero Fleet One’s team is distributed across the globe, though our operations are focused in North, Central, and South America.
-    team:
-      heading: Our Team
-      items:
-        - name: Allan Dosan
-          active: True
-          title: Market Development
-          img: /assets/img/team/AllanDosan.jpg
-          mail: allan@aerofleetone.com
-          linkedin: https://www.linkedin.com/in/allandosan/
-          latlong: [44.98306165100913, -93.26148006478746]
-          text: >
-            Allan brings his strong background in business analysis and sales to Aero 
-            Fleet One. He acts as a spokesperson and negotiator as we form partnerships 
-            and deals.
-        - name: Destiny West
-          active: True
-          title: Team Lead
-          img: /assets/img/team/DestinyWest.jpg
-          mail: destiny@aerofleetone.com
-          linkedin: https://www.linkedin.com/in/destiny-west-b9b7571b3/
-          latlong: [39.771370, -104.981852]
-          text: >
-            Destiny is our main public voice and administrative organizer. As she is training 
-            for her pilot’s license, she is also our in-house aviation enthusiast.
-        - name: Maria Dyatchyna
-          active: True
-          title: Analyst and European Representative
-          img: /assets/img/team/MariaDyatchyna.jpg
-          mail: maria@aerofleetone.com
-          linkedin: https://www.linkedin.com/in/maria-dyatchyna-8ab61137/
-          latlong: [50.436699619840184, 30.51481603417014]
-          text: >
-            Maria utilizes her significant experience in business development 
-            and deal-making to keep Aero Fleet One ahead of the game. She is the 
-            person to contact for any of our affairs in Europe.
-        - name: Mark Erjavec
-          active: True
-          title: Finance
-          img: /assets/img/team/MarkErjavec.jpg
-          mail: mark@aerofleetone.com
-          linkedin: https://www.linkedin.com/in/markerjavec/
-          latlong: [39.74883535119338, -105.01637690875211]
-          text: >
-            Mark has provided the seed and continues to help this vision grow. 
-            While managing our funding and resources, he keeps us all on track.
-        - name: Matheus Picinin
-          active: True
-          title: Marketing & Social Media
-          img: /assets/img/team/MatheusPicinin.jpg
-          mail: matheus@aerofleetone.com
-          linkedin: https://www.linkedin.com/in/matheus-raslan-a270941b4/
-          latlong: [53.349804, -6.260310]
-          text: >-
-            Matheus is a Brazilian Digital Marketer based in Ireland. Matheus’ main role is 
-            to build a social media presence for Aero Fleet One. In addition he creates visual 
-            concepts (pictures and videos) to communicate ideas and concepts.
-        - name: Ana Garcia
-          active: True
-          title: Business Development Representative Latin America
-          img: /assets/img/team/AnaGarcia.jpg
-          mail: ana@aerofleetone.com
-          linkedin: https://www.linkedin.com/in/ana-garcia4/
-          latlong: [-21.158780, -47.820990]
-          text: >-
-            Ana is an experienced business manager in the fields of agriculture and aviation. She helps develop and implement our business strategy and new technologies in Central and South America.
-        - name: Matthew Lessard
-          active: true
-          title: Strategic Advisor
-          img: /assets/img/team/MatthewLessard.jpg
-          linkedin: https://www.linkedin.com/in/matthew-lessard-4b73ab/
-          latlong: [44.1835832, -94.047492]
-          text: >-
-              Based in Minnesota, Matthew is an executive leader and entrepreneur with over 20 years of business management, financial oversight and analysis, business development, private equity, and international business experience in various countries including the US, Brazil, Mexico, and Europe.
+    about:
+        heading: About Us
+        subheading: Strengthening and revolutionizing the aerial application industry from the inside out.
+        boxes:
+            - heading: Agriculture
+              icon: /assets/img/about/precision-agriculture.png
+              text:
+            - heading: Aviation
+              icon: /assets/img/about/drone-fixed-wing.png
+              text:
+            - heading: Technology
+              icon: /assets/img/about/agricultural-technology.png
+              text:
+        mission:
+            heading: Our Mission
+            text:
+                - After 100 years of helping to feed and clothe the world, we believe that great things are yet to come for the ag aviation industry. As the demand for this work increases, so will the necessity of improved safety and efficiency. This will require more capital investment for training, equipment, maintenance, infrastructure, and insurance.
+                - As the industry sees pilot shortages, regulatory constraints, and inevitable technological upgrades, we know that this will be a hard transition for many operators to face. Many aging operators do not have an exit strategy and many young pilots do not have the financial means to begin. We want to see the industry through this season by providing financial stability, creating sustainable infrastructure, and integrating strategic technologies.
+                - Our team has begun the process of acquiring and partnering with aerial application businesses. We will be coming together with applicators across the country to share best practices and standardize communications for increased safety and efficiency. We will also continue to implement the best technologies available across our operations. We are here to help the agricultural aviation industry survive - and thrive - through the next waves of global demand and technological advancement.
 
-        - name: Yuriy Sherayzen
-          active: False
-          title: Strategist
-          img: /assets/img/team/YuriySherayzen.png
-          mail: yuriy@aerofleetone.com
-          linkedin: https://www.linkedin.com/in/yuriy-sherayzen-6935894/
-          latlong: [44.943610, -93.368290]
-          text: >-
-            Yuriy is an experienced business analyst who helps guide our team as we move 
-            forward with mergers and acquisitions.
-        - name: Dionas Silva
-          active: True
-          title: Brazilian Representative
-          img: /assets/img/team/DionasSilva.jpg
-          mail: dionas@aerofleetone.com
-          linkedin: https://www.linkedin.com/in/dionas-silva-1451a8153/
-          latlong: [-21.176630, -47.820839]
-          text: >-
-            As an expert agronomist and an experienced UAS pilot, Dionas is our 
-            pioneer in Brazil as we expand to service North, Central and South America.
-    map:
-      offices:
-        - location: tioga
-          title: North American Headquarters
-          name: Tioga, North Dakota, USA
-          latlong: [48.385480, -102.900970]
-        - location: ribeirao
-          title: South American Headquarters
-          name: Ribeirão, São Paulo State, Brazil
-          latlong: [-21.2068752671004, -47.91907593248477]
-        - location: denver
-          title: Colorado Office Location
-          name: Denver, Colorado, USA
-          latlong: [39.75929079347683, -105.00842779822192]
-        - location: kiev
-          title: European Office Location
-          name: Kiev, Ukraine
-          latlong: [50.450100, 30.523399]
-          
-      agro:
-        text: Check out our sister company, Agro Fund One who is also innovating to help create a more sustainable world
-        button:
-          text: Go to agrofundone.com
-          url: https://agrofundone.com
-  rfp:
-    heading: Request for Proposals for Agricultural UAS
-    text: >
-      Aero Fleet One is looking for UAS which are able to truly do the job that manned agricultural aircraft currently do. 
-      We will be publishing an official Request for Proposals to spur this technological advancement. If you think your 
-      team can meet the criteria, please consider submitting a proposal. We are excited to see what you can do!
-    cta:
-      text: Send your documents to proposals@aerofleetone.com or get in touch with us to find out more.
-      button:
-        text: Schedule a meeting
-        url: /connect/
-    form:
-      heading: Form Heading
-      form: Form goes here
-  connect:
-    heading: Get in touch
-    calendly:
-      heading: Schedule a meeting instantly
-    message:
-      heading: Send us a message
-      contact_form:
-        roles:
-          - Aerial Application Pilot
-          - Aerial Application Operator
-          - UAS Technology Developer
-          - UAS Pilot
-          - Journalist
-          - Investor
-          - Farmer
-          - Activist
-          - Government Official/Employee
-          - Other
+        gallery:
+            src: /assets/img/team-aero-fleet-one-agricultural-aviation.jpeg
+            alt: "Aero Fleet One Team"
+        purpose:
+            heading: Our Purpose
+            text: Our Purpose
+        team:
+            heading: Meet Our Team
+            items:
+                - name: Allan Dosan
+                  active: True
+                  title: Market Development
+                  img: /assets/img/team/AllanDosan.jpg
+                  mail: allan@aerofleetone.com
+                  linkedin: https://www.linkedin.com/in/allandosan/
+                  latlong: [44.98306165100913, -93.26148006478746]
+                  text: >
+                      Allan brings his strong background in business analysis and sales to Aero Fleet One. He acts as a spokesperson and negotiator as we form partnerships and deals. He is our resident futurist, exploring new market possibilities.
+                - name: Destiny West
+                  active: True
+                  title: Team Lead
+                  img: /assets/img/team/DestinyWest.jpg
+                  mail: destiny@aerofleetone.com
+                  linkedin: https://www.linkedin.com/in/destiny-west-b9b7571b3/
+                  latlong: [39.771370, -104.981852]
+                  text: >
+                      Destiny runs this project from front to back. She is our main public voice and administrative organizer. As she is training for her private pilot’s license, she is also our in-house aviation enthusiast.
+                - name: Maria Dyatchyna
+                  active: True
+                  title: Analyst and European Representative
+                  img: /assets/img/team/MariaDyatchyna.jpg
+                  mail: maria@aerofleetone.com
+                  linkedin: https://www.linkedin.com/in/maria-dyatchyna-8ab61137/
+                  latlong: [50.436699619840184, 30.51481603417014]
+                  text: >
+                      Maria utilizes her significant experience in business development and deal-making to keep Aero Fleet One ahead of the game. She is the person to contact for any of our international affairs. She also provides the bulk of our team’s cat photos.
+                - name: Mark Erjavec
+                  active: True
+                  title: Finance
+                  img: /assets/img/team/MarkErjavec.jpg
+                  mail: mark@aerofleetone.com
+                  linkedin: https://www.linkedin.com/in/markerjavec/
+                  latlong: [39.74883535119338, -105.01637690875211]
+                  text: >
+                      Mark has provided the seed and continues to help this vision grow. While managing our funding and resources, he keeps us all on track
+                - name: Matheus Picinin
+                  active: True
+                  title: Marketing & Social Media
+                  img: /assets/img/team/MatheusPicinin.jpg
+                  mail: matheus@aerofleetone.com
+                  linkedin: https://www.linkedin.com/in/matheus-raslan-a270941b4/
+                  latlong: [53.349804, -6.260310]
+                  text: >-
+                      Matheus is a Brazilian Digital Marketer based in Ireland. Matheus’ main role is to shape our brand and online presence. He is a wizard at creating video content too.
+                - name: Ana Garcia
+                  active: True
+                  title: Business Development Representative Latin America
+                  img: /assets/img/team/AnaGarcia.jpg
+                  mail: ana@aerofleetone.com
+                  linkedin: https://www.linkedin.com/in/ana-garcia4/
+                  latlong: [-21.158780, -47.820990]
+                  text: >-
+                      Ana is an experienced business manager in the fields of agriculture and aviation. She helps develop and implement our business strategy and new technologies in Central and South America. She also flies airplanes and drones, so she acts as our feet on the ground and our
+                - name: Matthew Lessard
+                  active: true
+                  title: Strategic Advisor
+                  img: /assets/img/team/MatthewLessard.jpg
+                  linkedin: https://www.linkedin.com/in/matthew-lessard-4b73ab/
+                  latlong: [44.1835832, -94.047492]
+                  text: >-
+                      Based in Minnesota, Matthew is an executive leader and entrepreneur with over 20 years of business management, financial oversight and analysis, business development, private equity, and international business experience in various countries including the US, Brazil, Mexico, and Europe.
+                - name: Yuriy Sherayzen
+                  active: False
+                  title: Strategist
+                  img: /assets/img/team/YuriySherayzen.png
+                  mail: yuriy@aerofleetone.com
+                  linkedin: https://www.linkedin.com/in/yuriy-sherayzen-6935894/
+                  latlong: [44.943610, -93.368290]
+                  text: >-
+                      Yuriy is an experienced business analyst who helps guide our team as we move 
+                      forward with mergers and acquisitions.
+                - name: Dionas Silva
+                  active: True
+                  title: Brazilian Representative
+                  img: /assets/img/team/DionasSilva.jpg
+                  mail: dionas@aerofleetone.com
+                  linkedin: https://www.linkedin.com/in/dionas-silva-1451a8153/
+                  latlong: [-21.176630, -47.820839]
+                  text: >-
+                      As an expert agronomist and an experienced UAS pilot, Dionas is our pioneer in Brazil. He manages partnership relations in the Brazilian drone space and implements our operational projects in ag. He is also pretty good at steering a boat on the river.
+            map:
+                offices:
+                    - location: tioga
+                      title: North American Headquarters
+                      name: Tioga, North Dakota, USA
+                      latlong: [48.385480, -102.900970]
+                    - location: ribeirao
+                      title: South American Headquarters
+                      name: Ribeirão, São Paulo State, Brazil
+                      latlong: [-21.2068752671004, -47.91907593248477]
+                    - location: denver
+                      title: Colorado Office Location
+                      name: Denver, Colorado, USA
+                      latlong: [39.75929079347683, -105.00842779822192]
+                    - location: kiev
+                      title: European Office Location
+                      name: Kiev, Ukraine
+                      latlong: [50.450100, 30.523399]
+    blog:
+        heading: Our Blog
+        subheading: Our articles provide information and insights on the latest technologies in agriculture.
+
+    media:
+        heading: Media
+        subheading: Check out our social media posts and follow us for more.
+        news:
+            heading: News
+        social:
+            heading: Social Media
+
+    connect:
+        heading: Get in touch
+        calendly:
+            heading: Schedule a meeting instantly
+        message:
+            heading: Send us a message
+            contact_form:
+                roles:
+                    - Aerial Application Pilot
+                    - Aerial Application Operator
+                    - UAS Technology Developer
+                    - UAS Pilot
+                    - Journalist
+                    - Investor
+                    - Farmer
+                    - Activist
+                    - Government Official/Employee
+                    - Other

@@ -5,24 +5,33 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://aerofleetone.com" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Build settings
-theme: minima
 plugins:
     - jekyll-feed
+    - jekyll-paginate
 
 sass:
     load_paths:
         - assets/css/_sass
-        - assets/css/_bootstrap/scss
+        - assets/css/_bootstrap
+
+permalink: /blog/:year/:slug/index.html
 
 collections:
     news:
         output: false
 
+paginate: 2
+paginate_path: "/blog/page-:num/"
+
+defaults:
+    - scope:
+          type: "posts"
+      values:
+          layout: blog
+
 exclude: [README.md]
 
 social_media:
-    - name: Twitter
-      url: https://twitter.com/AeroFleetOne
     - name: Linkedin
       url: https://www.linkedin.com/company/69963910/
     - name: Instagram

@@ -1,31 +1,65 @@
 <!-- assign variable to invalidate cache upon each new build -->
 {% assign cache_buster = site.time | date: '%s%N' %}
 
-<div class="flex-container bg-light" id="footer" style="min-height: 20vh">
-    <div class="container py-5 text-center">
+<div
+    class="flex-container border-top border-5 border-primary"
+    id="footer"
+    style="min-height: 20vh"
+>
+    <div class="container py-5 mb-5 text-center">
         <p class="mb-4">
-            {% for i in site.data.general.items.navigation.items %}
-            <a href="{{i.url}}" class="mx-3 fs-5 text-decoration-none">
-                {{i.name}}
-            </a>
-            {% unless forloop.last %}
-            <span class="text-primary fs-5">&mdash;</span>
-            {% endunless %} {% endfor %}
-        </p>
-        <p class="mb-5">
-            {% for i in site.social_media %}
+            {% for i in site.data.general.items.navigation %}
             <a
-                href="{{i.url}}"
-                target="_blank"
-                class="me-3 text-decoration-none"
-                aria-label="{{i.name}}"
-                rel="noopener"
+                class="
+                    mx-3
+                    fs-6
+                    fw-semibold
+                    text-decoration-none
+                    {%
+                    if
+                    forloop.first
+                    and
+                    page.url
+                    ==
+                    '/'
+                    %}
+                    active{%
+                    endif
+                    %}{%
+                    unless
+                    forloop.first
+                    %}{%
+                    unless
+                    forloop.last
+                    %}{%
+                    if
+                    page.url
+                    contains
+                    i.url
+                    %}
+                    active{%
+                    endif
+                    %}{%
+                    endunless
+                    %}{%
+                    endunless
+                    %}
+                "
+                href="/{{i.url}}{% unless forloop.first %}/{% endunless %}"
             >
-                <i class="bi-{{i.name|downcase}} text-primary fs-1"></i>
+                {{i.name|upcase}}
             </a>
             {% endfor %}
         </p>
         <p>
+            <img
+                class="mt-3"
+                src="/assets/img/Aero-Fleet-One-Logo.png"
+                alt="Aero Fleet One Logo"
+                width="150px"
+            />
+        </p>
+        <p class="mt-5">
             Copyright &copy;
             <span id="currentYear"></span>
             by AeroFleetOne.
@@ -34,13 +68,42 @@
     </div>
 </div>
 
+{% unless page.url contains 'connect' %}
+<div
+    class="
+        bg-primary
+        fixed-bottom
+        d-lg-none d-flex
+        justify-content-center
+        align-items-center
+        p-3
+        mt-3
+    "
+>
+    <a
+        href="/connect/"
+        class="strechted-link fs-1 text-decoration-none fw-bold text-white"
+    >
+        Connect
+    </a>
+</div>
+{% endunless %}
+
 <script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
     crossorigin="anonymous"
 ></script>
 <script
     type="text/javascript"
-    src="{{'/assets/js/myscript.js' | relative_url}}?{{cache_buster}}"
+    src="{{'/assets/js/main.js' | relative_url}}?{{cache_buster}}"
     async
 ></script>
+{% if page.parallax %}
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script
+    type="text/javascript"
+    src="{{'/assets/js/parallax.js' | relative_url}}?{{cache_buster}}"
+    async
+></script>
+{% endif %}
