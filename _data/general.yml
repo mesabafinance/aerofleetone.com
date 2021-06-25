@@ -29,13 +29,13 @@ items:
                   text: "Common Goals: Utilizing synergies to make life easier at individual locations."
                 - src: /assets/img/crop-duster-agricultural-aviation.jpg
                   text: "Common Expertise: Integrating strategic technologies and best practices to increase efficiency."
-        about:
-            heading: About Us
-            img: /assets/img/agricultural-aircraft-crop-seeding.jpg
-            text: We exist to maximize potential and minimize risk for all involved in agricultural aviation.
-            button:
-                text: Learn more
-                url: /about/
+            about:
+                heading: About Us
+                img: /assets/img/agricultural-aircraft-crop-seeding.jpg
+                text: We exist to maximize potential and minimize risk for all involved in agricultural aviation.
+                button:
+                    text: Learn more
+                    url: /about/
         blog:
             heading: Latest Blog Articles
             img: /assets/img/agricultural-aircraft-crop-dusting.jpg
