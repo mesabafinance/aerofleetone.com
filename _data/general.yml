@@ -65,7 +65,16 @@ items:
                 - After 100 years of helping to feed and clothe the world, we believe that great things are yet to come for the ag aviation industry. As the demand for this work increases, so will the necessity of improved safety and efficiency. This will require more capital investment for training, equipment, maintenance, infrastructure, and insurance.
                 - As the industry sees pilot shortages, regulatory constraints, and inevitable technological upgrades, we know that this will be a hard transition for many operators to face. Many aging operators do not have an exit strategy and many young pilots do not have the financial means to begin. We want to see the industry through this season by providing financial stability, creating sustainable infrastructure, and integrating strategic technologies.
                 - Our team has begun the process of acquiring and partnering with aerial application businesses. We will be coming together with applicators across the country to share best practices and standardize communications for increased safety and efficiency. We will also continue to implement the best technologies available across our operations. We are here to help the agricultural aviation industry survive - and thrive - through the next waves of global demand and technological advancement.
-
+        rfp:
+            heading: Request for Proposals
+            text:
+                - Aero Fleet One is building a network of aerial application operations to bolster and sustain the agricultural aviation industry through various changes, including technological advancements.  
+                - Transition to unmanned flight is inevitable in many domains. Aerial application is a highly specialized sector of aviation, and thus, AFO sees the need for a highly specialized Unmanned Aircraft System if this sector is to reach its full potential in this rapidly innovating world.
+                - AFO is publishing a Request for Proposals to meet this need. We are offering a contract for early adoption and large-scale purchase upon provision of an Unmanned Aircraft System that matches the requirements of this RFP.
+                - The RFP is open to ALL aircraft and component developers, as well as strategic teaming partnerships between the like.
+                - All Proposals must be submitted on or before January 1st, 2022.
+                - "Inquiries regarding the RFP can be directed to Destiny West: <a href=\"mailto:proposals@aerofleetone.com\">proposals@aerofleetone.com</a>."
+            download: "<a href=\"/assets/files/RFP-AFO-UAS.pdf\" target=\"_blank\">Download RFP</a>"
         gallery:
             src: /assets/img/team-aero-fleet-one-agricultural-aviation.jpeg
             alt: "Aero Fleet One Team"

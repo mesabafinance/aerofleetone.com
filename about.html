@@ -195,5 +195,12 @@ parallax: true
             {% endfor %}
         </div>
 
+    <div class="container py-5 my-5">
+        <h2>{{data.about.rfp.heading}}</h2>
+        {% for i in data.about.rfp.text %}
+        <p>{{i}}</p>
+        {% endfor %}
+        <p>{{data.about.rfp.download}}</p>
+</div>
 
 </div>
