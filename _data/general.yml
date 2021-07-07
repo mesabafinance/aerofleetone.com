@@ -14,7 +14,7 @@ items:
     home:
         top:
             headline: Aero Fleet One
-            subline: Strength in Numbers
+            subline: Innovate through integration
             button:
                 url: /connect/
                 text: Contact Us
@@ -68,13 +68,13 @@ items:
         rfp:
             heading: Request for Proposals
             text:
-                - Aero Fleet One is building a network of aerial application operations to bolster and sustain the agricultural aviation industry through various changes, including technological advancements.  
+                - Aero Fleet One is building a network of aerial application operations to bolster and sustain the agricultural aviation industry through various changes, including technological advancements.
                 - Transition to unmanned flight is inevitable in many domains. Aerial application is a highly specialized sector of aviation, and thus, AFO sees the need for a highly specialized Unmanned Aircraft System if this sector is to reach its full potential in this rapidly innovating world.
                 - AFO is publishing a Request for Proposals to meet this need. We are offering a contract for early adoption and large-scale purchase upon provision of an Unmanned Aircraft System that matches the requirements of this RFP.
                 - The RFP is open to ALL aircraft and component developers, as well as strategic teaming partnerships between the like.
                 - All Proposals must be submitted on or before January 1st, 2022.
-                - "Inquiries regarding the RFP can be directed to Destiny West: <a href=\"mailto:proposals@aerofleetone.com\">proposals@aerofleetone.com</a>."
-            download: "<a href=\"/assets/files/RFP-AFO-UAS.pdf\" target=\"_blank\">Download RFP</a>"
+                - 'Inquiries regarding the RFP can be directed to Destiny West: <a href="mailto:proposals@aerofleetone.com">proposals@aerofleetone.com</a>.'
+            download: '<a href="/assets/files/RFP-AFO-UAS.pdf" target="_blank">Download RFP</a>'
         gallery:
             src: /assets/img/team-aero-fleet-one-agricultural-aviation.jpeg
             alt: "Aero Fleet One Team"
@@ -84,15 +84,6 @@ items:
         team:
             heading: Meet Our Team
             items:
-                - name: Allan Dosan
-                  active: True
-                  title: Market Development
-                  img: /assets/img/team/AllanDosan.jpg
-                  mail: allan@aerofleetone.com
-                  linkedin: https://www.linkedin.com/in/allandosan/
-                  latlong: [44.98306165100913, -93.26148006478746]
-                  text: >
-                      Allan brings his strong background in business analysis and sales to Aero Fleet One. He acts as a spokesperson and negotiator as we form partnerships and deals. He is our resident futurist, exploring new market possibilities.
                 - name: Destiny West
                   active: True
                   title: Team Lead
@@ -102,15 +93,33 @@ items:
                   latlong: [39.771370, -104.981852]
                   text: >
                       Destiny runs this project from front to back. She is our main public voice and administrative organizer. As she is training for her private pilot’s license, she is also our in-house aviation enthusiast.
+                - name: Greg Maud
+                  active: True
+                  title: Corporate Development
+                  img: /assets/img/team/GregMaud.jpg
+                  mail: greg@aerofleetone.com
+                  linkedin: https://www.linkedin.com/in/greg-maud-8271881b/
+                  latlong: [39.749668, -105.216019]
+                  text: >
+                      Greg brings over 20 years international experience in strategy and corporate development to Aero Fleet One. He helps develop and implement our acquisition strategy to grow the business.
                 - name: Maria Dyatchyna
                   active: True
-                  title: Analyst and European Representative
+                  title: Research and Expansion Officer
                   img: /assets/img/team/MariaDyatchyna.jpg
                   mail: maria@aerofleetone.com
                   linkedin: https://www.linkedin.com/in/maria-dyatchyna-8ab61137/
                   latlong: [50.436699619840184, 30.51481603417014]
                   text: >
                       Maria utilizes her significant experience in business development and deal-making to keep Aero Fleet One ahead of the game. She is the person to contact for any of our international affairs. She also provides the bulk of our team’s cat photos.
+                - name: Allan Dosan
+                  active: True
+                  title: Tech and Market Development
+                  img: /assets/img/team/AllanDosan.jpg
+                  mail: allan@aerofleetone.com
+                  linkedin: https://www.linkedin.com/in/allandosan/
+                  latlong: [44.98306165100913, -93.26148006478746]
+                  text: >
+                      Allan brings his strong background in IT integrations and cybersecurity to Aero Fleet One. He acts as our point person for all things UAS. He is our resident futurist, exploring new market possibilities.
                 - name: Mark Erjavec
                   active: True
                   title: Finance
@@ -131,13 +140,13 @@ items:
                       Matheus is a Brazilian Digital Marketer based in Ireland. Matheus’ main role is to shape our brand and online presence. He is a wizard at creating video content too.
                 - name: Ana Garcia
                   active: True
-                  title: Business Development Representative Latin America
+                  title: Business Development Latin America
                   img: /assets/img/team/AnaGarcia.jpg
                   mail: ana@aerofleetone.com
                   linkedin: https://www.linkedin.com/in/ana-garcia4/
                   latlong: [-21.158780, -47.820990]
                   text: >-
-                      Ana is an experienced business manager in the fields of agriculture and aviation. She helps develop and implement our business strategy and new technologies in Central and South America. She also flies airplanes and drones, so she acts as our feet on the ground and our
+                      Ana is an experienced business manager in the fields of agriculture and aviation. She helps develop and implement our business strategy and new technologies in Central and South America. She also flies airplanes, so she acts as our feet on the ground and our Brazilian wings in Brazil.
                 - name: Matthew Lessard
                   active: true
                   title: Strategic Advisor
@@ -185,7 +194,7 @@ items:
                       latlong: [50.450100, 30.523399]
     blog:
         heading: Our Blog
-        subheading: Our articles provide information and insights on the latest technologies in agriculture.
+        subheading: We share knowledge, news, and opinions surrounding the intersection of ag, tech, and aviation.
 
     media:
         heading: Media
