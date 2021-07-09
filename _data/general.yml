@@ -129,15 +129,6 @@ items:
                   latlong: [39.74883535119338, -105.01637690875211]
                   text: >
                       Mark has provided the seed and continues to help this vision grow. While managing our funding and resources, he keeps us all on track
-                - name: Matheus Picinin
-                  active: True
-                  title: Marketing & Social Media
-                  img: /assets/img/team/MatheusPicinin.jpg
-                  mail: matheus@aerofleetone.com
-                  linkedin: https://www.linkedin.com/in/matheus-raslan-a270941b4/
-                  latlong: [53.349804, -6.260310]
-                  text: >-
-                      Matheus is a Brazilian Digital Marketer based in Ireland. Matheus’ main role is to shape our brand and online presence. He is a wizard at creating video content too.
                 - name: Ana Garcia
                   active: True
                   title: Business Development Latin America
@@ -147,14 +138,6 @@ items:
                   latlong: [-21.158780, -47.820990]
                   text: >-
                       Ana is an experienced business manager in the fields of agriculture and aviation. She helps develop and implement our business strategy and new technologies in Central and South America. She also flies airplanes, so she acts as our feet on the ground and our Brazilian wings in Brazil.
-                - name: Matthew Lessard
-                  active: true
-                  title: Strategic Advisor
-                  img: /assets/img/team/MatthewLessard.jpg
-                  linkedin: https://www.linkedin.com/in/matthew-lessard-4b73ab/
-                  latlong: [44.1835832, -94.047492]
-                  text: >-
-                      Based in Minnesota, Matthew is an executive leader and entrepreneur with over 20 years of business management, financial oversight and analysis, business development, private equity, and international business experience in various countries including the US, Brazil, Mexico, and Europe.
                 - name: Yuriy Sherayzen
                   active: False
                   title: Strategist
@@ -174,6 +157,23 @@ items:
                   latlong: [-21.176630, -47.820839]
                   text: >-
                       As an expert agronomist and an experienced UAS pilot, Dionas is our pioneer in Brazil. He manages partnership relations in the Brazilian drone space and implements our operational projects in ag. He is also pretty good at steering a boat on the river.
+                - name: Matheus Picinin
+                  active: True
+                  title: Marketing & Social Media
+                  img: /assets/img/team/MatheusPicinin.jpg
+                  mail: matheus@aerofleetone.com
+                  linkedin: https://www.linkedin.com/in/matheus-raslan-a270941b4/
+                  latlong: [53.349804, -6.260310]
+                  text: >-
+                      Matheus is a Brazilian Digital Marketer based in Ireland. Matheus’ main role is to shape our brand and online presence. He is a wizard at creating video content too.
+                - name: Matthew Lessard
+                  active: true
+                  title: Strategic Advisor
+                  img: /assets/img/team/MatthewLessard.jpg
+                  linkedin: https://www.linkedin.com/in/matthew-lessard-4b73ab/
+                  latlong: [44.1835832, -94.047492]
+                  text: >-
+                      Based in Minnesota, Matthew is an executive leader and entrepreneur with over 20 years of business management, financial oversight and analysis, business development, private equity, and international business experience in various countries including the US, Brazil, Mexico, and Europe.
             map:
                 offices:
                     - location: tioga
