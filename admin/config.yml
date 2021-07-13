@@ -1,6 +1,7 @@
 backend:
     name: git-gateway
-    branch: master # Branch to update (optional; defaults to master)
+    branch: cms # Branch to update (optional; defaults to master)
+    local_backend: true
 publish_mode: editorial_workflow
 media_folder: "assets/uploads"
 collections:
@@ -15,3 +16,44 @@ collections:
           - { label: "Body", name: "content", widget: "markdown" }
           - { label: "Tags", name: tags", widget: "list", allow_add: true }
           - { label: "Publish Date", name: "date", widget: "datetime" }
+    - name: "news"
+      label: "News"
+      folder: "_news/"
+      create: true
+      slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+      fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Link", name: "link", widget: "string", required: false }
+          - { label: "Body", name: "content", widget: "markdown" }
+          - { label: "Publish Date", name: "date", widget: "datetime" }
+    - name: "staff"
+      label: "Staff"
+      folder: "_staff/"
+      create: true
+      slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+      fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Link", name: "link", widget: "string", required: false }
+          - { label: "Body", name: "content", widget: "markdown" }
+          - { label: "Publish Date", name: "date", widget: "datetime" }
+    - name: "Team"
+      label: "Team"
+      editor:
+          preview: False
+      files:
+          - label: "Team"
+            name: "team"
+            file: "_data/staff.yml"
+            fields:
+                - label: "Staff members"
+                  name: "items"
+                  widget: "list"
+                  fields:
+                      - { label: "Name", name: "name", widget: "text" }
+                      - { label: "Active", name: "active", widget: "boolean" }
+                      - { label: "Title", name: "title", widget: "text" }
+                      - { label: "Image", name: "img", widget: "image" }
+                      - { label: "Mail", name: "mail", widget: "text" }
+                      - { label: "LinkedIn", name: "linkedin", widget: "text" }
+                      - { label: "Location", name: "latlong", widget: "map" }
+                      - { label: "Bio", name: "text", widget: "text" }

@@ -19,6 +19,8 @@ permalink: /blog/:year/:slug/index.html
 collections:
     news:
         output: false
+    staff:
+        output: false
 
 paginate: 2
 paginate_path: "/blog/page-:num/"
