@@ -86,13 +86,13 @@ items:
             items:
                 - name: Destiny West
                   active: True
-                  title: Team Lead
+                  title: President
                   img: /assets/img/team/DestinyWest.jpg
                   mail: destiny@aerofleetone.com
                   linkedin: https://www.linkedin.com/in/destiny-west-b9b7571b3/
                   latlong: [39.771370, -104.981852]
                   text: >
-                      Destiny runs this project from front to back. She is our main public voice and administrative organizer. As she is training for her private pilot’s license, she is also our in-house aviation enthusiast.
+                      A passion for aviation motivates Destiny as she enacts our ambitious business plan.. She is our main public voice,administrative organizer, and strategic fulcrum.
                 - name: Greg Maud
                   active: True
                   title: Corporate Development
@@ -101,16 +101,16 @@ items:
                   linkedin: https://www.linkedin.com/in/greg-maud-8271881b/
                   latlong: [39.749668, -105.216019]
                   text: >
-                      Greg brings over 20 years international experience in strategy and corporate development to Aero Fleet One. He helps develop and implement our acquisition strategy to grow the business.
+                      Greg brings over 20 years international experience in strategy and corporate development to Aero Fleet One. He helps develop and implement our acquisition strategy.
                 - name: Maria Dyatchyna
                   active: True
-                  title: Research and Expansion Officer
+                  title: Research and Expansion
                   img: /assets/img/team/MariaDyatchyna.jpg
                   mail: maria@aerofleetone.com
                   linkedin: https://www.linkedin.com/in/maria-dyatchyna-8ab61137/
                   latlong: [50.436699619840184, 30.51481603417014]
                   text: >
-                      Maria utilizes her significant experience in business development and deal-making to keep Aero Fleet One ahead of the game. She is the person to contact for any of our international affairs. She also provides the bulk of our team’s cat photos.
+                      Maria utilizes her significant experience in business development and deal-making to keep Aero Fleet One ahead of the game. She is the person to contact for any of our international affairs.
                 - name: Allan Dosan
                   active: True
                   title: Tech and Market Development
@@ -137,7 +137,7 @@ items:
                   linkedin: https://www.linkedin.com/in/ana-garcia4/
                   latlong: [-21.158780, -47.820990]
                   text: >-
-                      Ana is an experienced business manager in the fields of agriculture and aviation. She helps develop and implement our business strategy and new technologies in Central and South America. She also flies airplanes, so she acts as our feet on the ground and our Brazilian wings in Brazil.
+                      Ana is an experienced business manager in the fields of agriculture and aviation. She helps develop and implement our business strategy in Central and South America.
                 - name: Yuriy Sherayzen
                   active: False
                   title: Strategist
@@ -156,16 +156,16 @@ items:
                   linkedin: https://www.linkedin.com/in/dionas-silva-1451a8153/
                   latlong: [-21.176630, -47.820839]
                   text: >-
-                      As an expert agronomist and an experienced UAS pilot, Dionas is our pioneer in Brazil. He manages partnership relations in the Brazilian drone space and implements our operational projects in ag. He is also pretty good at steering a boat on the river.
+                      As an expert agronomist and an experienced UAS pilot, Dionas is our pioneer in Brazil. He manages partnership relations in the Brazilian drone and agtech spaces.
                 - name: Matheus Picinin
                   active: True
-                  title: Marketing & Social Media
+                  title: Marketing Coordinator
                   img: /assets/img/team/MatheusPicinin.jpg
                   mail: matheus@aerofleetone.com
                   linkedin: https://www.linkedin.com/in/matheus-raslan-a270941b4/
                   latlong: [53.349804, -6.260310]
                   text: >-
-                      Matheus is a Brazilian Digital Marketer based in Ireland. Matheus’ main role is to shape our brand and online presence. He is a wizard at creating video content too.
+                      Matheus uses his experience and training in digital media marketing to shape our brand and online presence.
                 - name: Matthew Lessard
                   active: true
                   title: Strategic Advisor
