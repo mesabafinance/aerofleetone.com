@@ -5,7 +5,9 @@ items:
       img: /assets/img/team/DestinyWest.jpg
       mail: destiny@aerofleetone.com
       linkedin: https://www.linkedin.com/in/destiny-west-b9b7571b3/
-      latlong: { type: "Point", coordinates: [-104.981852, 39.771370] }
+      latlong: 
+          type: "Point"
+          coordinates: [-104.981852, 39.771370] }
       text: >
           A passion for aviation motivates Destiny as she enacts our ambitious business plan. She is our main public voice, administrative organizer, and strategic fulcrum.
     - name: Greg Maud
@@ -14,7 +16,9 @@ items:
       img: /assets/img/team/GregMaud.jpg
       mail: greg@aerofleetone.com
       linkedin: https://www.linkedin.com/in/greg-maud-8271881b/
-      latlong: { type: "Point", coordinates: [-105.216019, 39.749668] }
+      latlong: 
+          type: "Point"
+          coordinates: [-105.216019, 39.749668] }
       text: >
           Greg brings over 20 years international experience in strategy and corporate development to Aero Fleet One. He helps develop and implement our acquisition strategy.
     - name: Maria Dyatchyna
@@ -24,10 +28,8 @@ items:
       mail: maria@aerofleetone.com
       linkedin: https://www.linkedin.com/in/maria-dyatchyna-8ab61137/
       latlong:
-          {
-              type: "Point",
-              coordinates: [30.51481603417014, 50.436699619840184],
-          }
+          type: "Point",
+          coordinates: [30.51481603417014, 50.436699619840184]
       text: >
           Maria utilizes her significant experience in business development and deal-making to keep Aero Fleet One ahead of the game. She is the person to contact for any of our international affairs.
     - name: Allan Dosan
@@ -37,10 +39,8 @@ items:
       mail: allan@aerofleetone.com
       linkedin: https://www.linkedin.com/in/allandosan/
       latlong:
-          {
-              type: "Point",
-              coordinates: [-93.26148006478746, 44.98306165100913],
-          }
+          type: "Point",
+          coordinates: [-93.26148006478746, 44.98306165100913]
       text: >
           Allan brings his strong background in IT integrations and cybersecurity to Aero Fleet One. He acts as our point person for all things UAS. He is our resident futurist, exploring new market possibilities.
     - name: Mark Erjavec
@@ -50,10 +50,8 @@ items:
       mail: mark@aerofleetone.com
       linkedin: https://www.linkedin.com/in/markerjavec/
       latlong:
-          {
-              type: "Point",
-              coordinates: [-105.01637690875211, 39.74883535119338],
-          }
+          type: "Point",
+          coordinates: [-105.01637690875211, 39.74883535119338]
       text: >
           Mark has provided the seed and continues to help this vision grow. While managing our funding and resources, he keeps us all on track
     - name: Ana Garcia
@@ -62,7 +60,9 @@ items:
       img: /assets/img/team/AnaGarcia.jpg
       mail: ana@aerofleetone.com
       linkedin: https://www.linkedin.com/in/ana-garcia4/
-      latlong: { type: "Point", coordinates: [-47.820990, -21.158780] }
+      latlong: 
+          type: "Point"
+          coordinates: [-47.820990, -21.158780] }
       text: >-
           Ana is an experienced business manager in the fields of agriculture and aviation. She helps develop and implement our business strategy in Central and South America.
     - name: Yuriy Sherayzen
@@ -71,7 +71,9 @@ items:
       img: /assets/img/team/YuriySherayzen.png
       mail: yuriy@aerofleetone.com
       linkedin: https://www.linkedin.com/in/yuriy-sherayzen-6935894/
-      latlong: { type: "Point", coordinates: [-93.368290, 44.943610] }
+      latlong: 
+          type: "Point"
+          coordinates: [-93.368290, 44.943610] }
       text: >-
           Yuriy is an experienced business analyst who helps guide our team as we move 
           forward with mergers and acquisitions.
@@ -81,7 +83,9 @@ items:
       img: /assets/img/team/DionasSilva.jpg
       mail: dionas@aerofleetone.com
       linkedin: https://www.linkedin.com/in/dionas-silva-1451a8153/
-      latlong: { type: "Point", coordinates: [-47.820839, -21.176630] }
+      latlong: 
+          type: "Point"
+          coordinates: [-47.820839, -21.176630] }
       text: >-
           As an expert agronomist and an experienced UAS pilot, Dionas is our pioneer in Brazil. He manages partnership relations in the Brazilian drone and agtech spaces.
     - name: Matheus Picinin
@@ -90,7 +94,9 @@ items:
       img: /assets/img/team/MatheusPicinin.jpg
       mail: matheus@aerofleetone.com
       linkedin: https://www.linkedin.com/in/matheus-raslan-a270941b4/
-      latlong: { type: "Point", coordinates: [-6.260310, 53.349804] }
+      latlong: 
+          type: "Point"
+          coordinates: [-6.260310, 53.349804] }
       text: >-
           Matheus uses his experience and training in digital media marketing to shape our brand and online presence. He manages our content staff and press relations.
     - name: Matthew Lessard
@@ -98,6 +104,8 @@ items:
       title: Strategic Advisor
       img: /assets/img/team/MatthewLessard.jpg
       linkedin: https://www.linkedin.com/in/matthew-lessard-4b73ab/
-      latlong: { type: "Point", coordinates: [-94.047492, 44.1835832] }
+      latlong: 
+          type: "Point"
+          coordinates: [-94.047492, 44.1835832] }
       text: >-
           Based in Minnesota, Matthew is an executive leader and entrepreneur with over 20 years of business management, financial oversight and analysis, business development, private equity, and international business experience in various countries including the US, Brazil, Mexico, and Europe.
