@@ -1,6 +1,6 @@
 backend:
-    name: github
-    repo: mesabafinance/aerofleetone.com
+    name: git-gateway
+    repo: cms
 publish_mode: editorial_workflow
 media_folder: "assets/uploads"
 collections:
