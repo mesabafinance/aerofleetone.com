@@ -73,7 +73,7 @@ parallax: true
         var team = {
             'type': 'TeamCollection',
             'people': [
-            {% for i in data.about.team.items %}
+            {% for i in site.data.staff.items %}
             {% if i.active %}
             {
                 'type': 'TeamMember',
@@ -85,7 +85,7 @@ parallax: true
                 },
                 'geometry': {
                     'type': 'Point',
-                    'coordinates': [{{i.latlong[1]}},{{i.latlong[0]}}]
+                    'coordinates': [{{i.latlong.coordinates[0]}},{{i.latlong.coordinates[1]}}]
                 }
             }{% unless forloop.last %},{% endunless %}
             {% endif %}
