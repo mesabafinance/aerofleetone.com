@@ -55,5 +55,5 @@ collections:
                       - { label: "Image", name: "img", widget: "image" }
                       - { label: "Mail", name: "mail", widget: "text" }
                       - { label: "LinkedIn", name: "linkedin", widget: "text" }
-                      - { label: "Location", name: "latlong", widget: "map" }
+                      - { label: "Location", name: "testing", widget: "map" }
                       - { label: "Bio", name: "text", widget: "text" }
