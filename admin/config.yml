@@ -53,6 +53,7 @@ collections:
                             widget: "boolean",
                         }
                       - { label: "Title", name: "title", widget: "string" }
+                      - { label: "Location", name: "location", widget: "map" }
                       - {
                             required: false,
                             label: "Image",
