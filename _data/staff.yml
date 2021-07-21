@@ -148,3 +148,4 @@ items:
     mail: test@aerofleetone.com
     linkedin: https://hello.com
     text: Hello Bio
+    active: true
