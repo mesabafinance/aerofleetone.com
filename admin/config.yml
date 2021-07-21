@@ -41,38 +41,48 @@ collections:
                             widget: "string",
                         }
                       - {
+                            required: false,
                             label: "Active",
                             name: "active",
                             widget: "boolean",
-                            required: false,
                         }
+                      - { label: "Title", name: "title", widget: "string" }
                       - {
-                            label: "Title",
-                            name: "title",
-                            widget: "string",
                             required: false,
-                        }
-                      - {
                             label: "Image",
                             name: "img",
                             widget: "image",
-                            required: false,
+                            hint: "Please make sure the image has the same minimum resolution and aspect ratio as the other images",
                         }
                       - {
+                            required: false,
                             label: "Mail",
                             name: "mail",
                             widget: "string",
-                            required: false,
+                            pattern:
+                                [
+                                    "^\\+@\\S+\\.\\S+$",
+                                    "Email address not valid",
+                                ],
                         }
                       - {
+                            required: false,
                             label: "LinkedIn",
                             name: "linkedin",
                             widget: "string",
-                            required: false,
+                            pattern:
+                                [
+                                    "^https:\\/\\/www\\.linkedin\\.com\\/in\\/\\S+$",
+                                    "Please put in a valid LinkedIn profile link following the pattern https://www.linkedin.com/in/<user-name>",
+                                ],
                         }
                       - {
                             label: "Bio",
                             name: "text",
                             widget: "text",
-                            required: false,
+                            pattern:
+                                [
+                                    "^.{0,300}$",
+                                    "Text too long. Maximum 300 characters.",
+                                ],
                         }
