@@ -1,4 +1,10 @@
 items:
+  - full_name: Simon Testing
+    title: Chief Tester
+    mail: test@aerofleetone.com
+    linkedin: https://hello.com
+    text: Hello Bio
+    active: true
   - full_name: Destiny West
     active: true
     title: President
@@ -143,9 +149,3 @@ items:
       business development, private equity, and international business
       experience in various countries including the US, Brazil, Mexico, and
       Europe.
-  - full_name: Simon Testing
-    title: Chief Tester
-    mail: test@aerofleetone.com
-    linkedin: https://hello.com
-    text: Hello Bio
-    active: true
