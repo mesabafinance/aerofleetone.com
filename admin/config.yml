@@ -1,7 +1,6 @@
 backend:
     name: git-gateway
-    repo: admin
-publish_mode: editorial_workflow
+    branch: admin
 media_folder: "assets/uploads"
 collections:
     - name: "blog"
@@ -9,34 +8,22 @@ collections:
       folder: "_posts/"
       create: true
       slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+      editor:
+          preview: false
       fields:
+          - {
+                label: "Layout",
+                name: "layout",
+                widget: "hidden",
+                default: "blog",
+            }
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Image", name: "img", widget: "image", required: false }
-          - { label: "Body", name: "content", widget: "markdown" }
+          - { label: "Body", name: "body", widget: "markdown" }
           - { label: "Tags", name: tags", widget: "list", allow_add: true }
           - { label: "Publish Date", name: "date", widget: "datetime" }
-    - name: "news"
-      label: "News"
-      folder: "_news/"
-      create: true
-      slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
-      fields:
-          - { label: "Title", name: "title", widget: "string" }
-          - { label: "Link", name: "link", widget: "string", required: false }
-          - { label: "Body", name: "content", widget: "markdown" }
-          - { label: "Publish Date", name: "date", widget: "datetime" }
-    - name: "staff"
-      label: "Staff"
-      folder: "_staff/"
-      create: true
-      slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
-      fields:
-          - { label: "Title", name: "title", widget: "string" }
-          - { label: "Link", name: "link", widget: "string", required: false }
-          - { label: "Body", name: "content", widget: "markdown" }
-          - { label: "Publish Date", name: "date", widget: "datetime" }
-    - name: "Team"
-      label: "Team"
+    - name: "site"
+      label: "Site"
       editor:
           preview: False
       files:
@@ -48,10 +35,44 @@ collections:
                   name: "items"
                   widget: "list"
                   fields:
-                      - { label: "Name", name: "name", widget: "text" }
-                      - { label: "Active", name: "active", widget: "boolean" }
-                      - { label: "Title", name: "title", widget: "text" }
-                      - { label: "Image", name: "img", widget: "image" }
-                      - { label: "Mail", name: "mail", widget: "text" }
-                      - { label: "LinkedIn", name: "linkedin", widget: "text" }
-                      - { label: "Bio", name: "text", widget: "text" }
+                      - {
+                            label: "Display Name",
+                            name: "full_name",
+                            widget: "string",
+                        }
+                      - {
+                            label: "Active",
+                            name: "active",
+                            widget: "boolean",
+                            required: false,
+                        }
+                      - {
+                            label: "Title",
+                            name: "title",
+                            widget: "string",
+                            required: false,
+                        }
+                      - {
+                            label: "Image",
+                            name: "img",
+                            widget: "image",
+                            required: false,
+                        }
+                      - {
+                            label: "Mail",
+                            name: "mail",
+                            widget: "string",
+                            required: false,
+                        }
+                      - {
+                            label: "LinkedIn",
+                            name: "linkedin",
+                            widget: "string",
+                            required: false,
+                        }
+                      - {
+                            label: "Bio",
+                            name: "text",
+                            widget: "text",
+                            required: false,
+                        }
