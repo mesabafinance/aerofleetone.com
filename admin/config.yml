@@ -61,7 +61,7 @@ collections:
                             widget: "string",
                             pattern:
                                 [
-                                    "^\\+@\\S+\\.\\S+$",
+                                    "^\\S+@\\S+\\.\\S+$",
                                     "Email address not valid",
                                 ],
                         }
@@ -82,7 +82,7 @@ collections:
                             widget: "text",
                             pattern:
                                 [
-                                    "^.{0,300}$",
+                                    "^[\\s\\S]{0,300}$",
                                     "Text too long. Maximum 300 characters.",
                                 ],
                         }
