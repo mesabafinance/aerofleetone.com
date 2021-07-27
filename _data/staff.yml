@@ -2,9 +2,9 @@ items:
   - full_name: Simon Testing
     title: Chief Tester
     mail: test@aerofleetone.com
-    linkedin: https://hello.com
+    linkedin: https://www.linkedin.com/in/smnwltr
     text: Hello Bio
-    active: true
+    active: false
   - full_name: Destiny West
     active: true
     title: President
