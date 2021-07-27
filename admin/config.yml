@@ -18,6 +18,12 @@ collections:
                 default: "blog",
             }
           - { label: "Title", name: "title", widget: "string" }
+          - {
+                label: "Published",
+                name: "published",
+                widget: "boolean",
+                default: false,
+            }
           - { label: "Image", name: "img", widget: "image", required: false }
           - { label: "Body", name: "body", widget: "markdown" }
           - { label: "Tags", name: tags", widget: "list", allow_add: true }
