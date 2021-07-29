@@ -88,3 +88,17 @@ collections:
                                     "Text too long. Maximum 300 characters.",
                                 ],
                         }
+                      - {
+                            label: "Latitude",
+                            name: "lat",
+                            widget: "number",
+                            value_type: "float",
+                            hint: "Use https://www.latlong.net/ to find the latitude and longitude coordinates for a specific address, then copy the values here",
+                        }
+                      - {
+                            label: "Longitude",
+                            name: "long",
+                            widget: "number",
+                            value_type: "float",
+                            hint: "Use https://www.latlong.net/ to find the latitude and longitude coordinates for a specific address, then copy the values here",
+                        }
