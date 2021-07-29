@@ -48,7 +48,6 @@ collections:
                             widget: "boolean",
                         }
                       - { label: "Title", name: "title", widget: "string" }
-                      - { label: "Location", name: "location", widget: "map" }
                       - {
                             required: false,
                             label: "Image",
@@ -87,4 +86,18 @@ collections:
                                     "^[\\s\\S]{0,300}$",
                                     "Text too long. Maximum 300 characters.",
                                 ],
+                        }
+                      - {
+                            label: "Latitude",
+                            name: "lat",
+                            widget: "number",
+                            value_type: "float",
+                            hint: "Use https://www.latlong.net/ to find the latitude and longitude coordinates for a specific address, then copy the values here",
+                        }
+                      - {
+                            label: "Longitude",
+                            name: "long",
+                            widget: "number",
+                            value_type: "float",
+                            hint: "Use https://www.latlong.net/ to find the latitude and longitude coordinates for a specific address, then copy the values here",
                         }
