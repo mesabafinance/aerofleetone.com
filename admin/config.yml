@@ -88,16 +88,28 @@ collections:
                                 ],
                         }
                       - {
+                            required: false,
                             label: "Latitude",
                             name: "lat",
                             widget: "number",
                             value_type: "float",
                             hint: "Use https://www.latlong.net/ to find the latitude and longitude coordinates for a specific address, then copy the values here",
+                            pattern:
+                                [
+                                    "^[-+]?\\d+(\\.\\d+)?$",
+                                    "Coordinate not recognized. Please make sure to enter a valid coordinat evaluee, e.g. 98.12345 or -100.12345.",
+                                ],
                         }
                       - {
+                            required: false,
                             label: "Longitude",
                             name: "long",
                             widget: "number",
                             value_type: "float",
                             hint: "Use https://www.latlong.net/ to find the latitude and longitude coordinates for a specific address, then copy the values here",
+                            pattern:
+                                [
+                                    "^[-+]?\\d+(\\.\\d+)?$",
+                                    "Coordinate not recognized. Please make sure to enter a valid coordinat evaluee, e.g. 98.12345 or -100.12345.",
+                                ],
                         }
