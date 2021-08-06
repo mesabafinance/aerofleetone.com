@@ -8,6 +8,10 @@ A few of Aero Fleet One’s team members were able to make their way down to the
 
 Thorough research has been done about the local aerial application industry from team members in Denver both online and verbally with the team members located in Brazil. AFO President Destiny West quotes, “Another main reason we went to Brazil was to solidify team bonding with the branch of members that were brought onto the team this year from Brazil and Ukraine and get to know them as people in real-time to establish our goals as a company”. With sights set on the future, the Aero Fleet Team was also able to connect with people that are recognized in the drone space.Although the plan is to implement the use of unmanned aerial vehicles in the agricultural aviation industry much later down the road, it is important for AFO to be present at these sorts of discussions.
 
+![](/assets/uploads/blog_2.1.jpg)
+
+
+
 Thorough research has been done about the local aerial application industry from team members in Denver both online and verbally with the team members located in Brazil. AFO President Destiny West quotes, “Another main reason we went to Brazil was to solidify team bonding with the branch of members that were brought onto the team this year from Brazil and Ukraine and get to know them as people in real-time to establish our goals as a company”. With sights set on the future, the Aero Fleet Team was also able to connect with people that are recognized in the drone space.Although the plan is to implement the use of unmanned aerial vehicles in the agricultural aviation industry much later down the road, it is important for AFO to be present at these sorts of discussions.
 
 The main insights gained on this trip came not only from AFO team members but from different people in the South American region. Whether they may be users or developers AFO procured better understandings of just what picture is being painted regarding rules and regulations of drone use in Brazil. 
