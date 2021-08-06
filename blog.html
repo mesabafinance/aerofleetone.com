@@ -25,7 +25,8 @@ parallax: true
     <div class="row">
         <div class="col-md-9">
             {% for i in site.posts %}
-            <div class="row mb-2">
+            <div class="row mb-2" style="transform: rotate(0);">
+            {% comment %} Apply transform to make sure stretched link  only spreads to this element {% endcomment %}
                 <div class="col-md-3">
                     <img
                         class="img-fluid"
