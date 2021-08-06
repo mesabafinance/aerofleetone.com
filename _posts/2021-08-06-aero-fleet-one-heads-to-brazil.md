@@ -10,7 +10,7 @@ Thorough research has been done about the local aerial application industry from
 
 
 
-![AFO team members meet with aerial applicators to discuss development of agricultural aviation.](/assets/uploads/blog_2.1.jpg "AFO team members meet with aerial applicators to discuss development of agricultural aviation.")
+![AFO team members meet with aerial applicators to discuss development of agricultural aviation.](/assets/uploads/blog_2.2.jpg "AFO team members meet with aerial applicators to discuss development of agricultural aviation.")
 
 
 
