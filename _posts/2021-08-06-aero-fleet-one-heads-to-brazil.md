@@ -4,7 +4,7 @@ title: Aero Fleet One Heads to Brazil
 img: /assets/uploads/blog-2-1_3.png
 date: 2021-08-06T17:37:06.768Z
 ---
-A few of Aero Fleet One’s team members were able to make their way down to the large fruitful country along the east coast of South America. Their task at hand was to gain hands-on, in-person experience with the aerial application industry in Brazil.
+A few of Aero Fleet One’s team members were able to make their way down to the large fruitful country along the east coast of South America. Their task at hand was to gain hands-on, in-person experience with the aerial application industry in Brazil. 
 
 Thorough research has been done about the local aerial application industry from team members in Denver both online and verbally with the team members located in Brazil. AFO President Destiny West quotes, “Another main reason we went to Brazil was to solidify team bonding with the branch of members that were brought onto the team this year from Brazil and Ukraine and get to know them as people in real-time to establish our goals as a company”. With sights set on the future, the Aero Fleet Team was also able to connect with people that are recognized in the drone space.Although the plan is to implement the use of unmanned aerial vehicles in the agricultural aviation industry much later down the road, it is important for AFO to be present at these sorts of discussions.
 
