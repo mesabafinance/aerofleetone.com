@@ -1,0 +1,116 @@
+backend:
+    name: git-gateway
+    branch: admin
+publish_mode: editorial_workflow
+media_folder: "assets/uploads"
+collections:
+    - name: "blog"
+      label: "Blog"
+      folder: "_posts/"
+      create: true
+      slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+      editor:
+          preview: false
+      fields:
+          - {
+                label: "Layout",
+                name: "layout",
+                widget: "hidden",
+                default: "blog",
+            }
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Image", name: "img", widget: "image", required: false }
+          - { label: "Body", name: "body", widget: "markdown" }
+          - { label: "Tags", name: tags", widget: "list", allow_add: true }
+          - { label: "Publish Date", name: "date", widget: "datetime" }
+    - name: "site"
+      label: "Site"
+      editor:
+          preview: False
+      files:
+          - label: "Team"
+            name: "team"
+            file: "_data/staff.yml"
+            fields:
+                - label: "Team members"
+                  name: "items"
+                  widget: "list"
+                  fields:
+                      - {
+                            label: "Display Name",
+                            name: "full_name",
+                            widget: "string",
+                        }
+                      - {
+                            required: false,
+                            label: "Active",
+                            name: "active",
+                            widget: "boolean",
+                        }
+                      - { label: "Title", name: "title", widget: "string" }
+                      - {
+                            required: false,
+                            label: "Image",
+                            name: "img",
+                            widget: "image",
+                            hint: "Please make sure the image has the same minimum resolution and aspect ratio as the other images (currently 500x612)",
+                        }
+                      - {
+                            required: false,
+                            label: "Mail",
+                            name: "mail",
+                            widget: "string",
+                            pattern:
+                                [
+                                    "^\\S+@\\S+\\.\\S+$",
+                                    "Email address not valid",
+                                ],
+                        }
+                      - {
+                            required: false,
+                            label: "LinkedIn",
+                            name: "linkedin",
+                            widget: "string",
+                            pattern:
+                                [
+                                    "^https:\\/\\/www\\.linkedin\\.com\\/in\\/\\S+$",
+                                    "Please put in a valid LinkedIn profile link following the pattern https://www.linkedin.com/in/<user-name>",
+                                ],
+                        }
+                      - {
+                            label: "Bio",
+                            name: "text",
+                            widget: "text",
+                            hint: "Maximum 300 characters"
+                            pattern:
+                                [
+                                    "^[\\s\\S]{0,300}$",
+                                    "Text too long. Maximum 300 characters.",
+                                ],
+                        }
+                      - {
+                            required: false,
+                            label: "Latitude",
+                            name: "lat",
+                            widget: "number",
+                            value_type: "float",
+                            hint: "Use https://www.latlong.net/ to find the latitude and longitude coordinates for a specific address, then copy the values here",
+                            pattern:
+                                [
+                                    "^[-+]?\\d+(\\.\\d+)?$",
+                                    "Coordinate not recognized. Please make sure to enter a valid coordinat evaluee, e.g. 98.12345 or -100.12345.",
+                                ],
+                        }
+                      - {
+                            required: false,
+                            label: "Longitude",
+                            name: "long",
+                            widget: "number",
+                            value_type: "float",
+                            hint: "Use https://www.latlong.net/ to find the latitude and longitude coordinates for a specific address, then copy the values here",
+                            pattern:
+                                [
+                                    "^[-+]?\\d+(\\.\\d+)?$",
+                                    "Coordinate not recognized. Please make sure to enter a valid coordinat evaluee, e.g. 98.12345 or -100.12345.",
+                                ],
+                        }

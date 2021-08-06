@@ -73,19 +73,19 @@ parallax: true
         var team = {
             'type': 'TeamCollection',
             'people': [
-            {% for i in data.about.team.items %}
+            {% for i in site.data.staff.items %}
             {% if i.active %}
             {
                 'type': 'TeamMember',
                 'properties': {
-                    'name': '{{i.name}}',
+                    'name': '{{i.full_name}}',
                     'iconSize': [60, 60],
                     'iconUrl': '{{i.img}}',
                     'title': '{{i.title}}'
                 },
                 'geometry': {
                     'type': 'Point',
-                    'coordinates': [{{i.latlong[1]}},{{i.latlong[0]}}]
+                    'coordinates': ['{{i.map.long}}','{{i.map.lat}}']
                 }
             }{% unless forloop.last %},{% endunless %}
             {% endif %}
@@ -96,7 +96,7 @@ parallax: true
         var offices = {
             'type': 'OfficeLocation',
             'locations': [
-            {% for i in data.about.team.map.offices %}
+            {% for i in site.data.general.items.about.team.map.offices %}
             {
                 'type': 'OfficeLocation',
                 'properties': {
@@ -108,7 +108,7 @@ parallax: true
                 },
                 'geometry': {
                     'type': 'Point',
-                    'coordinates': [{{i.latlong[1]}},{{i.latlong[0]}}]
+                    'coordinates': ['{{i.map.long}}','{{i.map.lat}}']
                 }
             }{% unless forloop.last %},{% endunless %}
             {% endfor %}
@@ -153,21 +153,19 @@ parallax: true
 <div class="container py-5 my-5">
     <h2>{{data.about.team.heading}}</h2>
 
-    <div
-            class="row row-cols-1 row-cols-md-3 g-4 justify-content-center py-5"
-        >
-            {% for i in data.about.team.items %}
-            {% if i.active %}
+    <div class="row row-cols-1 row-cols-md-3 g-4 justify-content-center py-5">
+        {% for i in site.data.staff.items %}
+        {% if i.active %}
             <div class="col">
                 <div class="card h-100">
                     <img
                         src="{{i.img}}"
                         class="card-img-top"
-                        alt="{{i.name}}"
+                        alt="{{i.full_name}}"
                     />
                     <div class="card-body d-flex flex-column">
                         <h5 class="card-title mb-1 fw-bold">
-                            {{i.name}}
+                            {{i.full_name}}
                             {% if i.linkedin %}
                             <span>
                                 <a href="{{i.linkedin}}" target="_blank">
@@ -191,16 +189,15 @@ parallax: true
                     </div>
                 </div>
             </div>
-            {% endif %}
-            {% endfor %}
-        </div>
-
-    <div class="container py-5 my-5">
-        <h2>{{data.about.rfp.heading}}</h2>
-        {% for i in data.about.rfp.text %}
-        <p>{{i}}</p>
+        {% endif %}     
         {% endfor %}
-        <p>{{data.about.rfp.download}}</p>
+    </div>   
 </div>
 
+<div class="container py-5 my-5">
+    <h2>{{data.about.rfp.heading}}</h2>
+    {% for i in data.about.rfp.text %}
+    <p>{{i}}</p>
+    {% endfor %}
+    <p>{{data.about.rfp.download}}</p>
 </div>
