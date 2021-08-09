@@ -4,7 +4,7 @@ items:
     mail: test@aerofleetone.com
     linkedin: https://www.linkedin.com/in/smnwltr
     text: dasdasddsfsdfdsf
-    active: true
+    active: false
     lat: 129.123123
     long: -13.123123
   - img: /assets/img/team/DestinyWest.jpg
