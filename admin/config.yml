@@ -81,7 +81,7 @@ collections:
                             label: "Bio",
                             name: "text",
                             widget: "text",
-                            hint: "Maximum 300 characters"
+                            hint: "Maximum 300 characters",
                             pattern:
                                 [
                                     "^[\\s\\S]{0,300}$",
