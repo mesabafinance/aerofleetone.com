@@ -1,15 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-{% include head.html %}
+    {% include head.html %}
 
-<body>
+    <body>
+        {% include navbar.html %} {% unless page.url contains
+        "exploring-the-future-at-auvsi-xponential" %}
+        <div class="p-2 bg-primary" id="top-msg">
+            <p class="text-center text-white align-self-center pt-5 mt-5">
+                We are in Atlanta at XPONENTIAL this week keeping a pulse on
+                unmanned aviation.
+                <a
+                    class="text-white"
+                    style="
+                        text-decoration-line: underline;
+                        text-decoration-color: white;
+                    "
+                    href="/blog/2021/exploring-the-future-at-auvsi-xponential/"
+                >
+                    Read Full Story...
+                </a>
+            </p>
+        </div>
+        {% endunless %}
 
-    {% include navbar.html %}
+        <div id="top" class="main" style="min-height: 80vh">{{ content }}</div>
 
-    <div id="top" class="main mt-5 pt-5" style="min-height: 80vh;"> {{ content }} </div>
-
-    {% include footer.html %}
-
-</body>
-
+        {% include footer.html %}
+    </body>
 </html>
