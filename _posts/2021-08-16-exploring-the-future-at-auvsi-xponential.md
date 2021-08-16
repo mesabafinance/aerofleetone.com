@@ -1,6 +1,7 @@
 ---
 layout: blog
 title: Exploring the Future at AUVSI XPONENTIAL
+img: /assets/uploads/auvsi-xponential.png
 date: 2021-08-16T22:18:27.435Z
 ---
 This week, AFO team and board members based in Denver and Minneapolis are traveling to the great southern city of Atlanta for a major conference focused on all things unmanned. Always considering the big picture, this is part of our efforts to stay familiar with the most recent trends and developments in aviation technology.
