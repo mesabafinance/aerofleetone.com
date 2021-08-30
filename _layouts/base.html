@@ -3,7 +3,7 @@
     {% include head.html %}
 
     <body>
-        {% include navbar.html %} {% unless page.url contains
+        {% include navbar.html %} {% comment %} {% unless page.url contains
         "exploring-the-future-at-auvsi-xponential" %}
         <div class="p-2 bg-primary" id="top-msg">
             <p class="text-center text-white align-self-center pt-5 mt-5">
@@ -21,7 +21,7 @@
                 </a>
             </p>
         </div>
-        {% endunless %}
+        {% endunless %} {% endcomment %}
 
         <div id="top" class="main" style="min-height: 80vh">{{ content }}</div>
 
