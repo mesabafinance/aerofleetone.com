@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: Ag pilot Juliana Torchetti expresses her passion for ag aviation.
+title: Ag pilot Juliana Torchetti expresses her passion for ag aviation
 img: /assets/uploads/juliana-torchetti-ag-aviation-pilot.jpg
 date: 2021-09-07T11:21:07.177Z
 ---
