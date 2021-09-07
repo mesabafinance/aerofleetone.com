@@ -10,7 +10,7 @@ She became an aerial applicator in Brazil in 2013. Juliana flew a plethora of di
 
 Climate and weather are exceptionally critical factors in this line of work. In the US, the peak growing seasons tend to be during the summer months while in Brazil, because the climate is greatly different, the peak growing seasons are longer, if not year-round. Fortunately, Juliana was still able to make time for a solo trip ferrying a plane from Georgia to Brazil. This is one activity she enjoys doing during her “off-season”. Challenged with an already daunting task, her biggest hurdle was flying through unexpected harsh weather, as most radar tools malfunction when flying over the ocean or jungle. Weather, windmills, power lines, and cell phone towers are obstacles that are monitored by every ag pilot when taking flight, but a trip of this distance comes with even more preparation.
 
-![]()
+![](/assets/uploads/juliana-interview.png)
 
 A piece of advice Juliana leaves for future ag pilots, “Take your time, before you try to be the best pilot, be the safest pilot, because the safest pilot is the best”. 
 
