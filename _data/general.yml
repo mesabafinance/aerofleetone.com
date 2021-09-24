@@ -14,25 +14,25 @@ items:
     home:
         top:
             headline: Aero Fleet One
-            subline: Innovate through integration
+            subline: Strengthening and revolutionizing the aerial application industry from the inside out
             button:
                 url: /connect/
                 text: Contact Us
         boilerplate:
-            text: Bringing together ag flying operations throughout the Americas.
+            text: We exist to maximize potential and minimize risk for all involved in agricultural aviation.
             src: UAV-fixed-wing-agriculture.png
         galleries:
             items:
                 - src: /assets/img/aerial-application-spraying-pesticides.jpg
-                  text: "Common Assets: Relieving capital expenditures and overhead pressures."
+                  text: "We relieve capital expenditures and overhead pressures from pilots and managers."
                 - src: /assets/img/smart-farming-technology-agriculture.jpg
-                  text: "Common Goals: Utilizing synergies to make work easier at individual locations."
+                  text: "Operators use standard practices and policies to simplify work at each location."
                 - src: /assets/img/crop-duster-agricultural-aviation.jpg
-                  text: "Common Expertise: Integrating strategic technologies and best practices to increase efficiency."
+                  text: "Experts join forces to increase efficiency and safety across the board."
             about:
                 heading: About Us
                 img: /assets/img/agricultural-aircraft-crop-seeding.jpg
-                text: We exist to maximize potential and minimize risk for all involved in agricultural aviation.
+                text: Innovating through the strategic integration of existing operations.
                 button:
                     text: Learn more
                     url: /about/
@@ -48,7 +48,7 @@ items:
 
     about:
         heading: About Us
-        subheading: Strengthening and revolutionizing the aerial application industry from the inside out.
+        subheading: We are in it for the long haul
         boxes:
             - heading: Agriculture
               icon: /assets/img/about/precision-agriculture.png
@@ -64,7 +64,12 @@ items:
             text:
                 - After 100 years of helping to feed and clothe the world, we believe that great things are yet to come for the ag aviation industry. As the demand for this work increases, so will the necessity of improved safety and efficiency. This will require more capital investment for training, equipment, maintenance, infrastructure, and insurance.
                 - As the industry sees pilot shortages, regulatory constraints, and inevitable technological upgrades, we know that this will be a hard transition for many operators to face. Many aging operators do not have an exit strategy and many young pilots do not have the financial means to begin. We want to see the industry through this season by providing financial stability, creating sustainable infrastructure, and integrating strategic technologies.
-                - Our team has begun the process of acquiring and partnering with aerial application businesses. We will be coming together with applicators across the Americas to share best practices and standardize communications for increased safety and efficiency. We will also continue to implement the best technologies available across our operations. We are here to help the agricultural aviation industry survive - and thrive - through the next waves of global demand and technological advancement.
+                - Our team has begun the process of acquiring and partnering with aerial application businesses. Our mission is to create an international network of operations through strategic purchases of existing businesses. We will be coming together with applicators across the Americas to share best practices and standardize communications for increased safety and efficiency. We will also continue to implement the best technologies available across our operations. We are here to help the agricultural aviation industry survive - and thrive - through the next waves of global demand and technological advancement.
+            cta:
+                text: Want to bring your business under our swing?
+                button:
+                    text: Take our interest survey
+                    link:
         rfp:
             heading: Request for Proposals
             text:
