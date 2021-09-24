@@ -21,11 +21,15 @@ parallax: true
     data-image-src="/assets/img/about/ag-aircraft-spraying-farm-field.jpg"
     data-parallax="scroll"
     data-position=""
-    style="height: 60vh;"
+    style="height: 70vh;"
 >
-    <div class="p-3">
-        <h1>{{data.about.heading}}</h1>
-        <h2 class="h3 text-white">{{data.about.subheading}}</h2>
+    <div class="container">
+        <div class="row p-3 mt-3 justify-content-center">
+            <div class="col-md-8">
+                <h1>{{data.about.heading}}</h1>
+                <h2 class="h3 text-white">{{data.about.subheading}}</h2>
+            </div>
+        </div>
     </div>
 </div>
 
@@ -50,6 +54,8 @@ parallax: true
     {% for i in data.about.mission.text %}
     <p>{{i}}</p>
     {% endfor %}
+    {% comment %} <p>{{data.about.mission.cta.text}}</p>
+    <p><a href="{{data.about.mission.cta.button.link}}" rel="noopener" class="btn btn-primary btn-lg fw-semibold">{{data.about.mission.cta.button.text}}</a></p> {% endcomment %}
 </div>
 
 <div class="container py-5 my-5">
