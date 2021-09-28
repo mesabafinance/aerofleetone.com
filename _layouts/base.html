@@ -3,25 +3,33 @@
     {% include head.html %}
 
     <body>
-        {% include navbar.html %} {% comment %} {% unless page.url contains
-        "exploring-the-future-at-auvsi-xponential" %}
-        <div class="p-2 bg-primary" id="top-msg">
+        {% include navbar.html %}
+        <div
+            class="p-1 bg-primary"
+            id="top-msg"
+            style="display: none; position: relative"
+        >
             <p class="text-center text-white align-self-center pt-5 mt-5">
-                We are in Atlanta at XPONENTIAL this week keeping a pulse on
-                unmanned aviation.
-                <a
-                    class="text-white"
-                    style="
-                        text-decoration-line: underline;
-                        text-decoration-color: white;
-                    "
-                    href="/blog/2021/exploring-the-future-at-auvsi-xponential/"
-                >
-                    Read Full Story...
-                </a>
+                <small>
+                    We use cookies to improve our website. Read more about which
+                    cookies we use in our
+                    <a
+                        class="text-reset"
+                        data-bs-toggle="modal"
+                        href="#privacyModal"
+                    >
+                        privacy policy
+                    </a>
+                    .
+                    <a
+                        class="btn btn-sm btn-light top-msg-close"
+                        href="/blog/2021/exploring-the-future-at-auvsi-xponential/"
+                    >
+                        Understood.
+                    </a>
+                </small>
             </p>
         </div>
-        {% endunless %} {% endcomment %}
 
         <div id="top" class="main" style="min-height: 80vh">{{ content }}</div>
 

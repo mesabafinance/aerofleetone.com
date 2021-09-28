@@ -1,20 +1,20 @@
 // Insert year for copyright
 document.getElementById("currentYear").innerHTML = new Date().getFullYear();
 
+
 // handle cookie message display
 
 function setMessageDismissed() {
-    localStorage.setItem('cookieMsg', 'dismissed');
+    localStorage.setItem('topMsg', 'dismissed');
 }
 
-let msgCheck = localStorage.getItem('cookieMsg');
+let msgCheck = localStorage.getItem('topMsg');
+if (msgCheck != 'dismissed') {
+    $('#top-msg').slideDown(1000);
+}
 
-// if (msgCheck != 'dismissed') {
-//     $('#cookie-msg').slideDown(1000);
-// }
-
-$('.cookie-msg-close').click(function (e) {
+$('.top-msg-close').click(function (e) {
     e.preventDefault();
-    $('#cookie-msg').slideUp(setMessageDismissed());
+    $('#top-msg').slideUp(setMessageDismissed());
     return false;
 })
