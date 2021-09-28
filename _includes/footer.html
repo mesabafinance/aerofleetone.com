@@ -99,14 +99,13 @@
     src="{{'/assets/js/main.js' | relative_url}}?{{cache_buster}}"
     async
 ></script>
-{% if page.parallax %}
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script
     type="text/javascript"
     src="{{'/assets/js/parallax.js' | relative_url}}?{{cache_buster}}"
     async
 ></script>
-{% endif %} {% if page.home%}
+{% if page.home%}
 <script>
     if (window.netlifyIdentity) {
         window.netlifyIdentity.on("init", (user) => {
