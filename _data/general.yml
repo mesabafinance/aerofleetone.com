@@ -30,12 +30,12 @@ items:
                 - src: /assets/img/crop-duster-agricultural-aviation.jpg
                   text: "Experts join forces to increase efficiency and safety across the board."
             about:
-                heading: About Us
+                heading: Join Us
                 img: /assets/img/agricultural-aircraft-crop-seeding.jpg
-                text: Innovating through the strategic integration of existing operations.
+                text: Interested in the idea of selling your business?
                 button:
-                    text: Learn more
-                    url: /about/
+                    text: Tell us about it
+                    url: /survey/
         blog:
             heading: Latest Blog Articles
             img: /assets/img/agricultural-aircraft-crop-dusting.jpg
